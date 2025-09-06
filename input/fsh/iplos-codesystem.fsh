@@ -1,0 +1,41 @@
+Alias: $iplos = urn:oid:2.16.578.1.12.4.1.4.1
+
+CodeSystem: IplosCodeSystem
+Id: IplosCs
+Title: "Individbasert pleie- og omsorgsstatistikk (IPLOS)"
+Description: "Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene."
+* ^url = $iplos
+* ^experimental = true
+* ^caseSensitive = false
+* #1 "Praktisk bistand - daglige gjøremål"
+* #2 "Praktisk bistand - opplæring - daglige gjøremål"
+* #3 "Praktisk bistand - brukerstyrt - personlig assistanse"
+* #4 "Dagaktivitetstilbud"
+* #5 "Matombringing"
+* #6 "Trygghetsalarm"
+* #7 "Avlastning utenfor institusjon"
+* #8 "Avlastning i institusjon"
+* #9 "Støttekontakt"
+* #11 "Omsorgsstønad"
+* #14 "Bruk av tvang psykisk utviklingshemning – planlagte tiltak"
+* #15 "Helsetjenester i hjemmet"
+* #17 "Dagopphold i institusjon"
+* #18 "Tidsbegrenset opphold - utredning/behandling"
+* #19 "Tidsbegrenset opphold - habilitering/rehabilitering"
+* #20 "Tidsbegrenset opphold - annet"
+* #21 "Langtidsopphold i institusjon"
+* #22 "Nattopphold i institusjon"
+* #23 "Bruk av tvang psykisk utviklingshemning – nødsituasjoner"
+* #24 "Helsehjelp med tvang"
+* #25 "Kommunal øyeblikkelig hjelp - døgnopphold"
+* #26 "Lokaliseringsteknologi (GPS)"
+* #27 "Elektronisk medisineringsstøtte"
+* #28 "Digitalt tilsyn"
+* #29 "Bolig som kommunen disponerer for helse- og omsorgsformål"
+
+ValueSet: IplosValueSet
+Id: IplosVs
+Title: "Individbasert pleie- og omsorgsstatistikk (IPLOS)"
+Description: "Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene."
+* ^experimental = true
+* include codes from system $iplos
