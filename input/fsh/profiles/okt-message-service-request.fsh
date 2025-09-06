@@ -20,6 +20,17 @@ Description: "Profile on ServiceRequest for OktMessage"
 * code ^short = "Kode for tjenesten fra IPLOS"
 * code ^definition = "Kode for tjenesten fra IPLOS"
 
+* orderDetail ..1
+* orderDetail ^slicing.discriminator.type = #value
+* orderDetail ^slicing.discriminator.path = "coding"
+* orderDetail ^slicing.rules = #closed
+* orderDetail contains
+    needsCaption 0..1
+* orderDetail[needsCaption].coding 1..1
+* orderDetail[needsCaption].coding = OktOrderDetailsCodeSystem#needsCaption
+* orderDetail[needsCaption] ^short = "Indikator for om det er behov for mer informasjon i GUI"
+* orderDetail[needsCaption] ^definition = "Indikator for om det er behov for mer informasjon i GUI"
+
 * quantity[x] only Ratio
 * quantityRatio.numerator 1..
 * quantityRatio.numerator.comparator ..0

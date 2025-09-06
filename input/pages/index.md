@@ -8,6 +8,7 @@ FHIR mapping: `OktEvent -> Bundle of ServiceRequest`
 |------------------|------------------------|
 | personIdentifier | ServiceRequest.subject |
 | oktMessages      | ServiceRequest         |
+{: .grid}
 
 Notes:
 
@@ -24,11 +25,12 @@ FHIR mapping: `OktMessage -> ServiceRequest`
 | iplosCode          | IplosCodeDefinition | code (CodeableConcept) or category (CodeableConcept) |
 | needsCaption       | boolean             | orderDetail (CodeableConcept)                        |
 | serviceDescription | string              | note (Annotation) text (markdown)                    |
-| serviceLevel       | string              | locationCode (CodeableConcept)                       |
+| serviceLevel       | string              | category (CodeableConcept)                           |
 | startDate          | string              | occurrencePeriod.start (dateTime)                    |
 | stayType           | string              | category (CodeableConcept)                           |
 | temporaryCessation | boolean             | status (code) = on-hold                              |
 | weeklyExtent       | string              | quantityRatio (Ratio)                                |
+{: .grid}
 
 Notes:
 
@@ -43,6 +45,7 @@ FHIR mapping: `OktStatus -> Bundle of type searchset`
 |------------------|---------------|----------------------------------|
 | oktStatus        | integer       | Bundle.total                     |
 | personIdentifier | string        | Bundle.link with relation "self" |
+{: .grid}
 
 Notes:
 
@@ -61,6 +64,7 @@ For the FHIR API, `/` is the service base URL.
 |                        | GET /okt-events/{pid} | OktEvent                 |                                        | GET /ServieRequest?subject={pid}                | Bundle (searchset) of ServiceRequest                |
 | OktEvent               | POST /okt-events      | {error} \| ResultMessage | Bundle (transaction) of ServiceRequest | POST /                                          | Bundle (transaction-response) with OperationOutcome |
 |                        | GET /okt-status/{pid} | OktStatus                |                                        | GET /ServieRequest?subject={pid}&_summary=count | Bundle (searchset) without entries                  |
+{: .grid}
 
 # Terminology:
 
@@ -72,3 +76,4 @@ Some fields of the FHIR resource contain coded data. The codes used by these fie
 | serviceLevel | On what municipal level this service is provided, i.e. district, institution, etc.   |                                                                              | http://hl7.no/fhir/hackathon-2025/ValueSet/okt-service-level |
 | stayType     | Set if service is provided on the institutional level; extent of stay at institution |                                                                              | http://hl7.no/fhir/hackathon-2025/ValueSet/okt-stay-type     |
 | needsCaption | Determines if there is a need for more information in the GUI                        |                                                                              | http://hl7.no/fhir/hackathon-2025/ValueSet/okt-service-flags |
+{: .grid}

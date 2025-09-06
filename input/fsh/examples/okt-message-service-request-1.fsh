@@ -7,6 +7,7 @@ Usage: #example
 * category[serviceLevel] = OktServiceLevelCodeSystem#dps
 * category[stayType] = OktStayTypeCodeSystem#dagopphold
 * code = IplosCodeSystem#1
+* orderDetail[needsCaption] = OktOrderDetailsCodeSystem#needsCaption
 * subject = Reference(Patient/Example)
 * occurrencePeriod.start = 2025-01-01
 * occurrencePeriod.end = 2025-12-31
