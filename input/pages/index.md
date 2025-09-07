@@ -77,3 +77,9 @@ Some fields of the FHIR resource contain coded data. The codes used by these fie
 | stayType     | Set if service is provided on the institutional level; extent of stay at institution |                                                                              | [http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs](CodeSystem-OktStayTypeCs.html)         |
 | needsCaption | Determines if there is a need for more information in the GUI                        |                                                                              | [http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs](CodeSystem-OktOrderDetailsCs.html) |
 {: .grid}
+
+### Transformation
+
+The [OktMessage-ServiceRequest](StructureMap-OktMessage-ServiceRequest.html) StructureMap demonstrates how a structure map can be used to transform the proprietary model to a FHIR resource. The transformation can be executed with the validator CLI, after the IG is built:
+
+`java -jar validator_cli.jar fsh-generated/resources/Binary-OktMessage1.json -output result.xml -transform http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest -ig output`
