@@ -17,7 +17,7 @@ releaseLabel: ci-build
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
   name: HL7 Norway
-  url: http://hl7.no/fhir/ig/okt/
+  url: http://hl7.no/
   # email: test@example.org
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -213,4 +213,4 @@ instanceOptions:
   # setId: always # always | standalone-only
 parameters:
   special-url:
-    - urn:oid:2.16.578.1.12.4.1.4.1
+    - urn:oid:2.16.578.1.12.4.1.1.9151

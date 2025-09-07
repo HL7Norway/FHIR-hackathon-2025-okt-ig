@@ -1,6 +1,6 @@
-# Models:
+### Models:
 
-## OktEvent
+#### OktEvent
 
 FHIR mapping: `OktEvent -> Bundle of ServiceRequest`
 
@@ -15,7 +15,7 @@ Notes:
 * Each entry in the oktMessages array is a ServiceRequest entry in the Bundle
 * The personIdentifier is added as the subject to each ServiceRequest
 
-## OktMessage
+#### OktMessage
 
 FHIR mapping: `OktMessage -> ServiceRequest`
 
@@ -37,7 +37,7 @@ Notes:
 * If a set end date implies that the service has ended, then the profile can restrict with FHIRPath that status = completed implies that occurrencePeriod.end exists.
 * weeklyExtent: Ratio data type, with denominator (Quantity) fixed to 1 week in the profile
 
-## OktStatus
+#### OktStatus
 
 FHIR mapping: `OktStatus -> Bundle of type searchset`
 
@@ -51,11 +51,11 @@ Notes:
 
 * oktStatus is "the number of active services (i.e. not on hold)"
 
-## ResultMessage
+#### ResultMessage
 
 FHIR mapping: `ResultMessage -> Bundle of type batch-response or transaction-response`
 
-# Interactions:
+### Interactions:
 
 For the FHIR API, `/` is the service base URL.
 
@@ -66,14 +66,14 @@ For the FHIR API, `/` is the service base URL.
 |                        | GET /okt-status/{pid} | OktStatus                |                                        | GET /ServieRequest?subject={pid}&_summary=count | Bundle (searchset) without entries                  |
 {: .grid}
 
-# Terminology:
+### Terminology:
 
 Some fields of the FHIR resource contain coded data. The codes used by these fields must be defined in code systems and value sets.
 
-| Field        | Description                                                                          | Existing definition                                                          | FHIR code system URL                                         |
-|--------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------------------------------------------------------------|
-| iplosCode    | Tjenestetype i helse- og omsorgstjenesten                                            | [FinnKode: 9151](https://finnkode.helsedirektoratet.no/adm/collections/9151) | urn:oid:2.16.578.1.12.4.1.1.9151                             |
-| serviceLevel | On what municipal level this service is provided, i.e. district, institution, etc.   |                                                                              | http://hl7.no/fhir/hackathon-2025/ValueSet/okt-service-level |
-| stayType     | Set if service is provided on the institutional level; extent of stay at institution |                                                                              | http://hl7.no/fhir/hackathon-2025/ValueSet/okt-stay-type     |
-| needsCaption | Determines if there is a need for more information in the GUI                        |                                                                              | http://hl7.no/fhir/hackathon-2025/ValueSet/okt-service-flags |
+| Field        | Description                                                                          | Existing definition                                                          | FHIR code system URL                                                                        |
+|--------------|--------------------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| iplosCode    | Tjenestetype i helse- og omsorgstjenesten                                            | [FinnKode: 9151](https://finnkode.helsedirektoratet.no/adm/collections/9151) | [urn:oid:2.16.578.1.12.4.1.1.9151](CodeSystem-IplosCs.html)                                 |
+| serviceLevel | On what municipal level this service is provided, i.e. district, institution, etc.   |                                                                              | [http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs](ValueSet-OktServiceLevelVs.html)     |
+| stayType     | Set if service is provided on the institutional level; extent of stay at institution |                                                                              | [http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs](ValueSet-OktStayTypeVs.html)             |
+| needsCaption | Determines if there is a need for more information in the GUI                        |                                                                              | [http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs](CodeSystem-OktOrderDetailsCs.html) |
 {: .grid}
