@@ -1,41 +1,52 @@
-### Models:
+### Models
+
+Mapping options:
+
+* ServiceRequest
+* EpisodeOfCare
+* CarePlan
 
 #### OktEvent
 
-FHIR mapping: `OktEvent -> Bundle of ServiceRequest`
-
-| OktEvent field   | FHIR field             |
-|------------------|------------------------|
-| personIdentifier | ServiceRequest.subject |
-| oktMessages      | ServiceRequest         |
+| OktEvent field   | ServiceRequest field               | EpisodeOfCare field              | CarePlan field    |
+|------------------|------------------------------------|----------------------------------|-------------------|
+| personIdentifier | ServiceRequest.subject<sup>1</sup> | EpisodeOfCare.patient.identifier | CarePlan.subject  |
+| oktMessages      | ServiceRequest<sup>2</sup>         | ?                                | CarePlan.activity |
 {: .grid}
 
 Notes:
 
-* Each entry in the oktMessages array is a ServiceRequest entry in the Bundle
-* The personIdentifier is added as the subject to each ServiceRequest
+<sup>1</sup> The personIdentifier is added as the subject to each ServiceRequest.<br/>
+<sup>2</sup> OktEvent is mapped to a Bundle of ServiceRequests. Each entry in the oktMessages array is a ServiceRequest entry in the Bundle.
 
 #### OktMessage
 
-FHIR mapping: `OktMessage -> ServiceRequest`
+Candidate resources:
 
-| OktMessage field   | OKT data type       | FHIR field and data type                             |
-|--------------------|---------------------|------------------------------------------------------|
-| endDate            | string              | occurrencePeriod.end (dateTime)                      |
-| iplosCode          | IplosCodeDefinition | code (CodeableConcept) or category (CodeableConcept) |
-| needsCaption       | boolean             | orderDetail (CodeableConcept)                        |
-| serviceDescription | string              | note (Annotation) text (markdown)                    |
-| serviceLevel       | string              | category (CodeableConcept)                           |
-| startDate          | string              | occurrencePeriod.start (dateTime)                    |
-| stayType           | string              | category (CodeableConcept)                           |
-| temporaryCessation | boolean             | status (code) = on-hold                              |
-| weeklyExtent       | string              | quantityRatio (Ratio)                                |
+* ServiceRequest
+  * Profile: [OktServiceRequest](StructureDefinition-OktServiceRequest.html)
+  * Example: [OktServiceRequest1](ServiceRequest-OktServiceRequest1.html)
+* EpisodeOfCare
+* CarePlan
+
+| OktMessage field    | OKT data type       | FHIR ServiceRequest field and data type | FHIR EpisodeOfCare field and data type | FHIR CarePlan field and data type                     |
+|---------------------|---------------------|-----------------------------------------|----------------------------------------|-------------------------------------------------------|
+| endDate<sup>1</sup> | string              | occurrencePeriod.end (dateTime)         | period.end (dateTime)                  | period.end (dateTime)                                 |
+| iplosCode           | IplosCodeDefinition | code (CodeableConcept)                  | ?                                      | activity.detail.code  (CodeableConcept)               |
+| needsCaption        | boolean             | orderDetail (CodeableConcept)           | type (CodeableConcept)                 | category (CodeableConcept)                            |
+| serviceDescription  | string              | note (Annotation) text (markdown)       | ?                                      | description (string)                                  |
+| serviceLevel        | string              | category (CodeableConcept)              | type (CodeableConcept)                 | category (CodeableConcept)                            |
+| startDate           | string              | occurrencePeriod.start (dateTime)       | period.start (dateTime)                | period.start (dateTime)                               |
+| stayType            | string              | category (CodeableConcept)              | type (CodeableConcept)                 | category (CodeableConcept)                            |
+| temporaryCessation  | boolean             | status (code) = on-hold                 | status (code) = on-hold                | status (code) = on-hold                               |
+| weeklyExtent        | string              | quantityRatio (Ratio<sup>2</sup>)       | ?                                      | activity.detail.quantity (SimpleQuantity)<sup>3</sup> |
 {: .grid}
 
 Notes:
 
-* If a set end date implies that the service has ended, then the profile can restrict with FHIRPath that status = completed implies that occurrencePeriod.end exists.
-* weeklyExtent: Ratio data type, with denominator (Quantity) fixed to 1 week in the profile
+<sup>1</sup> If a set end date implies that the service has ended, then the profile can restrict with FHIRPath that status = completed implies that occurrencePeriod.end exists.<br/>
+<sup>2</sup> Denominator (Quantity) fixed to 1 week in the profile.<br/>
+<sup>3</sup> SimpleQuantity doesn't allow declaring that the amount is a weekly amount.
 
 #### OktStatus
 
@@ -55,7 +66,7 @@ Notes:
 
 FHIR mapping: `ResultMessage -> Bundle of type batch-response or transaction-response`
 
-### Interactions:
+### Interactions
 
 For the FHIR API, `/` is the service base URL.
 
@@ -66,7 +77,7 @@ For the FHIR API, `/` is the service base URL.
 |                        | GET /okt-status/{pid} | OktStatus                |                                        | GET /ServieRequest?subject={pid}&_summary=count | Bundle (searchset) without entries                  |
 {: .grid}
 
-### Terminology:
+### Terminology
 
 Some fields of the FHIR resource contain coded data. The codes used by these fields must be defined in code systems and value sets.
 
