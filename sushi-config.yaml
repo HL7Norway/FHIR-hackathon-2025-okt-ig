@@ -43,16 +43,18 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
-#   implementation.xml:
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
-#
-#
+pages:
+  index.md:
+    title: Home
+  models-episodeofcare.md:
+    title: Implementation with EpisodeOfCare
+  models-servicerequest.md:
+    title: Implementation with ServiceRequest
+  terminology.md:
+    title: Terminology
+  acknowledgements.md:
+    title: Acknowledgements
+
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
 # resource), the code is the YAML key. If a parameter allows repeating
@@ -76,6 +78,10 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Implementation with EpisodeOfCare: models-episodeofcare.html
+  Implementation with ServiceRequest: models-servicerequest.html
+  Terminology: terminology.html
+  Acknowledgements: acknowledgements.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
