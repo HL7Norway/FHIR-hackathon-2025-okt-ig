@@ -50,8 +50,6 @@ Description: "Profile on ServiceRequest for OktMessage"
 * occurrence[x] only Period
 * occurrencePeriod.end ^short = "Sluttdato for levering av tjenesten hvis leveringen av en tjeneste er avsluttet"
 
-// TODO NeedsCaption
-
 * note 1..1
 * note ^short = "Utfyllende beskrivelse av tjenesten"
 * note ^definition = "Utfyllende beskrivelse av tjenesten"
