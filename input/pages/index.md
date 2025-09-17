@@ -3,7 +3,7 @@
 Mapping options:
 
 * ServiceRequest
-* EpisodeOfCare
+* EpisodeOfCare (see [EpisodeOfCare in VKP](https://simplifier.net/guide/velferdsteknologiskknutepunktvkp-r4/episodeofcare?version=current))
 * CarePlan
 
 #### OktEvent
@@ -23,23 +23,37 @@ Notes:
 
 Candidate resources:
 
-* ServiceRequest
+##### ServiceRequest
+
+"A record of a request for service such as diagnostic investigations, treatments, or operations to be performed."
+
   * Profile: [OktServiceRequest](StructureDefinition-OktServiceRequest.html)
   * Example: [OktServiceRequest1](ServiceRequest-OktServiceRequest1.html)
-* EpisodeOfCare
-* CarePlan
+
+##### EpisodeOfCare
+
+"An association between a patient and an organization / healthcare provider(s) during which time encounters may occur. The managing organization assumes a level of responsibility for the patient during this time."
+
+  * Profile: [OktEpisodeOfCare](StructureDefinition-OktEpisodeOfCare.html)
+  * Example: [OktEpisodeOfCare1](EpisodeOfCare-OktEpisodeOfCare1.html)
+
+##### CarePlan
+
+* TODO
+
+##### Comparison table
 
 | OktMessage field    | OKT data type       | FHIR ServiceRequest field and data type | FHIR EpisodeOfCare field and data type | FHIR CarePlan field and data type                     |
 |---------------------|---------------------|-----------------------------------------|----------------------------------------|-------------------------------------------------------|
 | endDate<sup>1</sup> | string              | occurrencePeriod.end (dateTime)         | period.end (dateTime)                  | period.end (dateTime)                                 |
-| iplosCode           | IplosCodeDefinition | code (CodeableConcept)                  | ?                                      | activity.detail.code  (CodeableConcept)               |
+| iplosCode           | IplosCodeDefinition | code (CodeableConcept)                  | type (CodeableConcept)                 | activity.detail.code  (CodeableConcept)               |
 | needsCaption        | boolean             | orderDetail (CodeableConcept)           | type (CodeableConcept)                 | category (CodeableConcept)                            |
-| serviceDescription  | string              | note (Annotation) text (markdown)       | ?                                      | description (string)                                  |
+| serviceDescription  | string              | note (Annotation) text (markdown)       | extension (markdown)                   | description (string)                                  |
 | serviceLevel        | string              | category (CodeableConcept)              | type (CodeableConcept)                 | category (CodeableConcept)                            |
 | startDate           | string              | occurrencePeriod.start (dateTime)       | period.start (dateTime)                | period.start (dateTime)                               |
 | stayType            | string              | category (CodeableConcept)              | type (CodeableConcept)                 | category (CodeableConcept)                            |
 | temporaryCessation  | boolean             | status (code) = on-hold                 | status (code) = on-hold                | status (code) = on-hold                               |
-| weeklyExtent        | string              | quantityRatio (Ratio<sup>2</sup>)       | ?                                      | activity.detail.quantity (SimpleQuantity)<sup>3</sup> |
+| weeklyExtent        | string              | quantityRatio (Ratio<sup>2</sup>)       | extension (Ratio)                      | activity.detail.quantity (SimpleQuantity)<sup>3</sup> |
 {: .grid}
 
 Notes:
