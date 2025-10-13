@@ -2,13 +2,21 @@
 
 This implementation guide gives suggestions for how the [OKT API](https://utviklerportal.nhn.no/informasjonstjenester/felles-journalloeft/okt-prototype) can be implemented with FHIR resources.
 
+### Prototype API models
+
+#### OktEvent
+
 The [`OktEvent`](StructureDefinition-OktEvent.html) model contains a person identifier and an array of [`OktMessage`](StructureDefinition-OktMessage.html) models. The array can be mapped to a Bundle of FHIR resources, moving the person identifier to the Bundle entries.
+
+#### OktMessage
 
 Mapping [`OktMessage`](StructureDefinition-OktMessage.html) has several FHIR resource candidates:
 
 * ServiceRequest
 * EpisodeOfCare
 * CarePlan
+
+#### OktStatus
 
 `OktStatus` returns the number of services for a person identifier. This can be mapped to a search with the `_summary=count` parameter, which returns a `searchset` Bundle without entries, with the `total` field showing the number of results.
 
