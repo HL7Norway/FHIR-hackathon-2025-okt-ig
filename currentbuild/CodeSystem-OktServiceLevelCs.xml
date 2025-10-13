@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="OktServiceLevelCs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem OktServiceLevelCs</b></p><a name="OktServiceLevelCs"> </a><a name="hcOktServiceLevelCs"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">dps<a name="OktServiceLevelCs-dps"> </a></td><td>Distriktspsykiatrisk senter</td><td>Distriktspsykiatrisk senter</td></tr></table></div>
+  </text>
+  <url value="http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"/>
+  <version value="0.1.0"/>
+  <name value="OktServiceLevelCodeSystem"/>
+  <title value="Tjenestenivå"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-13T11:41:55+00:00"/>
+  <publisher value="HL7 Norway"/>
+  <contact>
+    <name value="HL7 Norway"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.no/"/>
+    </telecom>
+  </contact>
+  <description value="Tjenestenivå for pleie- og omsorgstjenester."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="dps"/>
+    <display value="Distriktspsykiatrisk senter"/>
+    <definition value="Distriktspsykiatrisk senter"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,53 @@
+OKTonFHIR : Validation Results
+=========================================
+
+err = 0, warn = 0, info = 2
+IG Publisher Version: 2.0.20
+Generated Mon Oct 13 11:43:06 UTC 2025. FHIR version 4.0.1 for no.hl7.fhir.okt#0.1.0 (canonical = http://hl7.no/fhir/ig/okt)
+ Build Errors : 0 / 0 / 0
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/Binary-OktMessage1 : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/CodeSystem-IplosCs : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/CodeSystem-OktOrderDetailsCs : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/CodeSystem-OktServiceLevelCs : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/CodeSystem-OktStayTypeCs : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/EpisodeOfCare-OktEpisodeOfCare1 : 0 / 0 / 5
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/ImplementationGuide-no.hl7.fhir.okt : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/Patient-Example : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/ServiceRequest-OktServiceRequest1 : 0 / 0 / 4
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-IplosCodeDefinition : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-OktEpisodeOfCare : 0 / 0 / 4
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-OktEvent : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-OktMessage : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-OktServiceRequest : 0 / 0 / 3
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-ServiceDescriptionMarkdown : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-WeeklyExtentQuantity : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/ValueSet-IplosVs : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/ValueSet-OktOrderDetailsVs : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/ValueSet-OktServiceLevelVs : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/ValueSet-OktStayTypeVs : 0 / 0 / 1
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/input/resources/StructureMap-OktMessage-ServiceRequest : 0 / 0 / 2
+</table>
+== n/a ==
+== fsh-generated/resources/Binary-OktMessage1.json ==
+== fsh-generated/resources/CodeSystem-IplosCs.json ==
+== fsh-generated/resources/CodeSystem-OktOrderDetailsCs.json ==
+== fsh-generated/resources/CodeSystem-OktServiceLevelCs.json ==
+== fsh-generated/resources/CodeSystem-OktStayTypeCs.json ==
+== fsh-generated/resources/EpisodeOfCare-OktEpisodeOfCare1.json ==
+== fsh-generated/resources/ImplementationGuide-no.hl7.fhir.okt.json ==
+== fsh-generated/resources/Patient-Example.json ==
+== fsh-generated/resources/ServiceRequest-OktServiceRequest1.json ==
+== fsh-generated/resources/StructureDefinition-IplosCodeDefinition.json ==
+== fsh-generated/resources/StructureDefinition-OktEpisodeOfCare.json ==
+INFORMATION: StructureDefinition/OktEpisodeOfCare: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+== fsh-generated/resources/StructureDefinition-OktEvent.json ==
+== fsh-generated/resources/StructureDefinition-OktMessage.json ==
+== fsh-generated/resources/StructureDefinition-OktServiceRequest.json ==
+== fsh-generated/resources/StructureDefinition-ServiceDescriptionMarkdown.json ==
+== fsh-generated/resources/StructureDefinition-WeeklyExtentQuantity.json ==
+== fsh-generated/resources/ValueSet-IplosVs.json ==
+== fsh-generated/resources/ValueSet-OktOrderDetailsVs.json ==
+== fsh-generated/resources/ValueSet-OktServiceLevelVs.json ==
+== fsh-generated/resources/ValueSet-OktStayTypeVs.json ==
+== input/resources/StructureMap-OktMessage-ServiceRequest.xml ==
+INFORMATION: StructureMap/OktMessage-ServiceRequest: StructureMap.group[0].rule[0].source[0]: The source statement doesn't assign a variable to the source - check that this is what is intended

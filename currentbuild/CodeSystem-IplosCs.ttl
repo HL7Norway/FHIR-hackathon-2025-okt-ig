@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/okt/CodeSystem/IplosCs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IplosCs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem IplosCs</b></p><a name=\"IplosCs\"> </a><a name=\"hcIplosCs\"> </a><p>This case-insensitive code system <code>urn:oid:2.16.578.1.12.4.1.1.9151</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"IplosCs-1\"> </a></td><td>Praktisk bistand - daglige gjøremål</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"IplosCs-2\"> </a></td><td>Praktisk bistand - opplæring - daglige gjøremål</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"IplosCs-3\"> </a></td><td>Praktisk bistand - brukerstyrt - personlig assistanse</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"IplosCs-4\"> </a></td><td>Dagaktivitetstilbud</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"IplosCs-5\"> </a></td><td>Matombringing</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"IplosCs-6\"> </a></td><td>Trygghetsalarm</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"IplosCs-7\"> </a></td><td>Avlastning utenfor institusjon</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"IplosCs-8\"> </a></td><td>Avlastning i institusjon</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"IplosCs-9\"> </a></td><td>Støttekontakt</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"IplosCs-11\"> </a></td><td>Omsorgsstønad</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"IplosCs-14\"> </a></td><td>Bruk av tvang psykisk utviklingshemning – planlagte tiltak</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"IplosCs-15\"> </a></td><td>Helsetjenester i hjemmet</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"IplosCs-17\"> </a></td><td>Dagopphold i institusjon</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"IplosCs-18\"> </a></td><td>Tidsbegrenset opphold - utredning/behandling</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"IplosCs-19\"> </a></td><td>Tidsbegrenset opphold - habilitering/rehabilitering</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"IplosCs-20\"> </a></td><td>Tidsbegrenset opphold - annet</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"IplosCs-21\"> </a></td><td>Langtidsopphold i institusjon</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"IplosCs-22\"> </a></td><td>Nattopphold i institusjon</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"IplosCs-23\"> </a></td><td>Bruk av tvang psykisk utviklingshemning – nødsituasjoner</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"IplosCs-24\"> </a></td><td>Helsehjelp med tvang</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"IplosCs-25\"> </a></td><td>Kommunal øyeblikkelig hjelp - døgnopphold</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"IplosCs-26\"> </a></td><td>Lokaliseringsteknologi (GPS)</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"IplosCs-27\"> </a></td><td>Elektronisk medisineringsstøtte</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"IplosCs-28\"> </a></td><td>Digitalt tilsyn</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"IplosCs-29\"> </a></td><td>Bolig som kommunen disponerer for helse- og omsorgsformål</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.9151"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IplosCodeSystem"] ; # 
+  fhir:title [ fhir:v "Individbasert pleie- og omsorgsstatistikk (IPLOS)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-13T11:41:55+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Norway"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Norway" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.no/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "25"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Praktisk bistand - daglige gjøremål" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Praktisk bistand - opplæring - daglige gjøremål" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Praktisk bistand - brukerstyrt - personlig assistanse" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Dagaktivitetstilbud" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Matombringing" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Trygghetsalarm" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "Avlastning utenfor institusjon" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "Avlastning i institusjon" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "Støttekontakt" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "Omsorgsstønad" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "Bruk av tvang psykisk utviklingshemning – planlagte tiltak" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "Helsetjenester i hjemmet" ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "Dagopphold i institusjon" ]
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "Tidsbegrenset opphold - utredning/behandling" ]
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "Tidsbegrenset opphold - habilitering/rehabilitering" ]
+  ] [
+     fhir:code [ fhir:v "20" ] ;
+     fhir:display [ fhir:v "Tidsbegrenset opphold - annet" ]
+  ] [
+     fhir:code [ fhir:v "21" ] ;
+     fhir:display [ fhir:v "Langtidsopphold i institusjon" ]
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "Nattopphold i institusjon" ]
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "Bruk av tvang psykisk utviklingshemning – nødsituasjoner" ]
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "Helsehjelp med tvang" ]
+  ] [
+     fhir:code [ fhir:v "25" ] ;
+     fhir:display [ fhir:v "Kommunal øyeblikkelig hjelp - døgnopphold" ]
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "Lokaliseringsteknologi (GPS)" ]
+  ] [
+     fhir:code [ fhir:v "27" ] ;
+     fhir:display [ fhir:v "Elektronisk medisineringsstøtte" ]
+  ] [
+     fhir:code [ fhir:v "28" ] ;
+     fhir:display [ fhir:v "Digitalt tilsyn" ]
+  ] [
+     fhir:code [ fhir:v "29" ] ;
+     fhir:display [ fhir:v "Bolig som kommunen disponerer for helse- og omsorgsformål" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,37 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OktOrderDetailsCodeSystem",
+      "title" : "Indikatorer for tjenesten",
+      "description" : "Indikatorer med øvrige detaljer om tjenesten."
+    },
+    {
+      "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OktServiceLevelCodeSystem",
+      "title" : "Tjenestenivå",
+      "description" : "Tjenestenivå for pleie- og omsorgstjenester."
+    },
+    {
+      "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OktStayTypeCodeSystem",
+      "title" : "Oppholdstype",
+      "description" : "Oppholdstype for pleie- og omsorgstjenester."
+    },
+    {
+      "url" : "urn:oid:2.16.578.1.12.4.1.1.9151",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IplosCodeSystem",
+      "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",
+      "description" : "Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene.",
+      "oids" : ["2.16.578.1.12.4.1.1.9151"]
+    }
+  ]
+}

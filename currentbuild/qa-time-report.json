@@ -1,0 +1,942 @@
+{
+  "date" : "Mon, 13 Oct, 2025 11:42:36 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-no.hl7.fhir.okt.json",
+      "size" : 7511,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 12
+        },
+        {
+          "activity" : "scan",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 45,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 75
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 1959
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 137
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 96
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 70,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-IplosCs.json",
+      "size" : 2756,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 53
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 526
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-OktOrderDetailsCs.json",
+      "size" : 579,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 43
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-OktServiceLevelCs.json",
+      "size" : 525,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 21
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 41
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-OktStayTypeCs.json",
+      "size" : 498,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 19
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 54,
+          "length" : 38
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/EpisodeOfCare-OktEpisodeOfCare1.json",
+      "size" : 1380,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 73
+        },
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 36
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 17
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 60,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-Example.json",
+      "size" : 194,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 9
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ServiceRequest-OktServiceRequest1.json",
+      "size" : 1179,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 16
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-IplosCodeDefinition.json",
+      "size" : 2300,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 38
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 326
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 508
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 450
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OktEpisodeOfCare.json",
+      "size" : 4976,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 80
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 45,
+          "length" : 90
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 570
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 169
+        },
+        {
+          "activity" : "generate2",
+          "start" : 55,
+          "length" : 673
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 458
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 70,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OktEvent.json",
+      "size" : 1616,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 25
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 31
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 22
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 59
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 40
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OktMessage.json",
+      "size" : 4002,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 14
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 27
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 68
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 43
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 98
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 55
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OktServiceRequest.json",
+      "size" : 6159,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 123
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 54
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 501
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 234
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 1086
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 341
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 70,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ServiceDescriptionMarkdown.json",
+      "size" : 1362,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 24
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 47,
+          "length" : 2156
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 79
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 38
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-WeeklyExtentQuantity.json",
+      "size" : 1763,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 40,
+          "length" : 24
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 49,
+          "length" : 65
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 48
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 115
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 60
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-IplosVs.json",
+      "size" : 664,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 2
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 45,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 38
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 95
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-OktOrderDetailsVs.json",
+      "size" : 450,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 35
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-OktServiceLevelVs.json",
+      "size" : 437,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 52,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 32
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-OktStayTypeVs.json",
+      "size" : 419,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 29
+        }
+      ]
+    },
+    {
+      "name" : "input/resources/StructureMap-OktMessage-ServiceRequest.xml",
+      "size" : 8852,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 39,
+          "length" : 45
+        },
+        {
+          "activity" : "load",
+          "start" : 40,
+          "length" : 20
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 45,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 46,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 50,
+          "length" : 28
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 13
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 64,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "/fsh-generated/resources/Binary-OktMessage1.json",
+      "size" : 340,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 57,
+          "length" : 4
+        }
+      ]
+    }
+  ]
+}

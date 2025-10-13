@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/okt/ServiceRequest/OktServiceRequest1> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OktServiceRequest1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest OktServiceRequest1</b></p><a name=\"OktServiceRequest1\"> </a><a name=\"hcOktServiceRequest1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OktServiceRequest.html\">OktServiceRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs dps}\">Distriktspsykiatrisk senter</span>, <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs dagopphold}\">Dagopphold</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.9151 1}\">Praktisk bistand - daglige gjøremål</span></p><p><b>orderDetail</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs needsCaption}\">Behov for mer informasjon i GUI</span></p><p><b>subject</b>: <a href=\"Patient-Example.html\">Jane Doe  Female, DoB: 1980-01-01</a></p><p><b>occurrence</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>note</b>: </p><blockquote><div><p>Dette er en utfyllende beskrivelse av tjenesten</p>\n</div></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "dps" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "dagopphold" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.578.1.12.4.1.1.9151"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Praktisk bistand - daglige gjøremål" ]
+     ] )
+  ] ; # 
+  fhir:orderDetail ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "needsCaption" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://hl7.no/fhir/ig/okt/Patient/Example> ;
+     fhir:reference [ fhir:v "Patient/Example" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2025-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2025-12-31"^^xsd:date ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Dette er en utfyllende beskrivelse av tjenesten" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,264 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.no/fhir/ig/okt/ValueSet/IplosVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "IplosValueSet",
+      "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",
+      "description" : "Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene.",
+      "systems" : ["urn:oid:2.16.578.1.12.4.1.1.9151"],
+      "uses" : {
+      },
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare",
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OktOrderDetailsValueSet",
+      "title" : "Indikatorer for tjenesten",
+      "description" : "Indikatorer med øvrige detaljer om tjenesten.",
+      "systems" : ["http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs"]
+    },
+    {
+      "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OktServiceLevelValueSet",
+      "title" : "Tjenestenivå",
+      "description" : "Tjenestenivå for pleie- og omsorgstjenester.",
+      "systems" : ["http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"],
+      "uses" : {
+      },
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare",
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OktStayTypeValueSet",
+      "title" : "Oppholdstype",
+      "description" : "Oppholdstype for pleie- og omsorgstjenester.",
+      "systems" : ["http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"],
+      "uses" : {
+      },
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare",
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/episode-of-care-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareStatus",
+      "title" : "EpisodeOfCareStatus",
+      "description" : "The status of the episode of care.",
+      "systems" : ["http://hl7.org/fhir/episode-of-care-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.664"],
+      "sources" : ["2.16.840.1.113883.4.642.3.664"],
+      "uses" : {
+      },
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/episodeofcare-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EpisodeOfCareType",
+      "title" : "Episode of care type",
+      "description" : "This example value set defines a set of codes that can be used to express the usage type of an EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/episodeofcare-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.666"],
+      "sources" : ["2.16.840.1.113883.4.642.3.666"],
+      "uses" : {
+      },
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare",
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
+      "uses" : {
+      },
+      "StructureDefinition-WeeklyExtentQuantity.html" : "Weekly Extent Quantity",
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+    }
+  ]
+}

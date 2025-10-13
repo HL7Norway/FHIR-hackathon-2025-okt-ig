@@ -1,0 +1,22 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-no.hl7.fhir.okt.json	7511	-	0	0	0	0	0	0	9	75	0	0	0	0	0	0	0	1	0	0	137	96	0	0	0	5	0	1
+fsh-generated/resources/CodeSystem-IplosCs.json	2756	5	0	0	1	0	0	0	0	27	0	0	0	0	0	0	0	0	0	0	23	526	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-OktOrderDetailsCs.json	579	1	0	0	0	0	0	0	0	21	0	0	0	0	0	0	0	0	0	0	11	43	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-OktServiceLevelCs.json	525	2	0	0	0	0	0	0	1	21	0	0	0	0	0	0	0	0	0	0	10	41	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-OktStayTypeCs.json	498	1	0	0	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	12	38	0	0	0	0	0	0
+fsh-generated/resources/EpisodeOfCare-OktEpisodeOfCare1.json	1380	3	0	0	0	0	0	0	0	73	0	0	0	0	0	0	0	0	0	0	12	17	0	1	0	0	0	0
+fsh-generated/resources/Patient-Example.json	194	2	0	0	1	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	8	9	0	0	0	1	0	0
+fsh-generated/resources/ServiceRequest-OktServiceRequest1.json	1179	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	12	16	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-IplosCodeDefinition.json	2300	3	0	7	0	0	0	0	0	38	0	0	1	0	0	0	0	0	0	0	39	508	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-OktEpisodeOfCare.json	4976	4	0	80	0	0	0	0	1	90	0	0	0	0	0	0	0	2	0	0	169	673	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-OktEvent.json	1616	3	0	12	0	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	22	59	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-OktMessage.json	4002	2	0	14	0	0	0	0	0	27	0	0	0	0	0	0	0	0	0	0	43	98	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-OktServiceRequest.json	6159	2	0	123	0	0	0	0	0	54	0	0	0	0	0	0	0	1	0	0	234	1086	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-ServiceDescriptionMarkdown.json	1362	2	0	24	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	28	79	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-WeeklyExtentQuantity.json	1763	3	0	24	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	48	115	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-IplosVs.json	664	3	0	0	1	0	0	0	0	38	0	0	0	0	0	0	0	0	0	0	7	95	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-OktOrderDetailsVs.json	450	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	9	35	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-OktServiceLevelVs.json	437	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	8	32	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-OktStayTypeVs.json	419	3	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	6	29	0	0	0	0	0	0
+input/resources/StructureMap-OktMessage-ServiceRequest.xml	8852	45	0	0	0	0	0	0	2	11	0	0	0	0	0	0	0	1	0	0	20	13	0	0	0	1	0	0
+/fsh-generated/resources/Binary-OktMessage1.json	340	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	4	0	0	0	0	0	0

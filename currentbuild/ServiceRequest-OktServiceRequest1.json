@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "OktServiceRequest1",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest OktServiceRequest1</b></p><a name=\"OktServiceRequest1\"> </a><a name=\"hcOktServiceRequest1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OktServiceRequest.html\">OktServiceRequest</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs dps}\">Distriktspsykiatrisk senter</span>, <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs dagopphold}\">Dagopphold</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.9151 1}\">Praktisk bistand - daglige gjøremål</span></p><p><b>orderDetail</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs needsCaption}\">Behov for mer informasjon i GUI</span></p><p><b>subject</b>: <a href=\"Patient-Example.html\">Jane Doe  Female, DoB: 1980-01-01</a></p><p><b>occurrence</b>: 2025-01-01 --&gt; 2025-12-31</p><p><b>note</b>: </p><blockquote><div><p>Dette er en utfyllende beskrivelse av tjenesten</p>\n</div></blockquote></div>"
+  },
+  "status" : "active",
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs",
+      "code" : "dps"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs",
+      "code" : "dagopphold"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.9151",
+      "code" : "1",
+      "display" : "Praktisk bistand - daglige gjøremål"
+    }]
+  },
+  "orderDetail" : [{
+    "coding" : [{
+      "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs",
+      "code" : "needsCaption"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/Example"
+  },
+  "occurrencePeriod" : {
+    "start" : "2025-01-01",
+    "end" : "2025-12-31"
+  },
+  "note" : [{
+    "text" : "Dette er en utfyllende beskrivelse av tjenesten"
+  }]
+}

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="OktMessage-ServiceRequest"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap OktMessage-ServiceRequest</b></p><a name="OktMessage-ServiceRequest"> </a><a name="hcOktMessage-ServiceRequest"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest<span style="color: navy">&quot; = &quot;</span>OktMessageServiceRequest<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map OktMessage to ServiceRequest</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-OktMessage.html" title="Logical Model for OktMessage">http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage</a><span style="color: navy">&quot; </span><b>alias </b>NhnOktMessage <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R4/servicerequest.html" title="ServiceRequest">http://hl7.org/fhir/StructureDefinition/ServiceRequest</a><span style="color: navy">&quot; </span><b>alias </b>FhirServiceRequest <b>as </b><b>target</b>
+
+<b>group </b>OktMessageToServiceRequest<span style="color: navy">(</span><b>source</b> <span style="color: maroon">source</span><span style="color: navy"> : </span>NhnOktMessage, <b>target</b> <span style="color: maroon">target</span><span style="color: navy"> : </span>FhirServiceRequest<span style="color: navy">)</span><b> &lt;&lt;types&gt;&gt;</b><span style="color: navy"> {
+</span>  source<span style="color: navy"><b> -&gt; </b></span>target.occurrence = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Period'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">occurrencePeriod</span><b> then</b><span style="color: navy"> {
+</span>    source.startDate<b> as </b><span style="color: maroon">startDate</span><span style="color: navy"><b> -&gt; </b></span>occurrencePeriod.start = <span style="color: maroon">startDate</span> <i>&quot;setStart&quot;</i><span style="color: navy">;</span>
+    source.endDate<b> as </b><span style="color: maroon">endDate</span><span style="color: navy"><b> -&gt; </b></span>occurrencePeriod.end = <span style="color: maroon">endDate</span> <i>&quot;setEnd&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;mapOccurrencePeriod&quot;</i><span style="color: navy">;</span>
+  source.serviceDescription<b> as </b><span style="color: maroon">serviceDescription</span><span style="color: navy"><b> -&gt; </b></span> target.note = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Annotation'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">noteVariable</span><span style="color: navy">, </span> noteVariable.text = <span style="color: maroon">serviceDescription</span> <i>&quot;mapServiceDescription&quot;</i><span style="color: navy">;</span>
+  source.stayType<b> as </b><span style="color: maroon">stayType</span><span style="color: navy"><b> -&gt; </b></span>target.category = <b>cc</b><span style="color: navy">(</span><span style="color: blue">'http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs'</span><span style="color: navy">, </span><span style="color: maroon">stayType</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">categoryVariable</span> <i>&quot;mapStayType&quot;</i><span style="color: navy">;</span>
+  source.weeklyExtent<b> as </b><span style="color: maroon">weeklyExtent</span><span style="color: navy"><b> -&gt; </b></span> target.quantity = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Ratio'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">quantityVariable</span><span style="color: navy">, </span> quantityVariable.numerator = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Quantity'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">numeratorVariable</span><span style="color: navy">, </span> numeratorVariable.value = <span style="color: maroon">weeklyExtent</span><span style="color: navy">, </span> numeratorVariable.unit = <span style="color: blue">'h'</span><span style="color: navy">, </span> numeratorVariable.system = <span style="color: blue">'http://unitsofmeasure.org'</span><span style="color: navy">, </span> numeratorVariable.code = <span style="color: blue">'h'</span><span style="color: navy">, </span> quantityVariable.denominator = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Quantity'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">denominatorVariable</span><span style="color: navy">, </span> denominatorVariable.value = <span style="color: blue">'1'</span><span style="color: navy">, </span> denominatorVariable.unit = <span style="color: blue">'wk'</span><span style="color: navy">, </span> denominatorVariable.system = <span style="color: blue">'http://unitsofmeasure.org'</span><span style="color: navy">, </span> denominatorVariable.code = <span style="color: blue">'wk'</span> <i>&quot;mapWeeklyExtent&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest"/>
+  <version value="0.1.0"/>
+  <name value="OktMessageServiceRequest"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-13T11:41:55+00:00"/>
+  <publisher value="HL7 Norway"/>
+  <contact>
+    <name value="HL7 Norway"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.no/"/>
+    </telecom>
+  </contact>
+  <description value="Map OktMessage to ServiceRequest"/>
+  <structure>
+    <url value="http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage"/>
+    <mode value="source"/>
+    <alias value="NhnOktMessage"/>
+  </structure>
+  <structure>
+    <url value="http://hl7.org/fhir/StructureDefinition/ServiceRequest"/>
+    <mode value="target"/>
+    <alias value="FhirServiceRequest"/>
+  </structure>
+  <group>
+    <name value="OktMessageToServiceRequest"/>
+    <typeMode value="types"/>
+    <input>
+      <name value="source"/>
+      <type value="NhnOktMessage"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="target"/>
+      <type value="FhirServiceRequest"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="mapOccurrencePeriod"/>
+      <source>
+        <context value="source"/>
+      </source>
+      <target>
+        <context value="target"/>
+        <contextType value="variable"/>
+        <element value="occurrence"/>
+        <variable value="occurrencePeriod"/>
+        <transform value="create"/>
+        <parameter>
+          <valueString value="Period"/>
+        </parameter>
+      </target>
+      <rule>
+        <name value="setStart"/>
+        <source>
+          <context value="source"/>
+          <element value="startDate"/>
+          <variable value="startDate"/>
+        </source>
+        <target>
+          <context value="occurrencePeriod"/>
+          <contextType value="variable"/>
+          <element value="start"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueId value="startDate"/>
+          </parameter>
+        </target>
+      </rule>
+      <rule>
+        <name value="setEnd"/>
+        <source>
+          <context value="source"/>
+          <element value="endDate"/>
+          <variable value="endDate"/>
+        </source>
+        <target>
+          <context value="occurrencePeriod"/>
+          <contextType value="variable"/>
+          <element value="end"/>
+          <transform value="copy"/>
+          <parameter>
+            <valueId value="endDate"/>
+          </parameter>
+        </target>
+      </rule>
+    </rule>
+    <rule>
+      <name value="mapServiceDescription"/>
+      <source>
+        <context value="source"/>
+        <element value="serviceDescription"/>
+        <variable value="serviceDescription"/>
+      </source>
+      <target>
+        <context value="target"/>
+        <contextType value="variable"/>
+        <element value="note"/>
+        <variable value="noteVariable"/>
+        <transform value="create"/>
+        <parameter>
+          <valueString value="Annotation"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="noteVariable"/>
+        <contextType value="variable"/>
+        <element value="text"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueId value="serviceDescription"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="mapStayType"/>
+      <source>
+        <context value="source"/>
+        <element value="stayType"/>
+        <variable value="stayType"/>
+      </source>
+      <target>
+        <context value="target"/>
+        <contextType value="variable"/>
+        <element value="category"/>
+        <variable value="categoryVariable"/>
+        <transform value="cc"/>
+        <parameter>
+          <valueString value="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"/>
+        </parameter>
+        <parameter>
+          <valueId value="stayType"/>
+        </parameter>
+      </target>
+    </rule>
+    <rule>
+      <name value="mapWeeklyExtent"/>
+      <source>
+        <context value="source"/>
+        <element value="weeklyExtent"/>
+        <variable value="weeklyExtent"/>
+      </source>
+      <target>
+        <context value="target"/>
+        <contextType value="variable"/>
+        <element value="quantity"/>
+        <variable value="quantityVariable"/>
+        <transform value="create"/>
+        <parameter>
+          <valueString value="Ratio"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="quantityVariable"/>
+        <contextType value="variable"/>
+        <element value="numerator"/>
+        <variable value="numeratorVariable"/>
+        <transform value="create"/>
+        <parameter>
+          <valueString value="Quantity"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="numeratorVariable"/>
+        <contextType value="variable"/>
+        <element value="value"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueId value="weeklyExtent"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="numeratorVariable"/>
+        <contextType value="variable"/>
+        <element value="unit"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="h"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="numeratorVariable"/>
+        <contextType value="variable"/>
+        <element value="system"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="http://unitsofmeasure.org"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="numeratorVariable"/>
+        <contextType value="variable"/>
+        <element value="code"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="h"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="quantityVariable"/>
+        <contextType value="variable"/>
+        <element value="denominator"/>
+        <variable value="denominatorVariable"/>
+        <transform value="create"/>
+        <parameter>
+          <valueString value="Quantity"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="denominatorVariable"/>
+        <contextType value="variable"/>
+        <element value="value"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="1"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="denominatorVariable"/>
+        <contextType value="variable"/>
+        <element value="unit"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="wk"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="denominatorVariable"/>
+        <contextType value="variable"/>
+        <element value="system"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="http://unitsofmeasure.org"/>
+        </parameter>
+      </target>
+      <target>
+        <context value="denominatorVariable"/>
+        <contextType value="variable"/>
+        <element value="code"/>
+        <transform value="copy"/>
+        <parameter>
+          <valueString value="wk"/>
+        </parameter>
+      </target>
+    </rule>
+  </group>
+</StructureMap>

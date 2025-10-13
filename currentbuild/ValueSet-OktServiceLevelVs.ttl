@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OktServiceLevelVs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OktServiceLevelVs</b></p><a name=\"OktServiceLevelVs\"> </a><a name=\"hcOktServiceLevelVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OktServiceLevelCs.html\"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OktServiceLevelValueSet"] ; # 
+  fhir:title [ fhir:v "Tjenestenivå"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-13T11:41:55+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Norway"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Norway" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.no/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tjenestenivå for pleie- og omsorgstjenester."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

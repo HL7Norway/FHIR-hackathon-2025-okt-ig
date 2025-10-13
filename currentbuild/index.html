@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home -  v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="models-episodeofcare.html">Implementation with EpisodeOfCare</a>
+  </li>
+  <li>
+    <a href="models-servicerequest.html">Implementation with ServiceRequest</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="acknowledgements.html">Acknowledgements</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OKTonFHIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/okt/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-10-13
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">OKTonFHIR</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#prototype-api-models" id="markdown-toc-prototype-api-models">Prototype API models</a></li>
+  <li><a href="#summary-tables" id="markdown-toc-summary-tables">Summary tables</a></li>
+</ul>
+
+</div>
+<h3 id="introduction">Introduction</h3>
+
+<p>This implementation guide gives suggestions for how the <a href="https://utviklerportal.nhn.no/informasjonstjenester/felles-journalloeft/okt-prototype">OKT API</a> can be implemented with FHIR resources.</p>
+
+<h3 id="prototype-api-models">Prototype API models</h3>
+
+<h4 id="oktevent">OktEvent</h4>
+
+<p>The <a href="StructureDefinition-OktEvent.html"><code class="language-plaintext highlighter-rouge">OktEvent</code></a> model contains a person identifier and an array of <a href="StructureDefinition-OktMessage.html"><code class="language-plaintext highlighter-rouge">OktMessage</code></a> models. The array can be mapped to a Bundle of FHIR resources, moving the person identifier to the Bundle entries.</p>
+
+<h4 id="oktmessage">OktMessage</h4>
+
+<p>Mapping <a href="StructureDefinition-OktMessage.html"><code class="language-plaintext highlighter-rouge">OktMessage</code></a> has several FHIR resource candidates:</p>
+
+<ul>
+  <li>ServiceRequest</li>
+  <li>EpisodeOfCare</li>
+  <li>CarePlan</li>
+</ul>
+
+<h4 id="oktstatus">OktStatus</h4>
+
+<p><code class="language-plaintext highlighter-rouge">OktStatus</code> returns the number of services for a person identifier. This can be mapped to a search with the <code class="language-plaintext highlighter-rouge">_summary=count</code> parameter, which returns a <code class="language-plaintext highlighter-rouge">searchset</code> Bundle without entries, with the <code class="language-plaintext highlighter-rouge">total</code> field showing the number of results.</p>
+
+<p><code class="language-plaintext highlighter-rouge">ResultMessage</code> can be represented as aBundle of type <code class="language-plaintext highlighter-rouge">batch-response</code> or <code class="language-plaintext highlighter-rouge">transaction-response</code>.</p>
+
+<h3 id="summary-tables">Summary tables</h3>
+
+<h4 id="oktevent-1">OktEvent</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>OktEvent field</th>
+      <th>ServiceRequest field</th>
+      <th>EpisodeOfCare field</th>
+      <th>CarePlan field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>personIdentifier</td>
+      <td>ServiceRequest.subject<sup>1</sup></td>
+      <td>EpisodeOfCare.patient<sup>1</sup></td>
+      <td>CarePlan.subject</td>
+    </tr>
+    <tr>
+      <td>oktMessages</td>
+      <td>ServiceRequest<sup>2</sup></td>
+      <td>EpisodeOfCare<sup>2</sup></td>
+      <td>CarePlan.activity</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Notes:</p>
+
+<p><sup>1</sup> The personIdentifier is added to each resource in the Bundle.<br />
+<sup>2</sup> OktEvent is mapped to a Bundle. Each entry in the oktMessages array is an entry in the Bundle.</p>
+
+<h4 id="oktmessage-1">OktMessage</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>OktMessage field</th>
+      <th>OKT data type</th>
+      <th>FHIR ServiceRequest field and data type</th>
+      <th>FHIR EpisodeOfCare field and data type</th>
+      <th>FHIR CarePlan field and data type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>endDate<sup>1</sup></td>
+      <td>string</td>
+      <td>occurrencePeriod.end (dateTime)</td>
+      <td>period.end (dateTime)</td>
+      <td>period.end (dateTime)</td>
+    </tr>
+    <tr>
+      <td>iplosCode</td>
+      <td>IplosCodeDefinition</td>
+      <td>code (CodeableConcept)</td>
+      <td>type (CodeableConcept)</td>
+      <td>activity.detail.code  (CodeableConcept)</td>
+    </tr>
+    <tr>
+      <td>needsCaption</td>
+      <td>boolean</td>
+      <td>orderDetail (CodeableConcept)</td>
+      <td>type (CodeableConcept)</td>
+      <td>category (CodeableConcept)</td>
+    </tr>
+    <tr>
+      <td>serviceDescription</td>
+      <td>string</td>
+      <td>note (Annotation) text (markdown)</td>
+      <td>extension (markdown)</td>
+      <td>description (string)</td>
+    </tr>
+    <tr>
+      <td>serviceLevel</td>
+      <td>string</td>
+      <td>category (CodeableConcept)</td>
+      <td>type (CodeableConcept)</td>
+      <td>category (CodeableConcept)</td>
+    </tr>
+    <tr>
+      <td>startDate</td>
+      <td>string</td>
+      <td>occurrencePeriod.start (dateTime)</td>
+      <td>period.start (dateTime)</td>
+      <td>period.start (dateTime)</td>
+    </tr>
+    <tr>
+      <td>stayType</td>
+      <td>string</td>
+      <td>category (CodeableConcept)</td>
+      <td>type (CodeableConcept)</td>
+      <td>category (CodeableConcept)</td>
+    </tr>
+    <tr>
+      <td>temporaryCessation</td>
+      <td>boolean</td>
+      <td>status (code) = on-hold</td>
+      <td>status (code) = on-hold</td>
+      <td>status (code) = on-hold</td>
+    </tr>
+    <tr>
+      <td>weeklyExtent</td>
+      <td>string</td>
+      <td>quantityRatio (Ratio<sup>2</sup>)</td>
+      <td>extension (Ratio)</td>
+      <td>activity.detail.quantity (SimpleQuantity)<sup>3</sup></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Notes:</p>
+
+<p><sup>1</sup> If a set end date implies that the service has ended, then the profile can restrict with FHIRPath that status = completed implies that occurrencePeriod.end exists.<br />
+<sup>2</sup> Denominator (Quantity) fixed to 1 week in the profile.<br />
+<sup>3</sup> SimpleQuantity doesn't allow declaring that the amount is a weekly amount.</p>
+
+<h4 id="oktstatus-1">OktStatus</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>OktStatus field</th>
+      <th>OKT data type</th>
+      <th>FHIR field</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>oktStatus</td>
+      <td>integer</td>
+      <td>Bundle.total</td>
+    </tr>
+    <tr>
+      <td>personIdentifier</td>
+      <td>string</td>
+      <td>Bundle.link with relation "self"</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.no/">HL7 Norway</a>.  Package no.hl7.fhir.okt#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 11:42+0000">2025-10-13</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="OktStayTypeCs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem OktStayTypeCs</b></p><a name="OktStayTypeCs"> </a><a name="hcOktStayTypeCs"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">dagopphold<a name="OktStayTypeCs-dagopphold"> </a></td><td>Dagopphold</td><td>Dagopphold i institusjon</td></tr></table></div>
+  </text>
+  <url value="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"/>
+  <version value="0.1.0"/>
+  <name value="OktStayTypeCodeSystem"/>
+  <title value="Oppholdstype"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-10-13T11:41:55+00:00"/>
+  <publisher value="HL7 Norway"/>
+  <contact>
+    <name value="HL7 Norway"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.no/"/>
+    </telecom>
+  </contact>
+  <description value="Oppholdstype for pleie- og omsorgstjenester."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="dagopphold"/>
+    <display value="Dagopphold"/>
+    <definition value="Dagopphold i institusjon"/>
+  </concept>
+</CodeSystem>

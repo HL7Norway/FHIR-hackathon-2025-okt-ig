@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "OktMessage1",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2hsNy5uby9maGlyL2lnL29rdC9TdHJ1Y3R1cmVEZWZpbml0aW9uL09rdE1lc3NhZ2UiLAogICJzdGFydERhdGUiOiAiMjAyNS0wOS0wMSIsCiAgImVuZERhdGUiOiAiMjAyNS0wOS0zMCIsCiAgIm5lZWRzQ2FwdGlvbiI6IHRydWUsCiAgInNlcnZpY2VEZXNjcmlwdGlvbiI6ICJIamVtbWV0amVuZXN0ZSAtIHByYWt0aXNrIGJpc3RhbmQiLAogICJzZXJ2aWNlTGV2ZWwiOiAiTml2w6UgMiIsCiAgInN0YXlUeXBlIjogImtvcnR0aWRzb3BwaG9sZCIsCiAgInRlbXBvcmFyeUNlc3NhdGlvbiI6IGZhbHNlLAogICJ3ZWVrbHlFeHRlbnQiOiAiNy41Igp9Cg=="
+}
