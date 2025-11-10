@@ -5,9 +5,12 @@ Description: "Profile on EpisodeOfCare for OktMessage"
 
 * extension contains
     WeeklyExtentQuantity named weeklyExtentQuantity 0..1 and
+    WeeklyExtentRatio named weeklyExtentRatio 0..1 and
     ServiceDescriptionMarkdown named serviceDescriptionMarkdown 0..1
 * extension[weeklyExtentQuantity] ^short = "Sett hvis tjenesten gis i hjemmet; hvor mange timer per uke tjenesten gis"
 * extension[weeklyExtentQuantity] ^definition = "Sett hvis tjenesten gis i hjemmet; hvor mange timer per uke tjenesten gis"
+* extension[weeklyExtentRatio] ^short = "Sett hvis tjenesten gis i hjemmet; hvor mange timer i en periode tjenesten gis"
+* extension[weeklyExtentRatio] ^definition = "Sett hvis tjenesten gis i hjemmet; hvor mange timer i en periode tjenesten gis"
 * extension[serviceDescriptionMarkdown] ^short = "Utfyllende beskrivelse av tjenesten"
 * extension[serviceDescriptionMarkdown] ^definition = "Utfyllende beskrivelse av tjenesten"
 

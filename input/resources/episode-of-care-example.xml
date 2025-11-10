@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EpisodeOfCare xmlns="http://hl7.org/fhir">
+    <id value="OktEpisodeOfCareHack1"/>
+    <extension url="http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio">
+        <valueRatio>
+            <numerator>
+                <value value="15"/>
+                <unit value="h"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="h"/>
+            </numerator>
+            <denominator>
+                <value value="1"/>
+                <unit value="wk"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="wk"/>
+            </denominator>
+        </valueRatio>
+    </extension>
+    <extension url="http://hl7.no/fhir/ig/okt/StructureDefinition/ServiceDescriptionMarkdown">
+        <valueMarkdown value="TODO"/>
+    </extension>
+    <status value="active"/>
+    <type>
+        <coding>
+            <system value="urn:oid:2.16.578.1.12.4.1.1.9151"/>
+            <code value="2"/>
+            <display value="Praktisk bistand - opplæring - daglige gjøremål"/>
+        </coding>
+    </type>
+    <patient>
+        <identifier>
+            <system value="urn:oid:2.16.578.1.12.4.1.4.1"/>
+            <value value="19779998080"/>
+        </identifier>
+    </patient>
+    <managingOrganization>
+        <reference value="Organization/org-1"/>
+    </managingOrganization>
+    <period>
+        <start value="2020-06-22"/>
+    </period>
+    <team>
+        <reference value="Organization/privi-care-as"/>
+    </team>
+</EpisodeOfCare>

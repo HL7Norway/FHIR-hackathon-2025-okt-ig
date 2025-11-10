@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Organization xmlns="http://hl7.org/fhir">
+    <id value="org-1-1-2"/>
+    <name value="Sone Vest"/>
+    <partOf>
+        <reference value="Organization/org-1-1"/>
+    </partOf>
+</Organization>
