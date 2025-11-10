@@ -2,6 +2,12 @@
 <Organization xmlns="http://hl7.org/fhir">
     <id value="org-1-1"/>
     <name value="Hjemmeboende"/>
+    <contact>
+        <telecom>
+            <system value="phone"/>
+            <value value="23101600"/>
+        </telecom>
+    </contact>
     <partOf>
         <reference value="Organization/org-1"/>
     </partOf>
