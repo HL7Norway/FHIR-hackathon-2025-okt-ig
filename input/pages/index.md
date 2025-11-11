@@ -58,6 +58,21 @@ Notes:
 <sup>2</sup> Denominator (Quantity) fixed to 1 week in the profile.<br/>
 <sup>3</sup> SimpleQuantity doesn't allow declaring that the amount is a weekly amount.
 
+Changes during the hackathon:
+
+| OktMessage field    | OKT data type       | FHIR EpisodeOfCare field and data type | Changes from EHiN hackathon                            |
+|---------------------|---------------------|----------------------------------------|--------------------------------------------------------|
+| endDate<sup>1</sup> | string              | period.end (dateTime)                  |                                                        |
+| iplosCode           | IplosCodeDefinition | type (CodeableConcept)                 |                                                        |
+| needsCaption        | boolean             | type (CodeableConcept)                 | "Must Support" on serviceDescription; meta.lastUpdated |
+| serviceDescription  | string              | extension (markdown)                   |                                                        |
+| serviceLevel        | string              | type (CodeableConcept)                 | managingOrganization (Reference)                       |
+| startDate           | string              | period.start (dateTime)                |                                                        |
+| stayType            | string              | type (CodeableConcept)                 |                                                        |
+| temporaryCessation  | boolean             | status (code) = on-hold                |                                                        |
+| weeklyExtent        | string              | extension (Ratio)                      | Was Quantity in the profile, changed to Ratio          |
+{: .grid}
+
 #### OktStatus
 
 | OktStatus field  | OKT data type | FHIR field                       |
