@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"OktEvent","OktEvent","","","",0,*,"","","","null {[]} {[]}
+","Logical Model for OktEvent","Logical Model for OktEvent","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"OktEvent.personIdentifier","OktEvent.personIdentifier","","","",1,1,"","","","string {[]} {[]}
+","A valid Norwegian fødselsnummer","A valid Norwegian fødselsnummer","","","","","","","","","",,,,,"",,,,"OktEvent.personIdentifier",1,1,"",""
+"OktEvent.oktMessages","OktEvent.oktMessages","","","",1,*,"","","","http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage {[]} {[]}
+","List of OktMessage associated with the event","List of OktMessage associated with the event","","","","","","","","","",,,,,"",,,,"OktEvent.oktMessages",1,*,"",""

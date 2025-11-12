@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OktOrderDetailsCs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OktOrderDetailsCs</b></p><a name=\"OktOrderDetailsCs\"> </a><a name=\"hcOktOrderDetailsCs\"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">needsCaption<a name=\"OktOrderDetailsCs-needsCaption\"> </a></td><td>Behov for mer informasjon i GUI</td><td>Indikator for om det er behov for mer informasjon i GUI</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OktOrderDetailsCodeSystem"] ; # 
+  fhir:title [ fhir:v "Indikatorer for tjenesten"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-13T11:41:55+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Norway"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Norway" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.no/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Indikatorer med øvrige detaljer om tjenesten."] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "needsCaption" ] ;
+     fhir:display [ fhir:v "Behov for mer informasjon i GUI" ] ;
+     fhir:definition [ fhir:v "Indikator for om det er behov for mer informasjon i GUI" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

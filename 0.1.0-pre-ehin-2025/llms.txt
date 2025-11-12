@@ -1,0 +1,57 @@
+# no.hl7.fhir.okt#0.1.0: null
+
+## Pages
+
+* [Home](index.md)
+* [Implementation with EpisodeOfCare](models-episodeofcare.md)
+* [Acknowledgements](acknowledgements.md)
+* [Artifacts Summary](artifacts.md)
+* [Terminology](terminology.md)
+* [Implementation with ServiceRequest](models-servicerequest.md)
+
+## Resources
+
+### CodeSystems
+
+* [Individbasert pleie- og omsorgsstatistikk (IPLOS)](CodeSystem-IplosCs.md)
+* [Indikatorer for tjenesten](CodeSystem-OktOrderDetailsCs.md)
+* [Tjenestenivå](CodeSystem-OktServiceLevelCs.md)
+* [Oppholdstype](CodeSystem-OktStayTypeCs.md)
+
+### ValueSets
+
+* [Individbasert pleie- og omsorgsstatistikk (IPLOS)](ValueSet-IplosVs.md)
+* [Indikatorer for tjenesten](ValueSet-OktOrderDetailsVs.md)
+* [Tjenestenivå](ValueSet-OktServiceLevelVs.md)
+* [Oppholdstype](ValueSet-OktStayTypeVs.md)
+
+### Logicals
+
+* [Logical Model for IplosCode](StructureDefinition-IplosCodeDefinition.md)
+* [Logical Model for OktEvent](StructureDefinition-OktEvent.md)
+* [Logical Model for OktMessage](StructureDefinition-OktMessage.md)
+
+### Resource Profiles
+
+* [OktEpisodeOfCare](StructureDefinition-OktEpisodeOfCare.md)
+* [OktServiceRequest](StructureDefinition-OktServiceRequest.md)
+
+### Extensions
+
+* [Utfyllende beskrivelse av tjenesten](StructureDefinition-ServiceDescriptionMarkdown.md)
+* [Weekly Extent Quantity](StructureDefinition-WeeklyExtentQuantity.md)
+
+### ImplementationGuides
+
+* [OKTonFHIR](index.md)
+
+### StructureMaps
+
+* [OktMessageServiceRequest](StructureMap-OktMessage-ServiceRequest.md)
+
+### Examples
+
+* [OktMessage1 (Binary)](Binary-OktMessage1.md)
+* [OktEpisodeOfCare1 (EpisodeOfCare)](EpisodeOfCare-OktEpisodeOfCare1.md)
+* [Example (Patient)](Patient-Example.md)
+* [OktServiceRequest1 (ServiceRequest)](ServiceRequest-OktServiceRequest1.md)

@@ -1,0 +1,307 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OktMessage-ServiceRequest"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap OktMessage-ServiceRequest</b></p><a name=\"OktMessage-ServiceRequest\"> </a><a name=\"hcOktMessage-ServiceRequest\"> </a><pre class=\"fml\">#xD;\n<b>map</b><span style=\"color: navy\"> \"</span>http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest<span style=\"color: navy\">\" = \"</span>OktMessageServiceRequest<span style=\"color: navy\">\"#xD;\n#xD;\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Map OktMessage to ServiceRequest</span>#xD;\n#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"StructureDefinition-OktMessage.html\" title=\"Logical Model for OktMessage\">http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage</a><span style=\"color: navy\">\" </span><b>alias </b>NhnOktMessage <b>as </b><b>source</b>#xD;\n<b>uses</b><span style=\"color: navy\"> \"</span><a href=\"http://hl7.org/fhir/R4/servicerequest.html\" title=\"ServiceRequest\">http://hl7.org/fhir/StructureDefinition/ServiceRequest</a><span style=\"color: navy\">\" </span><b>alias </b>FhirServiceRequest <b>as </b><b>target</b>#xD;\n#xD;\n<b>group </b>OktMessageToServiceRequest<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">source</span><span style=\"color: navy\"> : </span>NhnOktMessage, <b>target</b> <span style=\"color: maroon\">target</span><span style=\"color: navy\"> : </span>FhirServiceRequest<span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {#xD;\n</span>  source<span style=\"color: navy\"><b> -&gt; </b></span>target.occurrence = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Period'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">occurrencePeriod</span><b> then</b><span style=\"color: navy\"> {#xD;\n</span>    source.startDate<b> as </b><span style=\"color: maroon\">startDate</span><span style=\"color: navy\"><b> -&gt; </b></span>occurrencePeriod.start = <span style=\"color: maroon\">startDate</span> <i>\"setStart\"</i><span style=\"color: navy\">;</span>#xD;\n    source.endDate<b> as </b><span style=\"color: maroon\">endDate</span><span style=\"color: navy\"><b> -&gt; </b></span>occurrencePeriod.end = <span style=\"color: maroon\">endDate</span> <i>\"setEnd\"</i><span style=\"color: navy\">;</span>#xD;\n  <span style=\"color: navy\">}</span> <i>\"mapOccurrencePeriod\"</i><span style=\"color: navy\">;</span>#xD;\n  source.serviceDescription<b> as </b><span style=\"color: maroon\">serviceDescription</span><span style=\"color: navy\"><b> -&gt; </b></span> target.note = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Annotation'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">noteVariable</span><span style=\"color: navy\">, </span> noteVariable.text = <span style=\"color: maroon\">serviceDescription</span> <i>\"mapServiceDescription\"</i><span style=\"color: navy\">;</span>#xD;\n  source.stayType<b> as </b><span style=\"color: maroon\">stayType</span><span style=\"color: navy\"><b> -&gt; </b></span>target.category = <b>cc</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs'</span><span style=\"color: navy\">, </span><span style=\"color: maroon\">stayType</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">categoryVariable</span> <i>\"mapStayType\"</i><span style=\"color: navy\">;</span>#xD;\n  source.weeklyExtent<b> as </b><span style=\"color: maroon\">weeklyExtent</span><span style=\"color: navy\"><b> -&gt; </b></span> target.quantity = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Ratio'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">quantityVariable</span><span style=\"color: navy\">, </span> quantityVariable.numerator = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Quantity'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">numeratorVariable</span><span style=\"color: navy\">, </span> numeratorVariable.value = <span style=\"color: maroon\">weeklyExtent</span><span style=\"color: navy\">, </span> numeratorVariable.unit = <span style=\"color: blue\">'h'</span><span style=\"color: navy\">, </span> numeratorVariable.system = <span style=\"color: blue\">'http://unitsofmeasure.org'</span><span style=\"color: navy\">, </span> numeratorVariable.code = <span style=\"color: blue\">'h'</span><span style=\"color: navy\">, </span> quantityVariable.denominator = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'Quantity'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">denominatorVariable</span><span style=\"color: navy\">, </span> denominatorVariable.value = <span style=\"color: blue\">'1'</span><span style=\"color: navy\">, </span> denominatorVariable.unit = <span style=\"color: blue\">'wk'</span><span style=\"color: navy\">, </span> denominatorVariable.system = <span style=\"color: blue\">'http://unitsofmeasure.org'</span><span style=\"color: navy\">, </span> denominatorVariable.code = <span style=\"color: blue\">'wk'</span> <i>\"mapWeeklyExtent\"</i><span style=\"color: navy\">;</span>#xD;\n<span style=\"color: navy\">}#xD;\n#xD;\n</span></pre></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OktMessageServiceRequest"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-10-13T11:41:55+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Norway"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Norway" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.no/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Map OktMessage to ServiceRequest"] ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage"^^xsd:anyURI ;
+       fhir:link <http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "NhnOktMessage" ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/ServiceRequest"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/ServiceRequest>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "FhirServiceRequest" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "OktMessageToServiceRequest" ] ;
+     fhir:typeMode [ fhir:v "types" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "source" ] ;
+       fhir:type [ fhir:v "NhnOktMessage" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "target" ] ;
+       fhir:type [ fhir:v "FhirServiceRequest" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "mapOccurrencePeriod" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "source" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "target" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "occurrence" ] ;
+         fhir:variable [ fhir:v "occurrencePeriod" ] ;
+         fhir:transform [ fhir:v "create" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Period"
+           ]
+         ] )
+       ] ) ;
+       fhir:rule ( [
+         fhir:name [ fhir:v "setStart" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "source" ] ;
+           fhir:element [ fhir:v "startDate" ] ;
+           fhir:variable [ fhir:v "startDate" ]
+         ] ) ;
+         fhir:target ( [
+           fhir:context [ fhir:v "occurrencePeriod" ] ;
+           fhir:contextType [ fhir:v "variable" ] ;
+           fhir:element [ fhir:v "start" ] ;
+           fhir:transform [ fhir:v "copy" ] ;
+           fhir:parameter ( [
+             fhir:value [
+               a fhir:id ;
+               fhir:v "startDate"
+             ]
+           ] )
+         ] )
+       ] [
+         fhir:name [ fhir:v "setEnd" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "source" ] ;
+           fhir:element [ fhir:v "endDate" ] ;
+           fhir:variable [ fhir:v "endDate" ]
+         ] ) ;
+         fhir:target ( [
+           fhir:context [ fhir:v "occurrencePeriod" ] ;
+           fhir:contextType [ fhir:v "variable" ] ;
+           fhir:element [ fhir:v "end" ] ;
+           fhir:transform [ fhir:v "copy" ] ;
+           fhir:parameter ( [
+             fhir:value [
+               a fhir:id ;
+               fhir:v "endDate"
+             ]
+           ] )
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "mapServiceDescription" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "source" ] ;
+         fhir:element [ fhir:v "serviceDescription" ] ;
+         fhir:variable [ fhir:v "serviceDescription" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "target" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "note" ] ;
+         fhir:variable [ fhir:v "noteVariable" ] ;
+         fhir:transform [ fhir:v "create" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Annotation"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "noteVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "text" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:id ;
+             fhir:v "serviceDescription"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "mapStayType" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "source" ] ;
+         fhir:element [ fhir:v "stayType" ] ;
+         fhir:variable [ fhir:v "stayType" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "target" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "category" ] ;
+         fhir:variable [ fhir:v "categoryVariable" ] ;
+         fhir:transform [ fhir:v "cc" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"
+           ]
+         ] [
+           fhir:value [
+             a fhir:id ;
+             fhir:v "stayType"
+           ]
+         ] )
+       ] )
+     ] [
+       fhir:name [ fhir:v "mapWeeklyExtent" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "source" ] ;
+         fhir:element [ fhir:v "weeklyExtent" ] ;
+         fhir:variable [ fhir:v "weeklyExtent" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "target" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "quantity" ] ;
+         fhir:variable [ fhir:v "quantityVariable" ] ;
+         fhir:transform [ fhir:v "create" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Ratio"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "quantityVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "numerator" ] ;
+         fhir:variable [ fhir:v "numeratorVariable" ] ;
+         fhir:transform [ fhir:v "create" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Quantity"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "numeratorVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "value" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:id ;
+             fhir:v "weeklyExtent"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "numeratorVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "unit" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "h"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "numeratorVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "system" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "http://unitsofmeasure.org"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "numeratorVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "code" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "h"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "quantityVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "denominator" ] ;
+         fhir:variable [ fhir:v "denominatorVariable" ] ;
+         fhir:transform [ fhir:v "create" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "Quantity"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "denominatorVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "value" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "1"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "denominatorVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "unit" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "wk"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "denominatorVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "system" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "http://unitsofmeasure.org"
+           ]
+         ] )
+       ] [
+         fhir:context [ fhir:v "denominatorVariable" ] ;
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:element [ fhir:v "code" ] ;
+         fhir:transform [ fhir:v "copy" ] ;
+         fhir:parameter ( [
+           fhir:value [
+             a fhir:string ;
+             fhir:v "wk"
+           ]
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

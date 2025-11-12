@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "IplosVs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet IplosVs</b></p><a name=\"IplosVs\"> </a><a name=\"hcIplosVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-IplosCs.html\"><code>urn:oid:2.16.578.1.12.4.1.1.9151</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://hl7.no/fhir/ig/okt/ValueSet/IplosVs",
+  "version" : "0.1.0",
+  "name" : "IplosValueSet",
+  "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-13T11:41:55+00:00",
+  "publisher" : "HL7 Norway",
+  "contact" : [{
+    "name" : "HL7 Norway",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.no/"
+    }]
+  }],
+  "description" : "Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene.",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.9151"
+    }]
+  }
+}

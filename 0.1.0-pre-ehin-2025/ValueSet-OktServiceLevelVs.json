@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "OktServiceLevelVs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OktServiceLevelVs</b></p><a name=\"OktServiceLevelVs\"> </a><a name=\"hcOktServiceLevelVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OktServiceLevelCs.html\"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\">&#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs",
+  "version" : "0.1.0",
+  "name" : "OktServiceLevelValueSet",
+  "title" : "Tjenestenivå",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-13T11:41:55+00:00",
+  "publisher" : "HL7 Norway",
+  "contact" : [{
+    "name" : "HL7 Norway",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.no/"
+    }]
+  }],
+  "description" : "Tjenestenivå for pleie- og omsorgstjenester.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"
+    }]
+  }
+}

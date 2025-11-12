@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"IplosCodeDefinition","IplosCodeDefinition","","","",0,*,"","","","null {[]} {[]}
+","Logical Model for IplosCode","Logical Model for IplosCode","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"IplosCodeDefinition.iplosCodeDescription","IplosCodeDefinition.iplosCodeDescription","","","",0,1,"","","","string {[]} {[]}
+","Beskrivelse av IPLOS-koden","Beskrivelse av IPLOS-koden","","","","","","","","","",,,,,"",,,,"IplosCodeDefinition.iplosCodeDescription",0,1,"",""
+"IplosCodeDefinition.iplosCodeLevel","IplosCodeDefinition.iplosCodeLevel","","","",0,1,"","","","string {[]} {[]}
+","Nivå for IPLOS-koden","Nivå for IPLOS-koden","","","","","","","","","",,,,,"",,,,"IplosCodeDefinition.iplosCodeLevel",0,1,"",""
+"IplosCodeDefinition.iplosCodeValue","IplosCodeDefinition.iplosCodeValue","","","",1,1,"","","","string {[]} {[]}
+","Verdi for IPLOS-koden","Verdi for IPLOS-koden","","","","","","","","","",,,,,"",,,,"IplosCodeDefinition.iplosCodeValue",1,1,"",""
+"IplosCodeDefinition.iplosParentCode","IplosCodeDefinition.iplosParentCode","","","",0,1,"","","","string {[]} {[]}
+","Overordnet IPLOS-kode","Overordnet IPLOS-kode","","","","","","","","","",,,,,"",,,,"IplosCodeDefinition.iplosParentCode",0,1,"",""
