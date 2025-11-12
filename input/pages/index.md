@@ -22,6 +22,8 @@ Having discussed several alternatives, including ServiceRequest and CarePlan, th
 
 ### Mapping to FHIR resources
 
+See [the profile on EpisodeOfCare for OKT](StructureDefinition-OktEpisodeOfCare.html).
+
 #### OktEvent
 
 | OktEvent field   | EpisodeOfCare field               |
