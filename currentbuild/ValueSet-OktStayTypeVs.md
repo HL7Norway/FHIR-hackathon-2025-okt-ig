@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:OktStayTypeValueSet |
+| Draft as of 2025-11-12 | *Computable Name*:OktStayTypeValueSet |
 
  
 Oppholdstype for pleie- og omsorgstjenester. 
@@ -21,7 +21,7 @@ Oppholdstype for pleie- og omsorgstjenester.
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs`](CodeSystem-OktStayTypeCs.md) version 📦0.1.0
+* Include all codes defined in [`http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs`](CodeSystem-OktStayTypeCs.md)version 📦0.1.0
 
  
 
@@ -54,7 +54,7 @@ Oppholdstype for pleie- og omsorgstjenester.
   "title" : "Oppholdstype",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-13T11:41:55+00:00",
+  "date" : "2025-11-12T13:38:48+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

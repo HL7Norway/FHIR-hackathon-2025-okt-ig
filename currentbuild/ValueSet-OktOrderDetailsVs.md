@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:OktOrderDetailsValueSet |
+| Draft as of 2025-11-12 | *Computable Name*:OktOrderDetailsValueSet |
 
  
 Indikatorer med øvrige detaljer om tjenesten. 
@@ -20,7 +20,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs`](CodeSystem-OktOrderDetailsCs.md) version 📦0.1.0
+* Include all codes defined in [`http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs`](CodeSystem-OktOrderDetailsCs.md)version 📦0.1.0
 
  
 
@@ -53,7 +53,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "Indikatorer for tjenesten",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-13T11:41:55+00:00",
+  "date" : "2025-11-12T13:38:48+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

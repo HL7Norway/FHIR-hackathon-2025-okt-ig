@@ -5,4 +5,4 @@ OKTonFHIR
 /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/input/resources/StructureMap-OktMessage-ServiceRequest.xml: line 1, col 6466, Info - The source statement doesn't assign a variable to the source - check that this is what is intended (INVALID)
 
 err = 0, warn = 0, info = 2
-IG Publisher Version: 2.0.20
+IG Publisher Version: 2.0.26

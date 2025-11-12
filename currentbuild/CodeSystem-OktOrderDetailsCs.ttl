@@ -11,15 +11,18 @@
   fhir:id [ fhir:v "OktOrderDetailsCs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OktOrderDetailsCs</b></p><a name=\"OktOrderDetailsCs\"> </a><a name=\"hcOktOrderDetailsCs\"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">needsCaption<a name=\"OktOrderDetailsCs-needsCaption\"> </a></td><td>Behov for mer informasjon i GUI</td><td>Indikator for om det er behov for mer informasjon i GUI</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OktOrderDetailsCs</b></p><a name=\"OktOrderDetailsCs\"> </a><a name=\"hcOktOrderDetailsCs\"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">needsCaption<a name=\"OktOrderDetailsCs-needsCaption\"> </a></td><td>Behov for mer informasjon i GUI</td><td>Indikator for om det er behov for mer informasjon i GUI</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs"^^xsd:anyURI ;
+     fhir:l <http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OktOrderDetailsCodeSystem"] ; # 
   fhir:title [ fhir:v "Indikatorer for tjenesten"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-10-13T11:41:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-12T13:38:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;

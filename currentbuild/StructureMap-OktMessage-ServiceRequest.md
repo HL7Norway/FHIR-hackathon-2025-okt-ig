@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:OktMessageServiceRequest |
+| Draft as of 2025-11-12 | *Computable Name*:OktMessageServiceRequest |
 
  
 Map OktMessage to ServiceRequest 
@@ -49,7 +49,7 @@ group OktMessageToServiceRequest(source source : NhnOktMessage, target target : 
   "name" : "OktMessageServiceRequest",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-13T11:41:55+00:00",
+  "date" : "2025-11-12T13:38:48+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

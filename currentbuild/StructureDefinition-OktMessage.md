@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:OktMessage |
+| Draft as of 2025-11-12 | *Computable Name*:OktMessage |
 
  
 Logical Model for OktMessage 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-OktMessage.csv), [Ex
   "name" : "OktMessage",
   "title" : "Logical Model for OktMessage",
   "status" : "draft",
-  "date" : "2025-10-13T11:41:55+00:00",
+  "date" : "2025-11-12T13:38:48+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

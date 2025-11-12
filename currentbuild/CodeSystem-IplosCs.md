@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:urn:oid:2.16.578.1.12.4.1.1.9151 | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:IplosCodeSystem |
+| Draft as of 2025-11-12 | *Computable Name*:IplosCodeSystem |
 
  
 Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene. 
@@ -32,7 +32,7 @@ Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som i
   "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-10-13T11:41:55+00:00",
+  "date" : "2025-11-12T13:38:48+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

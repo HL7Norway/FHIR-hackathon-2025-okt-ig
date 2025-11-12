@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/IplosCodeDefinition | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:IplosCodeDefinition |
+| Draft as of 2025-11-12 | *Computable Name*:IplosCodeDefinition |
 
  
 Logical Model for IplosCode 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-IplosCodeDefinition.
   "name" : "IplosCodeDefinition",
   "title" : "Logical Model for IplosCode",
   "status" : "draft",
-  "date" : "2025-10-13T11:41:55+00:00",
+  "date" : "2025-11-12T13:38:48+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

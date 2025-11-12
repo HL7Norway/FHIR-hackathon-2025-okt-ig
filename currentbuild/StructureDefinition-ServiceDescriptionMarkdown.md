@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/ServiceDescriptionMarkdown | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:ServiceDescriptionMarkdown |
+| Draft as of 2025-11-12 | *Computable Name*:ServiceDescriptionMarkdown |
 
 Utfyllende beskrivelse av tjenesten
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-ServiceDescriptionMa
   "name" : "ServiceDescriptionMarkdown",
   "title" : "Utfyllende beskrivelse av tjenesten",
   "status" : "draft",
-  "date" : "2025-10-13T11:41:55+00:00",
+  "date" : "2025-11-12T13:38:48+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

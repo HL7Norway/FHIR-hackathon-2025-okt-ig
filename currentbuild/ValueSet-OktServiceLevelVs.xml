@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="OktServiceLevelVs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet OktServiceLevelVs</b></p><a name="OktServiceLevelVs"> </a><a name="hcOktServiceLevelVs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-OktServiceLevelCs.html"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs</code></a> version <span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet OktServiceLevelVs</b></p><a name="OktServiceLevelVs"> </a><a name="hcOktServiceLevelVs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-OktServiceLevelCs.html"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
   </text>
   <url value="http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="Tjenestenivå"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-10-13T11:41:55+00:00"/>
+  <date value="2025-11-12T13:38:48+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentQuantity | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:WeeklyExtentQuantity |
+| Draft as of 2025-11-12 | *Computable Name*:WeeklyExtentQuantity |
 
 The quantity of the service provided on a weekly basis
 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-WeeklyExtentQuantity
   "name" : "WeeklyExtentQuantity",
   "title" : "Weekly Extent Quantity",
   "status" : "draft",
-  "date" : "2025-10-13T11:41:55+00:00",
+  "date" : "2025-11-12T13:38:48+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {
