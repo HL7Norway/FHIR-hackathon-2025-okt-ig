@@ -46,10 +46,6 @@ publisher:
 pages:
   index.md:
     title: Home
-  models-episodeofcare.md:
-    title: Implementation with EpisodeOfCare
-  models-servicerequest.md:
-    title: Implementation with ServiceRequest
   terminology.md:
     title: Terminology
   acknowledgements.md:
@@ -78,8 +74,6 @@ pages:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Implementation with EpisodeOfCare: models-episodeofcare.html
-  Implementation with ServiceRequest: models-servicerequest.html
   Terminology: terminology.html
   Acknowledgements: acknowledgements.html
   Artifacts: artifacts.html
