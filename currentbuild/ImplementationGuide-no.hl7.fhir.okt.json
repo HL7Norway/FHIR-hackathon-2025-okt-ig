@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide no.hl7.fhir.okt</b></p><a name=\"no.hl7.fhir.okt\"> </a><a name=\"hcno.hl7.fhir.okt\"> </a><h2>OKTonFHIR</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt</pre></div>"
   },
   "url" : "http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OKTonFHIR",
   "status" : "draft",
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",
@@ -720,6 +720,18 @@
         "valueString" : "EpisodeOfCare"
       }],
       "reference" : {
+        "reference" : "EpisodeOfCare/OktEpisodeOfCare-Proto-19779998080-1"
+      },
+      "name" : "OktEpisodeOfCare-Proto-19779998080-1",
+      "description" : "An example OktMessage implemented as a EpisodeOfCare patient 19779998080 service 1",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EpisodeOfCare"
+      }],
+      "reference" : {
         "reference" : "EpisodeOfCare/OktEpisodeOfCare1"
       },
       "name" : "OktEpisodeOfCare1",
@@ -744,6 +756,34 @@
     },
     {
       "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/OktMessage2"
+      },
+      "name" : "OktMessage2",
+      "description" : "An example OktMessage with a service on hold",
+      "exampleCanonical" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/OktMessage-EpisodeOfCare"
+      },
+      "name" : "OktMessageEpisodeOfCare",
+      "description" : "Map OktMessage to EpisodeOfCare",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureMap"
       }],
@@ -753,30 +793,6 @@
       "name" : "OktMessageServiceRequest",
       "description" : "Map OktMessage to ServiceRequest",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/OktServiceRequest"
-      },
-      "name" : "OktServiceRequest",
-      "description" : "Profile on ServiceRequest for OktMessage",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/OktServiceRequest1"
-      },
-      "name" : "OktServiceRequest1",
-      "description" : "An example OktMessage implemented as a ServiceRequest",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest"
     },
     {
       "extension" : [{
@@ -801,6 +817,50 @@
       "name" : "Oppholdstype",
       "description" : "Oppholdstype for pleie- og omsorgstjenester.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/org-1"
+      },
+      "name" : "org-1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/org-1-1"
+      },
+      "name" : "org-1-1",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/org-1-1-2"
+      },
+      "name" : "org-1-1-2",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/org-1-1-2-6"
+      },
+      "name" : "org-1-1-2-6",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -856,10 +916,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/WeeklyExtentQuantity"
+        "reference" : "StructureDefinition/WeeklyExtentRatio"
       },
-      "name" : "Weekly Extent Quantity",
-      "description" : "The quantity of the service provided on a weekly basis",
+      "name" : "Weekly Extent Ratio",
+      "description" : "The ratio of the service provided",
       "exampleBoolean" : false
     }],
     "page" : {
@@ -877,24 +937,6 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "models-episodeofcare.html"
-        }],
-        "nameUrl" : "models-episodeofcare.html",
-        "title" : "Implementation with EpisodeOfCare",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "models-servicerequest.html"
-        }],
-        "nameUrl" : "models-servicerequest.html",
-        "title" : "Implementation with ServiceRequest",
         "generation" : "markdown"
       },
       {

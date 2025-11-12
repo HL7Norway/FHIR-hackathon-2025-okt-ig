@@ -1,4 +1,4 @@
-# OktMessage1 - v0.1.0
+# OktMessage1 - v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

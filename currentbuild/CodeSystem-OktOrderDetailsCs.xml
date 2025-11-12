@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem OktOrderDetailsCs</b></p><a name="OktOrderDetailsCs"> </a><a name="hcOktOrderDetailsCs"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">needsCaption<a name="OktOrderDetailsCs-needsCaption"> </a></td><td>Behov for mer informasjon i GUI</td><td>Indikator for om det er behov for mer informasjon i GUI</td></tr></table></div>
   </text>
   <url value="http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="OktOrderDetailsCodeSystem"/>
   <title value="Indikatorer for tjenesten"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-11-12T13:47:08+00:00"/>
+  <date value="2025-11-12T16:10:30+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>

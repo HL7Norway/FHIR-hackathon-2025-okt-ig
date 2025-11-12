@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OktServiceLevelCs</b></p><a name=\"OktServiceLevelCs\"> </a><a name=\"hcOktServiceLevelCs\"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">dps<a name=\"OktServiceLevelCs-dps\"> </a></td><td>Distriktspsykiatrisk senter</td><td>Distriktspsykiatrisk senter</td></tr></table></div>"
   },
   "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OktServiceLevelCodeSystem",
   "title" : "Tjenestenivå",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",

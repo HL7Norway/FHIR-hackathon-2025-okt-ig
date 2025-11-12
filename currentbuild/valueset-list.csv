@@ -1,5 +1,5 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-http://hl7.no/fhir/ig/okt/ValueSet/IplosVs,0.1.0,draft,,IplosValueSet,Individbasert pleie- og omsorgsstatistikk (IPLOS),"Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene.",,"Internal"
-http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs,0.1.0,draft,,OktOrderDetailsValueSet,Indikatorer for tjenesten,"Indikatorer med øvrige detaljer om tjenesten.",,"Internal"
-http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs,0.1.0,draft,,OktServiceLevelValueSet,Tjenestenivå,"Tjenestenivå for pleie- og omsorgstjenester.",,"Internal"
-http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs,0.1.0,draft,,OktStayTypeValueSet,Oppholdstype,"Oppholdstype for pleie- og omsorgstjenester.",,"Internal"
+http://hl7.no/fhir/ig/okt/ValueSet/IplosVs,0.2.0,draft,,IplosValueSet,Individbasert pleie- og omsorgsstatistikk (IPLOS),"Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som inneholder opplysninger om personer som mottar pleie- og omsorgstjenester fra kommunen. Registeret skal gi grunnlag for styring, planlegging, finansiering og kvalitetsforbedring av pleie- og omsorgstjenestene.",,"Internal"
+http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs,0.2.0,draft,,OktOrderDetailsValueSet,Indikatorer for tjenesten,"Indikatorer med øvrige detaljer om tjenesten.",,"Internal"
+http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs,0.2.0,draft,,OktServiceLevelValueSet,Tjenestenivå,"Tjenestenivå for pleie- og omsorgstjenester.",,"Internal"
+http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs,0.2.0,draft,,OktStayTypeValueSet,Oppholdstype,"Oppholdstype for pleie- og omsorgstjenester.",,"Internal"

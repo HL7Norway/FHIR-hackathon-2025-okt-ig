@@ -3,15 +3,15 @@
   "id" : "OktServiceLevelVs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OktServiceLevelVs</b></p><a name=\"OktServiceLevelVs\"> </a><a name=\"hcOktServiceLevelVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OktServiceLevelCs.html\"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OktServiceLevelVs</b></p><a name=\"OktServiceLevelVs\"> </a><a name=\"hcOktServiceLevelVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OktServiceLevelCs.html\"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span></li></ul></div>"
   },
   "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OktServiceLevelValueSet",
   "title" : "Tjenestenivå",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",

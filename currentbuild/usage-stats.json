@@ -1,6 +1,6 @@
 {
   "package": "no.hl7.fhir.okt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -11,9 +11,20 @@
       ]
     },
     {
-      "url": "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentQuantity",
-      "title": "Weekly Extent Quantity",
+      "url": "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio",
+      "title": "Weekly Extent Ratio",
       "types": [
+        "Ratio",
+        "string",
+        "Extension",
+        "Quantity",
+        "string",
+        "Extension",
+        "decimal",
+        "code",
+        "string",
+        "uri",
+        "code",
         "Quantity",
         "string",
         "Extension",
@@ -31,19 +42,13 @@
         "url": "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare",
         "title": "OktEpisodeOfCare"
       }
-    ],
-    "ServiceRequest": [
-      {
-        "url": "http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest",
-        "title": "OktServiceRequest"
-      }
     ]
   },
   "usage": {
     "http://hl7.no/fhir/ig/okt/StructureDefinition/ServiceDescriptionMarkdown": [
       "EpisodeOfCare"
     ],
-    "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentQuantity": [
+    "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio": [
       "EpisodeOfCare"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [

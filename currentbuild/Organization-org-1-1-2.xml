@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-1-1-2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization org-1-1-2</b></p><a name="org-1-1-2"> </a><a name="hcorg-1-1-2"> </a><p><b>name</b>: Sone Vest</p><p><b>partOf</b>: <a href="Organization-org-1-1.html">Organization Hjemmeboende</a></p></div>
+  </text>
+  <name value="Sone Vest"/>
+  <partOf>
+    <reference value="Organization/org-1-1"/>
+  </partOf>
+</Organization>

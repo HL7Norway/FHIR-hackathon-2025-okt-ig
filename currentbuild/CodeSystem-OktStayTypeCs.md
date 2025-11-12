@@ -1,4 +1,4 @@
-# Oppholdstype - v0.1.0
+# Oppholdstype - v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs | *Version*:0.1.0 |
+| *Official URL*:http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs | *Version*:0.2.0 |
 | Draft as of 2025-11-12 | *Computable Name*:OktStayTypeCodeSystem |
 
  
@@ -27,12 +27,12 @@ Oppholdstype for pleie- og omsorgstjenester.
   "resourceType" : "CodeSystem",
   "id" : "OktStayTypeCs",
   "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OktStayTypeCodeSystem",
   "title" : "Oppholdstype",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {
@@ -48,12 +48,17 @@ Oppholdstype for pleie- og omsorgstjenester.
   "description" : "Oppholdstype for pleie- og omsorgstjenester.",
   "caseSensitive" : false,
   "content" : "complete",
-  "count" : 1,
+  "count" : 2,
   "concept" : [
     {
       "code" : "dagopphold",
       "display" : "Dagopphold",
       "definition" : "Dagopphold i institusjon"
+    },
+    {
+      "code" : "korttidsopphold",
+      "display" : "Korttidsopphold",
+      "definition" : "Korttidsopphold i institusjon"
     }
   ]
 }

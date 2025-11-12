@@ -6,12 +6,23 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare OktEpisodeOfCare1</b></p><a name=\"OktEpisodeOfCare1\"> </a><a name=\"hcOktEpisodeOfCare1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OktEpisodeOfCare.html\">OktEpisodeOfCare</a></p></div><p><b>Weekly Extent Quantity</b>: 10</p><p><b>Utfyllende beskrivelse av tjenesten</b>: </p><div><p>Dette er en utfyllende beskrivelse av tjenesten</p>\n</div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.9151 1}\">Praktisk bistand - daglige gjøremål</span>, <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs dps}\">Distriktspsykiatrisk senter</span>, <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs dagopphold}\">Dagopphold</span>, <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs needsCaption}\">Behov for mer informasjon i GUI</span></p><p><b>patient</b>: <a href=\"Patient-Example.html\">Jane Doe  Female, DoB: 1980-01-01</a></p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare OktEpisodeOfCare1</b></p><a name=\"OktEpisodeOfCare1\"> </a><a name=\"hcOktEpisodeOfCare1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OktEpisodeOfCare.html\">OktEpisodeOfCare</a></p></div><p><b>Weekly Extent Ratio</b>: 10 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span>/1 wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p><p><b>Utfyllende beskrivelse av tjenesten</b>: </p><div><p>Dette er en utfyllende beskrivelse av tjenesten</p>\n</div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.9151 1}\">Praktisk bistand - daglige gjøremål</span>, <span title=\"Codes:{http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs dagopphold}\">Dagopphold</span></p><p><b>patient</b>: <a href=\"Patient-Example.html\">Jane Doe  Female, DoB: 1980-01-01</a></p><p><b>period</b>: 2025-01-01 --&gt; 2025-12-31</p></div>"
   },
   "extension" : [{
-    "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentQuantity",
-    "valueQuantity" : {
-      "value" : 10
+    "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio",
+    "valueRatio" : {
+      "numerator" : {
+        "value" : 10,
+        "unit" : "h",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "h"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "wk",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "wk"
+      }
     }
   },
   {
@@ -28,20 +39,8 @@
   },
   {
     "coding" : [{
-      "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs",
-      "code" : "dps"
-    }]
-  },
-  {
-    "coding" : [{
       "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs",
       "code" : "dagopphold"
-    }]
-  },
-  {
-    "coding" : [{
-      "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs",
-      "code" : "needsCaption"
     }]
   }],
   "patient" : {

@@ -1,4 +1,4 @@
-# OktEpisodeOfCare1 - v0.1.0
+# OktEpisodeOfCare1 - v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 Profile: [OktEpisodeOfCare](StructureDefinition-OktEpisodeOfCare.md)
 
-**Weekly Extent Quantity**: 10
+**Weekly Extent Ratio**: 10 h(Details: UCUM codeh = 'h')/1 wk(Details: UCUM codewk = 'wk')
 
 **Utfyllende beskrivelse av tjenesten**: 
 
@@ -16,7 +16,7 @@ Dette er en utfyllende beskrivelse av tjenesten
 
 **status**: Active
 
-**type**: Praktisk bistand - daglige gjøremål, Distriktspsykiatrisk senter, Dagopphold, Behov for mer informasjon i GUI
+**type**: Praktisk bistand - daglige gjøremål, Dagopphold
 
 **patient**: [Jane Doe Female, DoB: 1980-01-01](Patient-Example.md)
 
@@ -37,9 +37,20 @@ Dette er en utfyllende beskrivelse av tjenesten
   },
   "extension" : [
     {
-      "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentQuantity",
-      "valueQuantity" : {
-        "value" : 10
+      "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio",
+      "valueRatio" : {
+        "numerator" : {
+          "value" : 10,
+          "unit" : "h",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "h"
+        },
+        "denominator" : {
+          "value" : 1,
+          "unit" : "wk",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "wk"
+        }
       }
     },
     {
@@ -61,24 +72,8 @@ Dette er en utfyllende beskrivelse av tjenesten
     {
       "coding" : [
         {
-          "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs",
-          "code" : "dps"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
           "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs",
           "code" : "dagopphold"
-        }
-      ]
-    },
-    {
-      "coding" : [
-        {
-          "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs",
-          "code" : "needsCaption"
         }
       ]
     }

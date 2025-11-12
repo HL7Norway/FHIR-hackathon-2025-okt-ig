@@ -3,15 +3,15 @@
   "id" : "OktStayTypeVs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OktStayTypeVs</b></p><a name=\"OktStayTypeVs\"> </a><a name=\"hcOktStayTypeVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OktStayTypeCs.html\"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OktStayTypeVs</b></p><a name=\"OktStayTypeVs\"> </a><a name=\"hcOktStayTypeVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OktStayTypeCs.html\"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span></li></ul></div>"
   },
   "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OktStayTypeValueSet",
   "title" : "Oppholdstype",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [{
     "name" : "HL7 Norway",

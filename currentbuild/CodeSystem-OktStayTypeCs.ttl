@@ -11,18 +11,18 @@
   fhir:id [ fhir:v "OktStayTypeCs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OktStayTypeCs</b></p><a name=\"OktStayTypeCs\"> </a><a name=\"hcOktStayTypeCs\"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">dagopphold<a name=\"OktStayTypeCs-dagopphold\"> </a></td><td>Dagopphold</td><td>Dagopphold i institusjon</td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem OktStayTypeCs</b></p><a name=\"OktStayTypeCs\"> </a><a name=\"hcOktStayTypeCs\"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">dagopphold<a name=\"OktStayTypeCs-dagopphold\"> </a></td><td>Dagopphold</td><td>Dagopphold i institusjon</td></tr><tr><td style=\"white-space:nowrap\">korttidsopphold<a name=\"OktStayTypeCs-korttidsopphold\"> </a></td><td>Korttidsopphold</td><td>Korttidsopphold i institusjon</td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"^^xsd:anyURI ;
      fhir:l <http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "OktStayTypeCodeSystem"] ; # 
   fhir:title [ fhir:v "Oppholdstype"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-11-12T13:47:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-12T16:10:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -34,11 +34,15 @@
   fhir:description [ fhir:v "Oppholdstype for pleie- og omsorgstjenester."] ; # 
   fhir:caseSensitive [ fhir:v false] ; # 
   fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "dagopphold" ] ;
      fhir:display [ fhir:v "Dagopphold" ] ;
      fhir:definition [ fhir:v "Dagopphold i institusjon" ]
+  ] [
+     fhir:code [ fhir:v "korttidsopphold" ] ;
+     fhir:display [ fhir:v "Korttidsopphold" ] ;
+     fhir:definition [ fhir:v "Korttidsopphold i institusjon" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

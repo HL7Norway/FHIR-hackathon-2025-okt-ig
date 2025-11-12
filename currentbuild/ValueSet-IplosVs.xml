@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="IplosVs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet IplosVs</b></p><a name="IplosVs"> </a><a name="hcIplosVs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-IplosCs.html"><code>urn:oid:2.16.578.1.12.4.1.1.9151</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet IplosVs</b></p><a name="IplosVs"> </a><a name="hcIplosVs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-IplosCs.html"><code>urn:oid:2.16.578.1.12.4.1.1.9151</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span></li></ul></div>
   </text>
   <url value="http://hl7.no/fhir/ig/okt/ValueSet/IplosVs"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="IplosValueSet"/>
   <title value="Individbasert pleie- og omsorgsstatistikk (IPLOS)"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-11-12T13:47:08+00:00"/>
+  <date value="2025-11-12T16:10:30+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>

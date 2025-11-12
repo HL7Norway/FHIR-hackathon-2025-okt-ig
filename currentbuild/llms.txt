@@ -1,13 +1,11 @@
-# no.hl7.fhir.okt#0.1.0: null
+# no.hl7.fhir.okt#0.2.0: null
 
 ## Pages
 
 * [Home](index.md)
-* [Implementation with EpisodeOfCare](models-episodeofcare.md)
 * [Acknowledgements](acknowledgements.md)
 * [Artifacts Summary](artifacts.md)
 * [Terminology](terminology.md)
-* [Implementation with ServiceRequest](models-servicerequest.md)
 
 ## Resources
 
@@ -34,12 +32,11 @@
 ### Resource Profiles
 
 * [OktEpisodeOfCare](StructureDefinition-OktEpisodeOfCare.md)
-* [OktServiceRequest](StructureDefinition-OktServiceRequest.md)
 
 ### Extensions
 
 * [Utfyllende beskrivelse av tjenesten](StructureDefinition-ServiceDescriptionMarkdown.md)
-* [Weekly Extent Quantity](StructureDefinition-WeeklyExtentQuantity.md)
+* [Weekly Extent Ratio](StructureDefinition-WeeklyExtentRatio.md)
 
 ### ImplementationGuides
 
@@ -47,11 +44,17 @@
 
 ### StructureMaps
 
+* [OktMessageEpisodeOfCare](StructureMap-OktMessage-EpisodeOfCare.md)
 * [OktMessageServiceRequest](StructureMap-OktMessage-ServiceRequest.md)
 
 ### Examples
 
 * [OktMessage1 (Binary)](Binary-OktMessage1.md)
+* [OktMessage2 (Binary)](Binary-OktMessage2.md)
+* [OktEpisodeOfCare-Proto-19779998080-1 (EpisodeOfCare)](EpisodeOfCare-OktEpisodeOfCare-Proto-19779998080-1.md)
 * [OktEpisodeOfCare1 (EpisodeOfCare)](EpisodeOfCare-OktEpisodeOfCare1.md)
+* [Sone Vest, Kjeller (Organization)](Organization-org-1-1-2-6.md)
+* [Sone Vest (Organization)](Organization-org-1-1-2.md)
+* [Hjemmeboende (Organization)](Organization-org-1-1.md)
+* [Test kommune (Organization)](Organization-org-1.md)
 * [Example (Patient)](Patient-Example.md)
-* [OktServiceRequest1 (ServiceRequest)](ServiceRequest-OktServiceRequest1.md)

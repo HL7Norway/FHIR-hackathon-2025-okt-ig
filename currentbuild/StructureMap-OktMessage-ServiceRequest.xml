@@ -24,11 +24,11 @@
 </span></pre></div>
   </text>
   <url value="http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="OktMessageServiceRequest"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-11-12T13:47:08+00:00"/>
+  <date value="2025-11-12T16:10:30+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>

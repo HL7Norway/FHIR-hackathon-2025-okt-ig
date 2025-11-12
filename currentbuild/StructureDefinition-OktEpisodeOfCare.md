@@ -1,4 +1,4 @@
-# OktEpisodeOfCare - v0.1.0
+# OktEpisodeOfCare - v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare | *Version*:0.1.0 |
+| *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare | *Version*:0.2.0 |
 | Draft as of 2025-11-12 | *Computable Name*:OktEpisodeOfCare |
 
  
@@ -16,7 +16,7 @@ Profile on EpisodeOfCare for OktMessage
 
 **Usages:**
 
-* Examples for this Profile: [EpisodeOfCare/OktEpisodeOfCare1](EpisodeOfCare-OktEpisodeOfCare1.md)
+* Examples for this Profile: [EpisodeOfCare/OktEpisodeOfCare-Proto-19779998080-1](EpisodeOfCare-OktEpisodeOfCare-Proto-19779998080-1.md) and [EpisodeOfCare/OktEpisodeOfCare1](EpisodeOfCare-OktEpisodeOfCare1.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/no.hl7.fhir.okt|current/StructureDefinition/OktEpisodeOfCare)
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-OktEpisodeOfCare.csv
   "resourceType" : "StructureDefinition",
   "id" : "OktEpisodeOfCare",
   "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OktEpisodeOfCare",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {
@@ -99,18 +99,18 @@ Other representations of profile: [CSV](StructureDefinition-OktEpisodeOfCare.csv
         }
       },
       {
-        "id" : "EpisodeOfCare.extension:weeklyExtentQuantity",
+        "id" : "EpisodeOfCare.extension:weeklyExtentRatio",
         "path" : "EpisodeOfCare.extension",
-        "sliceName" : "weeklyExtentQuantity",
-        "short" : "Sett hvis tjenesten gis i hjemmet; hvor mange timer per uke tjenesten gis",
-        "definition" : "Sett hvis tjenesten gis i hjemmet; hvor mange timer per uke tjenesten gis",
+        "sliceName" : "weeklyExtentRatio",
+        "short" : "Sett hvis tjenesten gis i hjemmet; hvor mange timer i en periode tjenesten gis",
+        "definition" : "Sett hvis tjenesten gis i hjemmet; hvor mange timer i en periode tjenesten gis",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
             "code" : "Extension",
             "profile" : [
-              "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentQuantity"
+              "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio"
             ]
           }
         ]
@@ -130,7 +130,8 @@ Other representations of profile: [CSV](StructureDefinition-OktEpisodeOfCare.csv
               "http://hl7.no/fhir/ig/okt/StructureDefinition/ServiceDescriptionMarkdown"
             ]
           }
-        ]
+        ],
+        "mustSupport" : true
       },
       {
         "id" : "EpisodeOfCare.type",
@@ -163,23 +164,6 @@ Other representations of profile: [CSV](StructureDefinition-OktEpisodeOfCare.csv
         }
       },
       {
-        "id" : "EpisodeOfCare.type:serviceLevel",
-        "path" : "EpisodeOfCare.type",
-        "sliceName" : "serviceLevel",
-        "short" : "Kode for tjenestenivå",
-        "definition" : "Kode for tjenestenivå",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "EpisodeOfCare.type:serviceLevel.coding",
-        "path" : "EpisodeOfCare.type.coding",
-        "binding" : {
-          "strength" : "required",
-          "valueSet" : "http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs"
-        }
-      },
-      {
         "id" : "EpisodeOfCare.type:stayType",
         "path" : "EpisodeOfCare.type",
         "sliceName" : "stayType",
@@ -197,23 +181,9 @@ Other representations of profile: [CSV](StructureDefinition-OktEpisodeOfCare.csv
         }
       },
       {
-        "id" : "EpisodeOfCare.type:needsCaption",
-        "path" : "EpisodeOfCare.type",
-        "sliceName" : "needsCaption",
-        "short" : "Indikator for om det er behov for mer informasjon i GUI",
-        "definition" : "Indikator for om det er behov for mer informasjon i GUI",
-        "min" : 0,
-        "max" : "1"
-      },
-      {
-        "id" : "EpisodeOfCare.type:needsCaption.coding",
-        "path" : "EpisodeOfCare.type.coding",
-        "min" : 1,
-        "max" : "1",
-        "patternCoding" : {
-          "system" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs",
-          "code" : "needsCaption"
-        }
+        "id" : "EpisodeOfCare.managingOrganization",
+        "path" : "EpisodeOfCare.managingOrganization",
+        "short" : "Referanse til organisasjon (avdeling i kommunen) som har ansvar for tjenesten"
       },
       {
         "id" : "EpisodeOfCare.period",

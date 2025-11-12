@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktOrderDetailsCodeSystem",
       "title" : "Indikatorer for tjenesten",
@@ -13,7 +13,7 @@
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktServiceLevelCodeSystem",
       "title" : "Tjenestenivå",
@@ -24,7 +24,7 @@
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktStayTypeCodeSystem",
       "title" : "Oppholdstype",
@@ -58,59 +58,6 @@
       "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
     },
     {
-      "url" : "http://hl7.org/fhir/request-intent",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestIntent",
-      "title" : "RequestIntent",
-      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.114"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent"
-    },
-    {
-      "url" : "http://hl7.org/fhir/request-priority",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestPriority",
-      "title" : "RequestPriority",
-      "description" : "Identifies the level of importance to be assigned to actioning the request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.116"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
-    },
-    {
-      "url" : "http://hl7.org/fhir/request-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestStatus",
-      "title" : "RequestStatus",
-      "description" : "Codes identifying the lifecycle stage of a request.",
-      "oids" : ["2.16.840.1.113883.4.642.4.112"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
-    },
-    {
-      "url" : "http://snomed.info/sct",
-      "version" : null,
-      "status" : "active",
-      "name" : "SNOMED_CT",
-      "title" : "SNOMED CT (all versions)",
-      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-      "oids" : ["2.16.840.1.113883.6.96"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes"
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
       "version" : "1.1.1",
       "status" : "active",
@@ -135,18 +82,6 @@
       "http://hl7.org/fhir/R4/valueset-episodeofcare-type.html" : "Episode of care type"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "RoleCode",
-      "title" : "RoleCode",
-      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
-      "oids" : ["2.16.840.1.113883.5.111"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/6.5.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
-    },
-    {
       "url" : "urn:ietf:bcp:47",
       "version" : "2.0.1",
       "status" : "active",
@@ -160,7 +95,7 @@
     },
     {
       "url" : "urn:oid:2.16.578.1.12.4.1.1.9151",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "IplosCodeSystem",
       "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",

@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Organization",
+  "id" : "org-1-1-2",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-1-1-2</b></p><a name=\"org-1-1-2\"> </a><a name=\"hcorg-1-1-2\"> </a><p><b>name</b>: Sone Vest</p><p><b>partOf</b>: <a href=\"Organization-org-1-1.html\">Organization Hjemmeboende</a></p></div>"
+  },
+  "name" : "Sone Vest",
+  "partOf" : {
+    "reference" : "Organization/org-1-1"
+  }
+}

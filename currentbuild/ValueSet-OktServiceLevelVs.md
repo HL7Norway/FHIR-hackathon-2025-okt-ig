@@ -1,4 +1,4 @@
-# Tjenestenivå - v0.1.0
+# Tjenestenivå - v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs | *Version*:0.1.0 |
+| *Official URL*:http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs | *Version*:0.2.0 |
 | Draft as of 2025-11-12 | *Computable Name*:OktServiceLevelValueSet |
 
  
@@ -16,12 +16,11 @@ Tjenestenivå for pleie- og omsorgstjenester.
 
  **References** 
 
-* [OktEpisodeOfCare](StructureDefinition-OktEpisodeOfCare.md)
-* [OktServiceRequest](StructureDefinition-OktServiceRequest.md)
+This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
 
 ### Logical Definition (CLD)
 
-* Include all codes defined in [`http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs`](CodeSystem-OktServiceLevelCs.md)version 📦0.1.0
+* Include all codes defined in [`http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs`](CodeSystem-OktServiceLevelCs.md)version 📦0.2.0
 
  
 
@@ -49,12 +48,12 @@ Tjenestenivå for pleie- og omsorgstjenester.
   "resourceType" : "ValueSet",
   "id" : "OktServiceLevelVs",
   "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OktServiceLevelValueSet",
   "title" : "Tjenestenivå",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

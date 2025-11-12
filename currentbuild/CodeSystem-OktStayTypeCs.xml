@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="OktStayTypeCs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem OktStayTypeCs</b></p><a name="OktStayTypeCs"> </a><a name="hcOktStayTypeCs"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">dagopphold<a name="OktStayTypeCs-dagopphold"> </a></td><td>Dagopphold</td><td>Dagopphold i institusjon</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem OktStayTypeCs</b></p><a name="OktStayTypeCs"> </a><a name="hcOktStayTypeCs"> </a><p>This case-insensitive code system <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">dagopphold<a name="OktStayTypeCs-dagopphold"> </a></td><td>Dagopphold</td><td>Dagopphold i institusjon</td></tr><tr><td style="white-space:nowrap">korttidsopphold<a name="OktStayTypeCs-korttidsopphold"> </a></td><td>Korttidsopphold</td><td>Korttidsopphold i institusjon</td></tr></table></div>
   </text>
   <url value="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="OktStayTypeCodeSystem"/>
   <title value="Oppholdstype"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2025-11-12T13:47:08+00:00"/>
+  <date value="2025-11-12T16:10:30+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -23,10 +23,15 @@
   <description value="Oppholdstype for pleie- og omsorgstjenester."/>
   <caseSensitive value="false"/>
   <content value="complete"/>
-  <count value="1"/>
+  <count value="2"/>
   <concept>
     <code value="dagopphold"/>
     <display value="Dagopphold"/>
     <definition value="Dagopphold i institusjon"/>
+  </concept>
+  <concept>
+    <code value="korttidsopphold"/>
+    <display value="Korttidsopphold"/>
+    <definition value="Korttidsopphold i institusjon"/>
   </concept>
 </CodeSystem>

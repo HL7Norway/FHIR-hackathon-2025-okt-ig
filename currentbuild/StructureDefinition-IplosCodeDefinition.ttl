@@ -27,11 +27,11 @@
      fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/IplosCodeDefinition"^^xsd:anyURI ;
      fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/IplosCodeDefinition>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "IplosCodeDefinition"] ; # 
   fhir:title [ fhir:v "Logical Model for IplosCode"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-12T13:47:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-12T16:10:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;

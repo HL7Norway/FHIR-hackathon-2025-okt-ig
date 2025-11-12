@@ -3,119 +3,119 @@
     "id" : "OktOrderDetailsCs",
     "type" : "CodeSystem",
     "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktOrderDetailsCodeSystem"
   },
   {
     "id" : "OktServiceLevelCs",
     "type" : "CodeSystem",
     "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktServiceLevelCodeSystem"
   },
   {
     "id" : "OktStayTypeCs",
     "type" : "CodeSystem",
     "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktStayTypeCodeSystem"
   },
   {
     "id" : "no.hl7.fhir.okt",
     "type" : "ImplementationGuide",
     "url" : "http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OKTonFHIR"
   },
   {
     "id" : "IplosCodeDefinition",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/IplosCodeDefinition",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "IplosCodeDefinition"
   },
   {
     "id" : "OktEpisodeOfCare",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktEpisodeOfCare"
   },
   {
     "id" : "OktEvent",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEvent",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktEvent"
   },
   {
     "id" : "OktMessage",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktMessage"
-  },
-  {
-    "id" : "OktServiceRequest",
-    "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest",
-    "version" : "0.1.0",
-    "name" : "OktServiceRequest"
   },
   {
     "id" : "ServiceDescriptionMarkdown",
     "type" : "StructureDefinition",
     "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/ServiceDescriptionMarkdown",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "ServiceDescriptionMarkdown"
   },
   {
-    "id" : "WeeklyExtentQuantity",
+    "id" : "WeeklyExtentRatio",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentQuantity",
-    "version" : "0.1.0",
-    "name" : "WeeklyExtentQuantity"
+    "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio",
+    "version" : "0.2.0",
+    "name" : "WeeklyExtentRatio"
+  },
+  {
+    "id" : "OktMessage-EpisodeOfCare",
+    "type" : "StructureMap",
+    "url" : "http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare",
+    "version" : "0.2.0",
+    "name" : "OktMessageEpisodeOfCare"
   },
   {
     "id" : "OktMessage-ServiceRequest",
     "type" : "StructureMap",
     "url" : "http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-ServiceRequest",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktMessageServiceRequest"
   },
   {
     "id" : "IplosVs",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ig/okt/ValueSet/IplosVs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "IplosValueSet"
   },
   {
     "id" : "OktOrderDetailsVs",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktOrderDetailsValueSet"
   },
   {
     "id" : "OktServiceLevelVs",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktServiceLevelValueSet"
   },
   {
     "id" : "OktStayTypeVs",
     "type" : "ValueSet",
     "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "OktStayTypeValueSet"
   },
   {
     "id" : "IplosCs",
     "type" : "CodeSystem",
     "url" : "urn:oid:2.16.578.1.12.4.1.1.9151",
-    "version" : "0.1.0",
+    "version" : "0.2.0",
     "name" : "IplosCodeSystem"
   }
 ]

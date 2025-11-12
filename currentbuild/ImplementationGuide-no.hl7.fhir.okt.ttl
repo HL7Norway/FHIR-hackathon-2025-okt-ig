@@ -17,10 +17,10 @@
      fhir:v "http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt"^^xsd:anyURI ;
      fhir:l <http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "OKTonFHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-12T13:47:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-12T16:10:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -1508,6 +1508,28 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/okt/EpisodeOfCare/OktEpisodeOfCare-Proto-19779998080-1> ;
+         fhir:reference [ fhir:v "EpisodeOfCare/OktEpisodeOfCare-Proto-19779998080-1" ]
+       ] ;
+       fhir:name [ fhir:v "OktEpisodeOfCare-Proto-19779998080-1" ] ;
+       fhir:description [ fhir:v "An example OktMessage implemented as a EpisodeOfCare patient 19779998080 service 1" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare"^^xsd:anyURI ;
+         fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "EpisodeOfCare"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <http://hl7.no/fhir/ig/okt/EpisodeOfCare/OktEpisodeOfCare1> ;
          fhir:reference [ fhir:v "EpisodeOfCare/OktEpisodeOfCare1" ]
        ] ;
@@ -1552,6 +1574,58 @@
      ] [
        fhir:extension ( [
          fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "application/fhir+json"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Binary"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/okt/Binary/OktMessage2> ;
+         fhir:reference [ fhir:v "Binary/OktMessage2" ]
+       ] ;
+       fhir:name [ fhir:v "OktMessage2" ] ;
+       fhir:description [ fhir:v "An example OktMessage with a service on hold" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage"^^xsd:anyURI ;
+         fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureMap"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare> ;
+         fhir:reference [ fhir:v "StructureMap/OktMessage-EpisodeOfCare" ]
+       ] ;
+       fhir:name [ fhir:v "OktMessageEpisodeOfCare" ] ;
+       fhir:description [ fhir:v "Map OktMessage to EpisodeOfCare" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
            fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
            fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
          ] ;
@@ -1569,49 +1643,6 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest> ;
-         fhir:reference [ fhir:v "StructureDefinition/OktServiceRequest" ]
-       ] ;
-       fhir:name [ fhir:v "OktServiceRequest" ] ;
-       fhir:description [ fhir:v "Profile on ServiceRequest for OktMessage" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ServiceRequest"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://hl7.no/fhir/ig/okt/ServiceRequest/OktServiceRequest1> ;
-         fhir:reference [ fhir:v "ServiceRequest/OktServiceRequest1" ]
-       ] ;
-       fhir:name [ fhir:v "OktServiceRequest1" ] ;
-       fhir:description [ fhir:v "An example OktMessage implemented as a ServiceRequest" ] ;
-       fhir:example [
-         a fhir:Canonical ;
-         fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest"^^xsd:anyURI ;
-         fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest>
        ]
      ] [
        fhir:extension ( [
@@ -1654,6 +1685,86 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/okt/Organization/org-1> ;
+         fhir:reference [ fhir:v "Organization/org-1" ]
+       ] ;
+       fhir:name [ fhir:v "org-1" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/okt/Organization/org-1-1> ;
+         fhir:reference [ fhir:v "Organization/org-1-1" ]
+       ] ;
+       fhir:name [ fhir:v "org-1-1" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/okt/Organization/org-1-1-2> ;
+         fhir:reference [ fhir:v "Organization/org-1-1-2" ]
+       ] ;
+       fhir:name [ fhir:v "org-1-1-2" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Organization"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/okt/Organization/org-1-1-2-6> ;
+         fhir:reference [ fhir:v "Organization/org-1-1-2-6" ]
+       ] ;
+       fhir:name [ fhir:v "org-1-1-2-6" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v true
        ]
      ] [
        fhir:extension ( [
@@ -1751,11 +1862,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentQuantity> ;
-         fhir:reference [ fhir:v "StructureDefinition/WeeklyExtentQuantity" ]
+         fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio> ;
+         fhir:reference [ fhir:v "StructureDefinition/WeeklyExtentRatio" ]
        ] ;
-       fhir:name [ fhir:v "Weekly Extent Quantity" ] ;
-       fhir:description [ fhir:v "The quantity of the service provided on a weekly basis" ] ;
+       fhir:name [ fhir:v "Weekly Extent Ratio" ] ;
+       fhir:description [ fhir:v "The ratio of the service provided" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1798,44 +1909,6 @@
            fhir:l fhir:index.html
          ] ;
          fhir:title [ fhir:v "Home" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
-             fhir:v "models-episodeofcare.html"^^xsd:anyURI ;
-             fhir:l fhir:models-episodeofcare.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "models-episodeofcare.html"^^xsd:anyURI ;
-           fhir:l fhir:models-episodeofcare.html
-         ] ;
-         fhir:title [ fhir:v "Implementation with EpisodeOfCare" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
-             fhir:v "models-servicerequest.html"^^xsd:anyURI ;
-             fhir:l fhir:models-servicerequest.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "models-servicerequest.html"^^xsd:anyURI ;
-           fhir:l fhir:models-servicerequest.html
-         ] ;
-         fhir:title [ fhir:v "Implementation with ServiceRequest" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

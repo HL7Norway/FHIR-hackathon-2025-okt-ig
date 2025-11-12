@@ -1,4 +1,4 @@
-# Logical Model for OktEvent - v0.1.0
+# Logical Model for OktEvent - v0.2.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/OktEvent | *Version*:0.1.0 |
+| *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/OktEvent | *Version*:0.2.0 |
 | Draft as of 2025-11-12 | *Computable Name*:OktEvent |
 
  
@@ -43,11 +43,11 @@ Other representations of profile: [CSV](StructureDefinition-OktEvent.csv), [Exce
     }
   ],
   "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEvent",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OktEvent",
   "title" : "Logical Model for OktEvent",
   "status" : "draft",
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

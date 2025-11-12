@@ -1,4 +1,4 @@
-# Home - v0.1.0
+# Home - v0.2.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,12 +7,14 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt | *Version*:0.1.0 |
+| *Official URL*:http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt | *Version*:0.2.0 |
 | Draft as of 2025-11-12 | *Computable Name*:OKTonFHIR |
 
 ### Introduction
 
 This implementation guide gives suggestions for how the [OKT API](https://utviklerportal.nhn.no/informasjonstjenester/felles-journalloeft/okt-prototype) can be implemented with FHIR resources.
+
+See also [EpisodeOfCare in VKP](https://simplifier.net/guide/velferdsteknologiskknutepunktvkp-r4/episodeofcare?version=current).
 
 ### Prototype API models
 
@@ -22,26 +24,24 @@ The [`OktEvent`](StructureDefinition-OktEvent.md) model contains a person identi
 
 #### OktMessage
 
-Mapping [`OktMessage`](StructureDefinition-OktMessage.md) has several FHIR resource candidates:
-
-* ServiceRequest
-* EpisodeOfCare
-* CarePlan
+Having discussed several alternatives, including ServiceRequest and CarePlan, the recommendation from the hackathon is to map [`OktMessage`](StructureDefinition-OktMessage.md) to [`EpisodeOfCare`](StructureDefinition-OktEpisodeOfCare.md) resources.
 
 #### OktStatus
 
 `OktStatus` returns the number of services for a person identifier. This can be mapped to a search with the `_summary=count` parameter, which returns a `searchset` Bundle without entries, with the `total` field showing the number of results.
 
-`ResultMessage` can be represented as aBundle of type `batch-response` or `transaction-response`.
+`ResultMessage` can be represented as a Bundle of type `batch-response` or `transaction-response`.
 
-### Summary tables
+### Mapping to FHIR resources
+
+See [the profile on EpisodeOfCare for OKT](StructureDefinition-OktEpisodeOfCare.md).
 
 #### OktEvent
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| personIdentifier | ServiceRequest.subject1 | EpisodeOfCare.patient1 | CarePlan.subject |
-| oktMessages | ServiceRequest2 | EpisodeOfCare2 | CarePlan.activity |
+| | |
+| :--- | :--- |
+| personIdentifier | EpisodeOfCare.patient1 |
+| oktMessages | EpisodeOfCare2 |
 
 Notes:
 
@@ -50,23 +50,38 @@ Notes:
 
 #### OktMessage
 
-| | | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| endDate1 | string | occurrencePeriod.end (dateTime) | period.end (dateTime) | period.end (dateTime) |
-| iplosCode | IplosCodeDefinition | code (CodeableConcept) | type (CodeableConcept) | activity.detail.code (CodeableConcept) |
-| needsCaption | boolean | orderDetail (CodeableConcept) | type (CodeableConcept) | category (CodeableConcept) |
-| serviceDescription | string | note (Annotation) text (markdown) | extension (markdown) | description (string) |
-| serviceLevel | string | category (CodeableConcept) | type (CodeableConcept) | category (CodeableConcept) |
-| startDate | string | occurrencePeriod.start (dateTime) | period.start (dateTime) | period.start (dateTime) |
-| stayType | string | category (CodeableConcept) | type (CodeableConcept) | category (CodeableConcept) |
-| temporaryCessation | boolean | status (code) = on-hold | status (code) = on-hold | status (code) = on-hold |
-| weeklyExtent | string | quantityRatio (Ratio2) | extension (Ratio) | activity.detail.quantity (SimpleQuantity)3 |
+Draft mapping table before the hackathon:
+
+| | | |
+| :--- | :--- | :--- |
+| endDate1 | string | period.end (dateTime) |
+| iplosCode | IplosCodeDefinition | type (CodeableConcept) |
+| needsCaption | boolean | type (CodeableConcept) |
+| serviceDescription | string | extension (markdown) |
+| serviceLevel | string | type (CodeableConcept) |
+| startDate | string | period.start (dateTime) |
+| stayType | string | type (CodeableConcept) |
+| temporaryCessation | boolean | status (code) = on-hold |
+| weeklyExtent | string | extension (Ratio2) |
 
 Notes:
 
 1 If a set end date implies that the service has ended, then the profile can restrict with FHIRPath that status = completed implies that occurrencePeriod.end exists.
  2 Denominator (Quantity) fixed to 1 week in the profile.
- 3 SimpleQuantity doesn't allow declaring that the amount is a weekly amount.
+
+Changes during the hackathon:
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| endDate1 | string | period.end (dateTime) |   |
+| iplosCode | IplosCodeDefinition | type (CodeableConcept) |   |
+| needsCaption | boolean | type (CodeableConcept) | "Must Support" on serviceDescription; meta.lastUpdated |
+| serviceDescription | string | extension (markdown) |   |
+| serviceLevel | string | type (CodeableConcept) | managingOrganization (Reference) |
+| startDate | string | period.start (dateTime) |   |
+| stayType | string | type (CodeableConcept) |   |
+| temporaryCessation | boolean | status (code) = on-hold |   |
+| weeklyExtent | string | extension (Ratio) | Was Quantity in the profile, changed to Ratio |
 
 #### OktStatus
 
@@ -74,6 +89,22 @@ Notes:
 | :--- | :--- | :--- |
 | oktStatus | integer | Bundle.total |
 | personIdentifier | string | Bundle.link with relation "self" |
+
+### API Interactions
+
+For the FHIR API, `/` is the service base URL.
+
+| | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+|   | GET /okt-events/{pid} | OktEvent |   | GET /EpisodeOfCare?patient={pid} | Bundle (searchset) of EpisodeOfCare |
+| OktEvent | POST /okt-events | {error} | ResultMessage | Bundle (transaction) of EpisodeOfCare | POST / | Bundle (transaction-response) with OperationOutcome |
+|   | GET /okt-status/{pid} | OktStatus |   | GET /EpisodeOfCare?patient={pid}&_summary=count | Bundle (searchset) without entries |
+
+### Transformation
+
+The [OktMessage-EpisodeOfCare](StructureMap-OktMessage-EpisodeOfCare.md) StructureMap demonstrates how a structure map can be used to transform the proprietary model to a FHIR resource. The transformation can be executed with the validator CLI, after the IG is built:
+
+`java -jar validator_cli.jar fsh-generated/resources/Binary-OktMessage1.json -output result.xml -transform http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare -ig output`
 
 
 
@@ -84,10 +115,10 @@ Notes:
   "resourceType" : "ImplementationGuide",
   "id" : "no.hl7.fhir.okt",
   "url" : "http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "name" : "OKTonFHIR",
   "status" : "draft",
-  "date" : "2025-11-12T13:47:08+00:00",
+  "date" : "2025-11-12T16:10:30+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {
@@ -933,6 +964,20 @@ Notes:
           }
         ],
         "reference" : {
+          "reference" : "EpisodeOfCare/OktEpisodeOfCare-Proto-19779998080-1"
+        },
+        "name" : "OktEpisodeOfCare-Proto-19779998080-1",
+        "description" : "An example OktMessage implemented as a EpisodeOfCare patient 19779998080 service 1",
+        "exampleCanonical" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "EpisodeOfCare"
+          }
+        ],
+        "reference" : {
           "reference" : "EpisodeOfCare/OktEpisodeOfCare1"
         },
         "name" : "OktEpisodeOfCare1",
@@ -960,6 +1005,38 @@ Notes:
       {
         "extension" : [
           {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+            "valueCode" : "application/fhir+json"
+          },
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Binary"
+          }
+        ],
+        "reference" : {
+          "reference" : "Binary/OktMessage2"
+        },
+        "name" : "OktMessage2",
+        "description" : "An example OktMessage with a service on hold",
+        "exampleCanonical" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureMap"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureMap/OktMessage-EpisodeOfCare"
+        },
+        "name" : "OktMessageEpisodeOfCare",
+        "description" : "Map OktMessage to EpisodeOfCare",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureMap"
           }
@@ -970,34 +1047,6 @@ Notes:
         "name" : "OktMessageServiceRequest",
         "description" : "Map OktMessage to ServiceRequest",
         "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/OktServiceRequest"
-        },
-        "name" : "OktServiceRequest",
-        "description" : "Profile on ServiceRequest for OktMessage",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "ServiceRequest"
-          }
-        ],
-        "reference" : {
-          "reference" : "ServiceRequest/OktServiceRequest1"
-        },
-        "name" : "OktServiceRequest1",
-        "description" : "An example OktMessage implemented as a ServiceRequest",
-        "exampleCanonical" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest"
       },
       {
         "extension" : [
@@ -1026,6 +1075,58 @@ Notes:
         "name" : "Oppholdstype",
         "description" : "Oppholdstype for pleie- og omsorgstjenester.",
         "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/org-1"
+        },
+        "name" : "org-1",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/org-1-1"
+        },
+        "name" : "org-1-1",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/org-1-1-2"
+        },
+        "name" : "org-1-1-2",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Organization"
+          }
+        ],
+        "reference" : {
+          "reference" : "Organization/org-1-1-2-6"
+        },
+        "name" : "org-1-1-2-6",
+        "exampleBoolean" : true
       },
       {
         "extension" : [
@@ -1091,10 +1192,10 @@ Notes:
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/WeeklyExtentQuantity"
+          "reference" : "StructureDefinition/WeeklyExtentRatio"
         },
-        "name" : "Weekly Extent Quantity",
-        "description" : "The quantity of the service provided on a weekly basis",
+        "name" : "Weekly Extent Ratio",
+        "description" : "The ratio of the service provided",
         "exampleBoolean" : false
       }
     ],
@@ -1118,28 +1219,6 @@ Notes:
           ],
           "nameUrl" : "index.html",
           "title" : "Home",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "models-episodeofcare.html"
-            }
-          ],
-          "nameUrl" : "models-episodeofcare.html",
-          "title" : "Implementation with EpisodeOfCare",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "models-servicerequest.html"
-            }
-          ],
-          "nameUrl" : "models-servicerequest.html",
-          "title" : "Implementation with ServiceRequest",
           "generation" : "markdown"
         },
         {

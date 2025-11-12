@@ -6,10 +6,10 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide no.hl7.fhir.okt</b></p><a name="no.hl7.fhir.okt"> </a><a name="hcno.hl7.fhir.okt"> </a><h2>OKTonFHIR</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt</pre></div>
   </text>
   <url value="http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt"/>
-  <version value="0.1.0"/>
+  <version value="0.2.0"/>
   <name value="OKTonFHIR"/>
   <status value="draft"/>
-  <date value="2025-11-12T13:47:08+00:00"/>
+  <date value="2025-11-12T16:10:30+00:00"/>
   <publisher value="HL7 Norway"/>
   <contact>
     <name value="HL7 Norway"/>
@@ -550,6 +550,17 @@
         <valueString value="EpisodeOfCare"/>
       </extension>
       <reference>
+        <reference value="EpisodeOfCare/OktEpisodeOfCare-Proto-19779998080-1"/>
+      </reference>
+      <name value="OktEpisodeOfCare-Proto-19779998080-1"/>
+      <description value="An example OktMessage implemented as a EpisodeOfCare patient 19779998080 service 1"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EpisodeOfCare"/>
+      </extension>
+      <reference>
         <reference value="EpisodeOfCare/OktEpisodeOfCare1"/>
       </reference>
       <name value="OktEpisodeOfCare1"/>
@@ -571,6 +582,31 @@
       <exampleCanonical value="http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage"/>
     </resource>
     <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format">
+        <valueCode value="application/fhir+json"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Binary"/>
+      </extension>
+      <reference>
+        <reference value="Binary/OktMessage2"/>
+      </reference>
+      <name value="OktMessage2"/>
+      <description value="An example OktMessage with a service on hold"/>
+      <exampleCanonical value="http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/OktMessage-EpisodeOfCare"/>
+      </reference>
+      <name value="OktMessageEpisodeOfCare"/>
+      <description value="Map OktMessage to EpisodeOfCare"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureMap"/>
       </extension>
@@ -580,28 +616,6 @@
       <name value="OktMessageServiceRequest"/>
       <description value="Map OktMessage to ServiceRequest"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/OktServiceRequest"/>
-      </reference>
-      <name value="OktServiceRequest"/>
-      <description value="Profile on ServiceRequest for OktMessage"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/OktServiceRequest1"/>
-      </reference>
-      <name value="OktServiceRequest1"/>
-      <description value="An example OktMessage implemented as a ServiceRequest"/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/okt/StructureDefinition/OktServiceRequest"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -624,6 +638,46 @@
       <name value="Oppholdstype"/>
       <description value="Oppholdstype for pleie- og omsorgstjenester."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/org-1"/>
+      </reference>
+      <name value="org-1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/org-1-1"/>
+      </reference>
+      <name value="org-1-1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/org-1-1-2"/>
+      </reference>
+      <name value="org-1-1-2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/org-1-1-2-6"/>
+      </reference>
+      <name value="org-1-1-2-6"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -674,10 +728,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/WeeklyExtentQuantity"/>
+        <reference value="StructureDefinition/WeeklyExtentRatio"/>
       </reference>
-      <name value="Weekly Extent Quantity"/>
-      <description value="The quantity of the service provided on a weekly basis"/>
+      <name value="Weekly Extent Ratio"/>
+      <description value="The ratio of the service provided"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -693,22 +747,6 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="models-episodeofcare.html"/>
-        </extension>
-        <nameUrl value="models-episodeofcare.html"/>
-        <title value="Implementation with EpisodeOfCare"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="models-servicerequest.html"/>
-        </extension>
-        <nameUrl value="models-servicerequest.html"/>
-        <title value="Implementation with ServiceRequest"/>
         <generation value="markdown"/>
       </page>
       <page>

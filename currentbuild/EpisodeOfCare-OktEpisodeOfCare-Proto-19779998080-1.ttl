@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/okt/EpisodeOfCare/OktEpisodeOfCare-Proto-19779998080-1> a fhir:EpisodeOfCare ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OktEpisodeOfCare-Proto-19779998080-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare"^^xsd:anyURI ;
+       fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare OktEpisodeOfCare-Proto-19779998080-1</b></p><a name=\"OktEpisodeOfCare-Proto-19779998080-1\"> </a><a name=\"hcOktEpisodeOfCare-Proto-19779998080-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OktEpisodeOfCare.html\">OktEpisodeOfCare</a></p></div><p><b>Weekly Extent Ratio</b>: 15 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span>/1 wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.9151 2}\">Praktisk bistand - opplæring - daglige gjøremål</span></p><p><b>patient</b>: <a href=\"Patient-Example.html\">Jane Doe  Female, DoB: 1980-01-01</a></p><p><b>managingOrganization</b>: <a href=\"Organization-org-1-1-2-6.html\">Organization Sone Vest, Kjeller</a></p><p><b>period</b>: 2020-06-22 --&gt; (ongoing)</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio"^^xsd:anyURI ;
+       fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio>
+     ] ;
+     fhir:value [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "h" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "h" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "wk" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "wk" ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:oid:2.16.578.1.12.4.1.1.9151"^^xsd:anyURI ;
+         fhir:l <urn:oid:2.16.578.1.12.4.1.1.9151>
+       ] ;
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "Praktisk bistand - opplæring - daglige gjøremål" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:l <http://hl7.no/fhir/ig/okt/Patient/Example> ;
+     fhir:reference [ fhir:v "Patient/Example" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:l <http://hl7.no/fhir/ig/okt/Organization/org-1-1-2-6> ;
+     fhir:reference [ fhir:v "Organization/org-1-1-2-6" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-06-22"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

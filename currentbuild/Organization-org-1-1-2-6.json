@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Organization",
+  "id" : "org-1-1-2-6",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-1-1-2-6</b></p><a name=\"org-1-1-2-6\"> </a><a name=\"hcorg-1-1-2-6\"> </a><p><b>name</b>: Sone Vest, Kjeller</p><p><b>partOf</b>: <a href=\"Organization-org-1-1-2.html\">Organization Sone Vest</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: 23101675</td></tr></table></div>"
+  },
+  "name" : "Sone Vest, Kjeller",
+  "partOf" : {
+    "reference" : "Organization/org-1-1-2"
+  },
+  "contact" : [{
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "23101675"
+    }]
+  }]
+}

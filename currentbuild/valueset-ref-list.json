@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/okt/ValueSet/IplosVs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "IplosValueSet",
       "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",
@@ -10,12 +10,11 @@
       "systems" : ["urn:oid:2.16.578.1.12.4.1.1.9151"],
       "uses" : {
       },
-      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest",
       "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktOrderDetailsValueSet",
       "title" : "Indikatorer for tjenesten",
@@ -24,20 +23,16 @@
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktServiceLevelValueSet",
       "title" : "Tjenestenivå",
       "description" : "Tjenestenivå for pleie- og omsorgstjenester.",
-      "systems" : ["http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"],
-      "uses" : {
-      },
-      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest",
-      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
+      "systems" : ["http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"]
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktStayTypeValueSet",
       "title" : "Oppholdstype",
@@ -45,7 +40,6 @@
       "systems" : ["http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"],
       "uses" : {
       },
-      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest",
       "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
     }
   ]

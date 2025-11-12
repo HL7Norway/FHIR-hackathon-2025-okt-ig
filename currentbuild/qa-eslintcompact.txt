@@ -1,8 +1,16 @@
 OKTonFHIR
 =========================================
 
-/__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-OktEpisodeOfCare.json: line 1, col 49817, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated (BUSINESSRULE)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-1-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-1-1-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-1-1-2-6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+/__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/StructureDefinition-OktEpisodeOfCare.json: line 1, col 39660, Info - The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated (BUSINESSRULE)
+/__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/input/resources/StructureMap-OktMessage-EpisodeOfCare.xml: line 1, col 11332, Warning - The target path descrExtensionVariableValueMd.value refers to the path Extension.value[x].value which could be a reference to multiple elements (markdown.value, markdown.value). No further checking can be performed (INVALID)
+/__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/input/resources/StructureMap-OktMessage-EpisodeOfCare.xml: line 1, col 11426, Info - The source statement doesn't assign a variable to the source - check that this is what is intended (INVALID)
+/__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/input/resources/StructureMap-OktMessage-EpisodeOfCare.xml: line 1, col 11811, Info - The source statement doesn't assign a variable to the source - check that this is what is intended (INVALID)
+/__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/input/resources/StructureMap-OktMessage-EpisodeOfCare.xml: line 1, col 12477, Info - The source statement doesn't assign a variable to the source - check that this is what is intended (INVALID)
 /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/input/resources/StructureMap-OktMessage-ServiceRequest.xml: line 1, col 6466, Info - The source statement doesn't assign a variable to the source - check that this is what is intended (INVALID)
 
-err = 0, warn = 0, info = 2
+err = 0, warn = 5, info = 5
 IG Publisher Version: 2.0.26

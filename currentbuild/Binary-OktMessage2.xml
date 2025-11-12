@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="OktMessage2"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2hsNy5uby9maGlyL2lnL29rdC9TdHJ1Y3R1cmVEZWZpbml0aW9uL09rdE1lc3NhZ2UiLAogICJzdGFydERhdGUiOiAiMjAyNS0xMC0wMSIsCiAgImVuZERhdGUiOiAiMjAyNS0xMC0zMSIsCiAgIm5lZWRzQ2FwdGlvbiI6IHRydWUsCiAgInNlcnZpY2VEZXNjcmlwdGlvbiI6ICJIamVtbWV0amVuZXN0ZSAtIHPDpXJzdGVsbCIsCiAgInNlcnZpY2VMZXZlbCI6ICJOaXbDpSAxIiwKICAic3RheVR5cGUiOiAia29ydHRpZHNvcHBob2xkIiwKICAidGVtcG9yYXJ5Q2Vzc2F0aW9uIjogdHJ1ZSwKICAid2Vla2x5RXh0ZW50IjogIjIuNSIKfQo="/>
+</Binary>

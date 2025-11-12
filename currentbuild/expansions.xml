@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="817453a9-d0a7-44be-8378-281c513fad79"/>
+  <id value="a67ed3c6-8c96-466a-bfb7-63870fffef38"/>
   <meta>
-    <lastUpdated value="2025-11-12T13:47:08.415+00:00"/>
+    <lastUpdated value="2025-11-12T16:10:30.172+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,9 +15,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-IplosCs.html">codesystem Individbasert pleie- og omsorgsstatistikk (IPLOS) v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-IplosCs.html">codesystem Individbasert pleie- og omsorgsstatistikk (IPLOS) v0.2.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="urn:oid:2.16.578.1.12.4.1.1.9151|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="urn:oid:2.16.578.1.12.4.1.1.9151|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 25 concepts</p>
@@ -54,12 +54,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;1&quot;, &quot;display&quot;: &quot;Praktisk bistand - daglige gjøremål&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;1&quot;, &quot;display&quot;: &quot;Praktisk bistand - daglige gjøremål&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;display value=&quot;Praktisk bistand - daglige gjøremål&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;display value=&quot;Praktisk bistand - daglige gjøremål&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -75,12 +75,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;2&quot;, &quot;display&quot;: &quot;Praktisk bistand - opplæring - daglige gjøremål&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;2&quot;, &quot;display&quot;: &quot;Praktisk bistand - opplæring - daglige gjøremål&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;2&quot;&gt;&lt;display value=&quot;Praktisk bistand - opplæring - daglige gjøremål&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;2&quot;&gt;&lt;display value=&quot;Praktisk bistand - opplæring - daglige gjøremål&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -96,12 +96,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;3&quot;, &quot;display&quot;: &quot;Praktisk bistand - brukerstyrt - personlig assistanse&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;3&quot;, &quot;display&quot;: &quot;Praktisk bistand - brukerstyrt - personlig assistanse&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;3&quot;&gt;&lt;display value=&quot;Praktisk bistand - brukerstyrt - personlig assistanse&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;3&quot;&gt;&lt;display value=&quot;Praktisk bistand - brukerstyrt - personlig assistanse&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -117,12 +117,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;4&quot;, &quot;display&quot;: &quot;Dagaktivitetstilbud&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;4&quot;, &quot;display&quot;: &quot;Dagaktivitetstilbud&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;4&quot;&gt;&lt;display value=&quot;Dagaktivitetstilbud&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;4&quot;&gt;&lt;display value=&quot;Dagaktivitetstilbud&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -138,12 +138,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;5&quot;, &quot;display&quot;: &quot;Matombringing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;5&quot;, &quot;display&quot;: &quot;Matombringing&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;5&quot;&gt;&lt;display value=&quot;Matombringing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;5&quot;&gt;&lt;display value=&quot;Matombringing&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -159,12 +159,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;6&quot;, &quot;display&quot;: &quot;Trygghetsalarm&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;6&quot;, &quot;display&quot;: &quot;Trygghetsalarm&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;6&quot;&gt;&lt;display value=&quot;Trygghetsalarm&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;6&quot;&gt;&lt;display value=&quot;Trygghetsalarm&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -180,12 +180,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;7&quot;, &quot;display&quot;: &quot;Avlastning utenfor institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;7&quot;, &quot;display&quot;: &quot;Avlastning utenfor institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;7&quot;&gt;&lt;display value=&quot;Avlastning utenfor institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;7&quot;&gt;&lt;display value=&quot;Avlastning utenfor institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -201,12 +201,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;8&quot;, &quot;display&quot;: &quot;Avlastning i institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;8&quot;, &quot;display&quot;: &quot;Avlastning i institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;8&quot;&gt;&lt;display value=&quot;Avlastning i institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;8&quot;&gt;&lt;display value=&quot;Avlastning i institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -222,12 +222,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;9&quot;, &quot;display&quot;: &quot;Støttekontakt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;9&quot;, &quot;display&quot;: &quot;Støttekontakt&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;9&quot;&gt;&lt;display value=&quot;Støttekontakt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;9&quot;&gt;&lt;display value=&quot;Støttekontakt&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -243,12 +243,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;11&quot;, &quot;display&quot;: &quot;Omsorgsstønad&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;11&quot;, &quot;display&quot;: &quot;Omsorgsstønad&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;11&quot;&gt;&lt;display value=&quot;Omsorgsstønad&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;11&quot;&gt;&lt;display value=&quot;Omsorgsstønad&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -264,12 +264,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;14&quot;, &quot;display&quot;: &quot;Bruk av tvang psykisk utviklingshemning – planlagte tiltak&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;14&quot;, &quot;display&quot;: &quot;Bruk av tvang psykisk utviklingshemning – planlagte tiltak&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;14&quot;&gt;&lt;display value=&quot;Bruk av tvang psykisk utviklingshemning – planlagte tiltak&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;14&quot;&gt;&lt;display value=&quot;Bruk av tvang psykisk utviklingshemning – planlagte tiltak&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -285,12 +285,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;15&quot;, &quot;display&quot;: &quot;Helsetjenester i hjemmet&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;15&quot;, &quot;display&quot;: &quot;Helsetjenester i hjemmet&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;15&quot;&gt;&lt;display value=&quot;Helsetjenester i hjemmet&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;15&quot;&gt;&lt;display value=&quot;Helsetjenester i hjemmet&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -306,12 +306,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;17&quot;, &quot;display&quot;: &quot;Dagopphold i institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;17&quot;, &quot;display&quot;: &quot;Dagopphold i institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;17&quot;&gt;&lt;display value=&quot;Dagopphold i institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;17&quot;&gt;&lt;display value=&quot;Dagopphold i institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -327,12 +327,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;18&quot;, &quot;display&quot;: &quot;Tidsbegrenset opphold - utredning/behandling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;18&quot;, &quot;display&quot;: &quot;Tidsbegrenset opphold - utredning/behandling&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;18&quot;&gt;&lt;display value=&quot;Tidsbegrenset opphold - utredning/behandling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;18&quot;&gt;&lt;display value=&quot;Tidsbegrenset opphold - utredning/behandling&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -348,12 +348,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;19&quot;, &quot;display&quot;: &quot;Tidsbegrenset opphold - habilitering/rehabilitering&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;19&quot;, &quot;display&quot;: &quot;Tidsbegrenset opphold - habilitering/rehabilitering&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;19&quot;&gt;&lt;display value=&quot;Tidsbegrenset opphold - habilitering/rehabilitering&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;19&quot;&gt;&lt;display value=&quot;Tidsbegrenset opphold - habilitering/rehabilitering&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -369,12 +369,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;20&quot;, &quot;display&quot;: &quot;Tidsbegrenset opphold - annet&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;20&quot;, &quot;display&quot;: &quot;Tidsbegrenset opphold - annet&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;20&quot;&gt;&lt;display value=&quot;Tidsbegrenset opphold - annet&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;20&quot;&gt;&lt;display value=&quot;Tidsbegrenset opphold - annet&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -390,12 +390,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;21&quot;, &quot;display&quot;: &quot;Langtidsopphold i institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;21&quot;, &quot;display&quot;: &quot;Langtidsopphold i institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;21&quot;&gt;&lt;display value=&quot;Langtidsopphold i institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;21&quot;&gt;&lt;display value=&quot;Langtidsopphold i institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -411,12 +411,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;22&quot;, &quot;display&quot;: &quot;Nattopphold i institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;22&quot;, &quot;display&quot;: &quot;Nattopphold i institusjon&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;22&quot;&gt;&lt;display value=&quot;Nattopphold i institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;22&quot;&gt;&lt;display value=&quot;Nattopphold i institusjon&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -432,12 +432,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;23&quot;, &quot;display&quot;: &quot;Bruk av tvang psykisk utviklingshemning – nødsituasjoner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;23&quot;, &quot;display&quot;: &quot;Bruk av tvang psykisk utviklingshemning – nødsituasjoner&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;23&quot;&gt;&lt;display value=&quot;Bruk av tvang psykisk utviklingshemning – nødsituasjoner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;23&quot;&gt;&lt;display value=&quot;Bruk av tvang psykisk utviklingshemning – nødsituasjoner&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -453,12 +453,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;24&quot;, &quot;display&quot;: &quot;Helsehjelp med tvang&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;24&quot;, &quot;display&quot;: &quot;Helsehjelp med tvang&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;24&quot;&gt;&lt;display value=&quot;Helsehjelp med tvang&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;24&quot;&gt;&lt;display value=&quot;Helsehjelp med tvang&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -474,12 +474,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;25&quot;, &quot;display&quot;: &quot;Kommunal øyeblikkelig hjelp - døgnopphold&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;25&quot;, &quot;display&quot;: &quot;Kommunal øyeblikkelig hjelp - døgnopphold&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;25&quot;&gt;&lt;display value=&quot;Kommunal øyeblikkelig hjelp - døgnopphold&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;25&quot;&gt;&lt;display value=&quot;Kommunal øyeblikkelig hjelp - døgnopphold&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -495,12 +495,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;26&quot;, &quot;display&quot;: &quot;Lokaliseringsteknologi (GPS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;26&quot;, &quot;display&quot;: &quot;Lokaliseringsteknologi (GPS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;26&quot;&gt;&lt;display value=&quot;Lokaliseringsteknologi (GPS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;26&quot;&gt;&lt;display value=&quot;Lokaliseringsteknologi (GPS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -516,12 +516,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;27&quot;, &quot;display&quot;: &quot;Elektronisk medisineringsstøtte&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;27&quot;, &quot;display&quot;: &quot;Elektronisk medisineringsstøtte&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;27&quot;&gt;&lt;display value=&quot;Elektronisk medisineringsstøtte&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;27&quot;&gt;&lt;display value=&quot;Elektronisk medisineringsstøtte&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -537,12 +537,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;28&quot;, &quot;display&quot;: &quot;Digitalt tilsyn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;28&quot;, &quot;display&quot;: &quot;Digitalt tilsyn&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;28&quot;&gt;&lt;display value=&quot;Digitalt tilsyn&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;28&quot;&gt;&lt;display value=&quot;Digitalt tilsyn&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -558,12 +558,12 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;29&quot;, &quot;display&quot;: &quot;Bolig som kommunen disponerer for helse- og omsorgsformål&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;29&quot;, &quot;display&quot;: &quot;Bolig som kommunen disponerer for helse- og omsorgsformål&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;29&quot;&gt;&lt;display value=&quot;Bolig som kommunen disponerer for helse- og omsorgsformål&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.578.1.12.4.1.1.9151&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;29&quot;&gt;&lt;display value=&quot;Bolig som kommunen disponerer for helse- og omsorgsformål&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -571,15 +571,15 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ig/okt/ValueSet/IplosVs"/>
-        <version value="0.1.0"/>
+        <version value="0.2.0"/>
         <name value="IplosValueSet"/>
         <title value="Individbasert pleie- og omsorgsstatistikk (IPLOS)"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-12T13:47:08+00:00"/>
+        <date value="2025-11-12T16:10:30+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:2cf03f6b-0e78-4a3e-8801-801b7500b3c6"/>
-          <timestamp value="2025-11-12T13:48:21+00:00"/>
+          <identifier value="urn:uuid:1ef48f8b-f835-4b95-ac68-72a2408cec4c"/>
+          <timestamp value="2025-11-12T16:11:49+00:00"/>
           <total value="25"/>
           <offset value="0"/>
           <parameter>
@@ -600,7 +600,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="urn:oid:2.16.578.1.12.4.1.1.9151|0.1.0"/>
+            <valueUri value="urn:oid:2.16.578.1.12.4.1.1.9151|0.2.0"/>
           </parameter>
           <contains>
             <system value="urn:oid:2.16.578.1.12.4.1.1.9151"/>
@@ -740,9 +740,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-OktOrderDetailsCs.html">codesystem Indikatorer for tjenesten v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-OktOrderDetailsCs.html">codesystem Indikatorer for tjenesten v0.2.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -775,12 +775,12 @@
                 <td>Behov for mer informasjon i GUI</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;needsCaption&quot;, &quot;display&quot;: &quot;Behov for mer informasjon i GUI&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;needsCaption&quot;, &quot;display&quot;: &quot;Behov for mer informasjon i GUI&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;needsCaption&quot;&gt;&lt;display value=&quot;Behov for mer informasjon i GUI&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;needsCaption&quot;&gt;&lt;display value=&quot;Behov for mer informasjon i GUI&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -788,15 +788,15 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs"/>
-        <version value="0.1.0"/>
+        <version value="0.2.0"/>
         <name value="OktOrderDetailsValueSet"/>
         <title value="Indikatorer for tjenesten"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-12T13:47:08+00:00"/>
+        <date value="2025-11-12T16:10:30+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:337f7f5d-6c66-4790-a6fa-bd404d6e4d1d"/>
-          <timestamp value="2025-11-12T13:48:21+00:00"/>
+          <identifier value="urn:uuid:5d5a2b40-a757-4beb-87da-9f1ec431fb79"/>
+          <timestamp value="2025-11-12T16:11:49+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -817,7 +817,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs|0.1.0"/>
+            <valueUri value="http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs|0.2.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs"/>
@@ -837,9 +837,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-OktServiceLevelCs.html">codesystem Tjenestenivå v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-OktServiceLevelCs.html">codesystem Tjenestenivå v0.2.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 1 concepts</p>
@@ -872,12 +872,12 @@
                 <td>Distriktspsykiatrisk senter</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;dps&quot;, &quot;display&quot;: &quot;Distriktspsykiatrisk senter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;dps&quot;, &quot;display&quot;: &quot;Distriktspsykiatrisk senter&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;dps&quot;&gt;&lt;display value=&quot;Distriktspsykiatrisk senter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;dps&quot;&gt;&lt;display value=&quot;Distriktspsykiatrisk senter&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -885,15 +885,15 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ig/okt/ValueSet/OktServiceLevelVs"/>
-        <version value="0.1.0"/>
+        <version value="0.2.0"/>
         <name value="OktServiceLevelValueSet"/>
         <title value="Tjenestenivå"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-12T13:47:08+00:00"/>
+        <date value="2025-11-12T16:10:30+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:436cc059-95e9-45e7-ac8d-75a24a3abdf6"/>
-          <timestamp value="2025-11-12T13:48:21+00:00"/>
+          <identifier value="urn:uuid:93a488f2-7419-4c9d-85d7-a42dbe1d7f31"/>
+          <timestamp value="2025-11-12T16:11:49+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -914,7 +914,7 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs|0.1.0"/>
+            <valueUri value="http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs|0.2.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"/>
@@ -934,12 +934,12 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-OktStayTypeCs.html">codesystem Oppholdstype v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-OktStayTypeCs.html">codesystem Oppholdstype v0.2.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs|0.1.0" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
-            <p>This value set contains 1 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <table class="codes" data-fhir="generated">
               <tr>
                 <td>
@@ -969,12 +969,32 @@
                 <td>Dagopphold</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;dagopphold&quot;, &quot;display&quot;: &quot;Dagopphold&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;dagopphold&quot;, &quot;display&quot;: &quot;Dagopphold&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;dagopphold&quot;&gt;&lt;display value=&quot;Dagopphold&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;dagopphold&quot;&gt;&lt;display value=&quot;Dagopphold&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs-korttidsopphold"> </a>
+                  <code>http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-OktStayTypeCs.html#OktStayTypeCs-korttidsopphold">korttidsopphold</a>
+                </td>
+                <td>Korttidsopphold</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;korttidsopphold&quot;, &quot;display&quot;: &quot;Korttidsopphold&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;korttidsopphold&quot;&gt;&lt;display value=&quot;Korttidsopphold&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -982,16 +1002,16 @@
           </div>
         </text>
         <url value="http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs"/>
-        <version value="0.1.0"/>
+        <version value="0.2.0"/>
         <name value="OktStayTypeValueSet"/>
         <title value="Oppholdstype"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-12T13:47:08+00:00"/>
+        <date value="2025-11-12T16:10:30+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:927b5b67-7c44-488b-846a-4a2d79afa3fb"/>
-          <timestamp value="2025-11-12T13:48:21+00:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:b21959b4-ce0e-48f6-9139-a91f488c92d9"/>
+          <timestamp value="2025-11-12T16:11:49+00:00"/>
+          <total value="2"/>
           <offset value="0"/>
           <parameter>
             <name value="displayLanguage"/>
@@ -1011,12 +1031,17 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs|0.1.0"/>
+            <valueUri value="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs|0.2.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"/>
             <code value="dagopphold"/>
             <display value="Dagopphold"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"/>
+            <code value="korttidsopphold"/>
+            <display value="Korttidsopphold"/>
           </contains>
         </expansion>
       </ValueSet>

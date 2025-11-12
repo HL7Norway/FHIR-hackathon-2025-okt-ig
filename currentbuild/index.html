@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home -  v0.1.0</title>
+    <title>Home -  v0.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.0 - ci-build
 
 
             </span>
@@ -81,12 +81,6 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
-  </li>
-  <li>
-    <a href="models-episodeofcare.html">Implementation with EpisodeOfCare</a>
-  </li>
-  <li>
-    <a href="models-servicerequest.html">Implementation with ServiceRequest</a>
   </li>
   <li>
     <a href="terminology.html">Terminology</a>
@@ -129,7 +123,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">OKTonFHIR - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/okt/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">OKTonFHIR - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/okt/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -144,7 +138,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt|0.1.0"/></span>
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt|0.2.0"/></span>
       </td>
     </tr>
 
@@ -188,13 +182,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#prototype-api-models" id="markdown-toc-prototype-api-models">Prototype API models</a></li>
-  <li><a href="#summary-tables" id="markdown-toc-summary-tables">Summary tables</a></li>
+  <li><a href="#mapping-to-fhir-resources" id="markdown-toc-mapping-to-fhir-resources">Mapping to FHIR resources</a></li>
+  <li><a href="#api-interactions" id="markdown-toc-api-interactions">API Interactions</a></li>
+  <li><a href="#transformation" id="markdown-toc-transformation">Transformation</a></li>
 </ul>
 
 </div>
 <h3 id="introduction">Introduction</h3>
 
 <p>This implementation guide gives suggestions for how the <a href="https://utviklerportal.nhn.no/informasjonstjenester/felles-journalloeft/okt-prototype">OKT API</a> can be implemented with FHIR resources.</p>
+
+<p>See also <a href="https://simplifier.net/guide/velferdsteknologiskknutepunktvkp-r4/episodeofcare?version=current">EpisodeOfCare in VKP</a>.</p>
 
 <h3 id="prototype-api-models">Prototype API models</h3>
 
@@ -204,21 +202,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="oktmessage">OktMessage</h4>
 
-<p>Mapping <a href="StructureDefinition-OktMessage.html"><code class="language-plaintext highlighter-rouge">OktMessage</code></a> has several FHIR resource candidates:</p>
-
-<ul>
-  <li>ServiceRequest</li>
-  <li>EpisodeOfCare</li>
-  <li>CarePlan</li>
-</ul>
+<p>Having discussed several alternatives, including ServiceRequest and CarePlan, the recommendation from the hackathon is to map <a href="StructureDefinition-OktMessage.html"><code class="language-plaintext highlighter-rouge">OktMessage</code></a> to <a href="StructureDefinition-OktEpisodeOfCare.html"><code class="language-plaintext highlighter-rouge">EpisodeOfCare</code></a> resources.</p>
 
 <h4 id="oktstatus">OktStatus</h4>
 
 <p><code class="language-plaintext highlighter-rouge">OktStatus</code> returns the number of services for a person identifier. This can be mapped to a search with the <code class="language-plaintext highlighter-rouge">_summary=count</code> parameter, which returns a <code class="language-plaintext highlighter-rouge">searchset</code> Bundle without entries, with the <code class="language-plaintext highlighter-rouge">total</code> field showing the number of results.</p>
 
-<p><code class="language-plaintext highlighter-rouge">ResultMessage</code> can be represented as aBundle of type <code class="language-plaintext highlighter-rouge">batch-response</code> or <code class="language-plaintext highlighter-rouge">transaction-response</code>.</p>
+<p><code class="language-plaintext highlighter-rouge">ResultMessage</code> can be represented as a Bundle of type <code class="language-plaintext highlighter-rouge">batch-response</code> or <code class="language-plaintext highlighter-rouge">transaction-response</code>.</p>
 
-<h3 id="summary-tables">Summary tables</h3>
+<h3 id="mapping-to-fhir-resources">Mapping to FHIR resources</h3>
+
+<p>See <a href="StructureDefinition-OktEpisodeOfCare.html">the profile on EpisodeOfCare for OKT</a>.</p>
 
 <h4 id="oktevent-1">OktEvent</h4>
 
@@ -226,23 +220,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <thead>
     <tr>
       <th>OktEvent field</th>
-      <th>ServiceRequest field</th>
       <th>EpisodeOfCare field</th>
-      <th>CarePlan field</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>personIdentifier</td>
-      <td>ServiceRequest.subject<sup>1</sup></td>
       <td>EpisodeOfCare.patient<sup>1</sup></td>
-      <td>CarePlan.subject</td>
     </tr>
     <tr>
       <td>oktMessages</td>
-      <td>ServiceRequest<sup>2</sup></td>
       <td>EpisodeOfCare<sup>2</sup></td>
-      <td>CarePlan.activity</td>
     </tr>
   </tbody>
 </table>
@@ -254,79 +242,61 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="oktmessage-1">OktMessage</h4>
 
+<p>Draft mapping table before the hackathon:</p>
+
 <table class="grid">
   <thead>
     <tr>
       <th>OktMessage field</th>
       <th>OKT data type</th>
-      <th>FHIR ServiceRequest field and data type</th>
       <th>FHIR EpisodeOfCare field and data type</th>
-      <th>FHIR CarePlan field and data type</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>endDate<sup>1</sup></td>
       <td>string</td>
-      <td>occurrencePeriod.end (dateTime)</td>
-      <td>period.end (dateTime)</td>
       <td>period.end (dateTime)</td>
     </tr>
     <tr>
       <td>iplosCode</td>
       <td>IplosCodeDefinition</td>
-      <td>code (CodeableConcept)</td>
       <td>type (CodeableConcept)</td>
-      <td>activity.detail.code  (CodeableConcept)</td>
     </tr>
     <tr>
       <td>needsCaption</td>
       <td>boolean</td>
-      <td>orderDetail (CodeableConcept)</td>
       <td>type (CodeableConcept)</td>
-      <td>category (CodeableConcept)</td>
     </tr>
     <tr>
       <td>serviceDescription</td>
       <td>string</td>
-      <td>note (Annotation) text (markdown)</td>
       <td>extension (markdown)</td>
-      <td>description (string)</td>
     </tr>
     <tr>
       <td>serviceLevel</td>
       <td>string</td>
-      <td>category (CodeableConcept)</td>
       <td>type (CodeableConcept)</td>
-      <td>category (CodeableConcept)</td>
     </tr>
     <tr>
       <td>startDate</td>
       <td>string</td>
-      <td>occurrencePeriod.start (dateTime)</td>
-      <td>period.start (dateTime)</td>
       <td>period.start (dateTime)</td>
     </tr>
     <tr>
       <td>stayType</td>
       <td>string</td>
-      <td>category (CodeableConcept)</td>
       <td>type (CodeableConcept)</td>
-      <td>category (CodeableConcept)</td>
     </tr>
     <tr>
       <td>temporaryCessation</td>
       <td>boolean</td>
       <td>status (code) = on-hold</td>
-      <td>status (code) = on-hold</td>
-      <td>status (code) = on-hold</td>
     </tr>
     <tr>
       <td>weeklyExtent</td>
       <td>string</td>
-      <td>quantityRatio (Ratio<sup>2</sup>)</td>
-      <td>extension (Ratio)</td>
-      <td>activity.detail.quantity (SimpleQuantity)<sup>3</sup></td>
+      <td>extension (Ratio<sup>2</sup>)</td>
     </tr>
   </tbody>
 </table>
@@ -334,8 +304,76 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Notes:</p>
 
 <p><sup>1</sup> If a set end date implies that the service has ended, then the profile can restrict with FHIRPath that status = completed implies that occurrencePeriod.end exists.<br />
-<sup>2</sup> Denominator (Quantity) fixed to 1 week in the profile.<br />
-<sup>3</sup> SimpleQuantity doesn't allow declaring that the amount is a weekly amount.</p>
+<sup>2</sup> Denominator (Quantity) fixed to 1 week in the profile.<br /></p>
+
+<p>Changes during the hackathon:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>OktMessage field</th>
+      <th>OKT data type</th>
+      <th>FHIR EpisodeOfCare field and data type</th>
+      <th>Changes from EHiN hackathon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>endDate<sup>1</sup></td>
+      <td>string</td>
+      <td>period.end (dateTime)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>iplosCode</td>
+      <td>IplosCodeDefinition</td>
+      <td>type (CodeableConcept)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>needsCaption</td>
+      <td>boolean</td>
+      <td>type (CodeableConcept)</td>
+      <td>"Must Support" on serviceDescription; meta.lastUpdated</td>
+    </tr>
+    <tr>
+      <td>serviceDescription</td>
+      <td>string</td>
+      <td>extension (markdown)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>serviceLevel</td>
+      <td>string</td>
+      <td>type (CodeableConcept)</td>
+      <td>managingOrganization (Reference)</td>
+    </tr>
+    <tr>
+      <td>startDate</td>
+      <td>string</td>
+      <td>period.start (dateTime)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>stayType</td>
+      <td>string</td>
+      <td>type (CodeableConcept)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>temporaryCessation</td>
+      <td>boolean</td>
+      <td>status (code) = on-hold</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>weeklyExtent</td>
+      <td>string</td>
+      <td>extension (Ratio)</td>
+      <td>Was Quantity in the profile, changed to Ratio</td>
+    </tr>
+  </tbody>
+</table>
 
 <h4 id="oktstatus-1">OktStatus</h4>
 
@@ -361,6 +399,55 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="api-interactions">API Interactions</h3>
+
+<p>For the FHIR API, <code class="language-plaintext highlighter-rouge">/</code> is the service base URL.</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th><em>OKT API</em> request body</th>
+      <th><em>OKT API</em> URL</th>
+      <th><em>OKT API</em> response body</th>
+      <th><em>OKT FHIR API</em> request body</th>
+      <th><em>OKT FHIR API</em> URL</th>
+      <th><em>OKT FHIR API</em> response body</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>GET /okt-events/{pid}</td>
+      <td>OktEvent</td>
+      <td> </td>
+      <td>GET /EpisodeOfCare?patient={pid}</td>
+      <td>Bundle (searchset) of EpisodeOfCare</td>
+    </tr>
+    <tr>
+      <td>OktEvent</td>
+      <td>POST /okt-events</td>
+      <td>{error} | ResultMessage</td>
+      <td>Bundle (transaction) of EpisodeOfCare</td>
+      <td>POST /</td>
+      <td>Bundle (transaction-response) with OperationOutcome</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>GET /okt-status/{pid}</td>
+      <td>OktStatus</td>
+      <td> </td>
+      <td>GET /EpisodeOfCare?patient={pid}&amp;_summary=count</td>
+      <td>Bundle (searchset) without entries</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="transformation">Transformation</h3>
+
+<p>The <a href="StructureMap-OktMessage-EpisodeOfCare.html">OktMessage-EpisodeOfCare</a> StructureMap demonstrates how a structure map can be used to transform the proprietary model to a FHIR resource. The transformation can be executed with the validator CLI, after the IG is built:</p>
+
+<p><code class="language-plaintext highlighter-rouge">java -jar validator_cli.jar fsh-generated/resources/Binary-OktMessage1.json -output result.xml -transform http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare -ig output</code></p>
+
 
 
 
@@ -380,7 +467,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.no/">HL7 Norway</a>.  Package no.hl7.fhir.okt#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 12, 2025 13:47+0000">2025-11-12</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.no/">HL7 Norway</a>.  Package no.hl7.fhir.okt#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 12, 2025 16:10+0000">2025-11-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

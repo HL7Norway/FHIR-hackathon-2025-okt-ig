@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktOrderDetailsCodeSystem",
       "title" : "Indikatorer for tjenesten",
@@ -13,7 +13,7 @@
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktServiceLevelCodeSystem",
       "title" : "Tjenestenivå",
@@ -24,7 +24,7 @@
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "OktStayTypeCodeSystem",
       "title" : "Oppholdstype",
@@ -35,7 +35,7 @@
     },
     {
       "url" : "urn:oid:2.16.578.1.12.4.1.1.9151",
-      "version" : "0.1.0",
+      "version" : "0.2.0",
       "status" : "draft",
       "name" : "IplosCodeSystem",
       "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",

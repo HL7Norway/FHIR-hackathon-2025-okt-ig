@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>OktMessageEpisodeOfCare -  v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4.15"}
+    h3,h4,h5,h6{--heading-prefix:"4.15"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="acknowledgements.html">Acknowledgements</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>OktMessageEpisodeOfCare</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">OKTonFHIR - Local Development build (v0.2.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://hl7.no/fhir/ig/okt/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureMap-OktMessage-EpisodeOfCare.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureMap-OktMessage-EpisodeOfCare.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureMap-OktMessage-EpisodeOfCare.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+
+  <h2 id="root">StructureMap: OktMessageEpisodeOfCare
+(Experimental)
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare|0.2.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-11-12
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">OktMessageEpisodeOfCare</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+<p>
+<p>Map OktMessage to EpisodeOfCare</p>
+
+</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<!--  <p>
+  Formats: <a href="StructureMap-OktMessage-EpisodeOfCare.xml.html">XML</a>, <a href="StructureMap-OktMessage-EpisodeOfCare.json.html">JSON</a>, <a href="StructureMap-OktMessage-EpisodeOfCare.ttl.html">Turtle</a>
+  </p>-->
+
+  
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="OktMessage-EpisodeOfCare"> </a><a name="hcOktMessage-EpisodeOfCare"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare<span style="color: navy">&quot; = &quot;</span>OktMessageEpisodeOfCare<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Map OktMessage to EpisodeOfCare</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-OktMessage.html" title="Logical Model for OktMessage">http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage</a><span style="color: navy">&quot; </span><b>alias </b>NhnOktMessage <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="StructureDefinition-OktEpisodeOfCare.html" title="OktEpisodeOfCare">http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare</a><span style="color: navy">&quot; </span><b>alias </b>FhirEpisodeOfCare <b>as </b><b>target</b>
+
+<b>group </b>OktMessageToEpisodeOfCare<span style="color: navy">(</span><b>source</b> <span style="color: maroon">source</span><span style="color: navy"> : </span>NhnOktMessage, <b>target</b> <span style="color: maroon">target</span><span style="color: navy"> : </span>FhirEpisodeOfCare<span style="color: navy">)</span><b> &lt;&lt;types&gt;&gt;</b><span style="color: navy"> {
+</span>  source.weeklyExtent<b> as </b><span style="color: maroon">weeklyExtent</span><span style="color: navy"><b> -&gt; </b></span> target.extension = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Extension'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">weeklyExtentExtensionVariable</span><span style="color: navy">, </span> weeklyExtentExtensionVariable.url = <span style="color: blue">'http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio'</span><span style="color: navy">, </span> weeklyExtentExtensionVariable.value = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Ratio'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">weeklyExtentExtensionVariableValueRatio</span><span style="color: navy">, </span> weeklyExtentExtensionVariableValueRatio.numerator = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Quantity'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">numeratorVariable</span><span style="color: navy">, </span> numeratorVariable.value = <span style="color: maroon">weeklyExtent</span><span style="color: navy">, </span> numeratorVariable.unit = <span style="color: blue">'h'</span><span style="color: navy">, </span> numeratorVariable.system = <span style="color: blue">'http://unitsofmeasure.org'</span><span style="color: navy">, </span> numeratorVariable.code = <span style="color: blue">'h'</span><span style="color: navy">, </span> weeklyExtentExtensionVariableValueRatio.denominator = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Quantity'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">denominatorVariable</span><span style="color: navy">, </span> denominatorVariable.value = <span style="color: blue">'1'</span><span style="color: navy">, </span> denominatorVariable.unit = <span style="color: blue">'wk'</span><span style="color: navy">, </span> denominatorVariable.system = <span style="color: blue">'http://unitsofmeasure.org'</span><span style="color: navy">, </span> denominatorVariable.code = <span style="color: blue">'wk'</span> <i>&quot;mapWeeklyExtent&quot;</i><span style="color: navy">;</span>
+  source.serviceDescription<b> as </b><span style="color: maroon">serviceDescription</span><span style="color: navy"><b> -&gt; </b></span> target.extension = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Extension'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">descrExtensionVariable</span><span style="color: navy">, </span> descrExtensionVariable.url = <span style="color: blue">'http://hl7.no/fhir/ig/okt/StructureDefinition/ServiceDescriptionMarkdown'</span><span style="color: navy">, </span> descrExtensionVariable.value = <b>create</b><span style="color: navy">(</span><span style="color: blue">'markdown'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">descrExtensionVariableValueMd</span><span style="color: navy">, </span> descrExtensionVariableValueMd.value = <span style="color: maroon">serviceDescription</span> <i>&quot;mapServiceDescription&quot;</i><span style="color: navy">;</span>
+  source<b> where </b>temporaryCessation != true<span style="color: navy"><b> -&gt; </b></span> target.status = <b>create</b><span style="color: navy">(</span><span style="color: blue">'code'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">statusVariable</span><span style="color: navy">, </span> statusVariable.value = <span style="color: blue">'active'</span> <i>&quot;mapStatus&quot;</i><span style="color: navy">;</span>
+  source<b> where </b>temporaryCessation = true<span style="color: navy"><b> -&gt; </b></span> target.status = <b>create</b><span style="color: navy">(</span><span style="color: blue">'code'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">statusVariable</span><span style="color: navy">, </span> statusVariable.value = <span style="color: blue">'onhold'</span> <i>&quot;mapStatus&quot;</i><span style="color: navy">;</span>
+  source.stayType<b> as </b><span style="color: maroon">stayType</span><span style="color: navy"><b> -&gt; </b></span>target.type = <b>cc</b><span style="color: navy">(</span><span style="color: blue">'http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs'</span><span style="color: navy">, </span><span style="color: maroon">stayType</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">typeVariable</span> <i>&quot;mapStayType&quot;</i><span style="color: navy">;</span>
+  source<span style="color: navy"><b> -&gt; </b></span>target.period = <b>create</b><span style="color: navy">(</span><span style="color: blue">'Period'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">period</span><b> then</b><span style="color: navy"> {
+</span>    source.startDate<b> as </b><span style="color: maroon">startDate</span><span style="color: navy"><b> -&gt; </b></span>period.start = <span style="color: maroon">startDate</span> <i>&quot;setStart&quot;</i><span style="color: navy">;</span>
+    source.endDate<b> as </b><span style="color: maroon">endDate</span><span style="color: navy"><b> -&gt; </b></span>period.end = <span style="color: maroon">endDate</span> <i>&quot;setEnd&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;mapPeriod&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.no/">HL7 Norway</a>.  Package no.hl7.fhir.okt#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 12, 2025 16:10+0000">2025-11-12</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

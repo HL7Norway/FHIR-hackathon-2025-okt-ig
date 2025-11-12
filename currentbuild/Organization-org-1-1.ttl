@@ -1,0 +1,29 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/okt/Organization/org-1-1> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "org-1-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-1-1</b></p><a name=\"org-1-1\"> </a><a name=\"hcorg-1-1\"> </a><p><b>name</b>: Hjemmeboende</p><p><b>partOf</b>: <a href=\"Organization-org-1.html\">Organization Test kommune</a></p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: 23101600</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:name [ fhir:v "Hjemmeboende"] ; # 
+  fhir:partOf [
+     fhir:l <http://hl7.no/fhir/ig/okt/Organization/org-1> ;
+     fhir:reference [ fhir:v "Organization/org-1" ]
+  ] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "23101600" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

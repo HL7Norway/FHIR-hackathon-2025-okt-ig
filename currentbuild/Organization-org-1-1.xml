@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-1-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization org-1-1</b></p><a name="org-1-1"> </a><a name="hcorg-1-1"> </a><p><b>name</b>: Hjemmeboende</p><p><b>partOf</b>: <a href="Organization-org-1.html">Organization Test kommune</a></p><h3>Contacts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Telecom</b></td></tr><tr><td style="display: none">*</td><td>ph: 23101600</td></tr></table></div>
+  </text>
+  <name value="Hjemmeboende"/>
+  <partOf>
+    <reference value="Organization/org-1"/>
+  </partOf>
+  <contact>
+    <telecom>
+      <system value="phone"/>
+      <value value="23101600"/>
+    </telecom>
+  </contact>
+</Organization>

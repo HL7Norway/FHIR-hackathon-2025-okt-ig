@@ -1,0 +1,45 @@
+{
+  "resourceType" : "EpisodeOfCare",
+  "id" : "OktEpisodeOfCare-Proto-19779998080-1",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: EpisodeOfCare OktEpisodeOfCare-Proto-19779998080-1</b></p><a name=\"OktEpisodeOfCare-Proto-19779998080-1\"> </a><a name=\"hcOktEpisodeOfCare-Proto-19779998080-1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OktEpisodeOfCare.html\">OktEpisodeOfCare</a></p></div><p><b>Weekly Extent Ratio</b>: 15 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeh = 'h')</span>/1 wk<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codewk = 'wk')</span></p><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{urn:oid:2.16.578.1.12.4.1.1.9151 2}\">Praktisk bistand - opplæring - daglige gjøremål</span></p><p><b>patient</b>: <a href=\"Patient-Example.html\">Jane Doe  Female, DoB: 1980-01-01</a></p><p><b>managingOrganization</b>: <a href=\"Organization-org-1-1-2-6.html\">Organization Sone Vest, Kjeller</a></p><p><b>period</b>: 2020-06-22 --&gt; (ongoing)</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio",
+    "valueRatio" : {
+      "numerator" : {
+        "value" : 15,
+        "unit" : "h",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "h"
+      },
+      "denominator" : {
+        "value" : 1,
+        "unit" : "wk",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "wk"
+      }
+    }
+  }],
+  "status" : "active",
+  "type" : [{
+    "coding" : [{
+      "system" : "urn:oid:2.16.578.1.12.4.1.1.9151",
+      "code" : "2",
+      "display" : "Praktisk bistand - opplæring - daglige gjøremål"
+    }]
+  }],
+  "patient" : {
+    "reference" : "Patient/Example"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/org-1-1-2-6"
+  },
+  "period" : {
+    "start" : "2020-06-22"
+  }
+}

@@ -11,18 +11,18 @@
   fhir:id [ fhir:v "OktOrderDetailsVs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OktOrderDetailsVs</b></p><a name=\"OktOrderDetailsVs\"> </a><a name=\"hcOktOrderDetailsVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OktOrderDetailsCs.html\"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet OktOrderDetailsVs</b></p><a name=\"OktOrderDetailsVs\"> </a><a name=\"hcOktOrderDetailsVs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-OktOrderDetailsCs.html\"><code>http://hl7.no/fhir/ig/okt/CodeSystem/OktOrderDetailsCs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs"^^xsd:anyURI ;
      fhir:l <http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "OktOrderDetailsValueSet"] ; # 
   fhir:title [ fhir:v "Indikatorer for tjenesten"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-11-12T13:47:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-12T16:10:30+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;

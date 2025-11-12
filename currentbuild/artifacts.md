@@ -1,4 +1,4 @@
-# Artifacts Summary - v0.1.0
+# Artifacts Summary - v0.2.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts Summary**
@@ -24,7 +24,6 @@ These define constraints on FHIR resources for systems conforming to this implem
 | | |
 | :--- | :--- |
 | [OktEpisodeOfCare](StructureDefinition-OktEpisodeOfCare.md) | Profile on EpisodeOfCare for OktMessage |
-| [OktServiceRequest](StructureDefinition-OktServiceRequest.md) | Profile on ServiceRequest for OktMessage |
 
 ### Structures: Extension Definitions 
 
@@ -33,7 +32,7 @@ These define constraints on FHIR data types for systems conforming to this imple
 | | |
 | :--- | :--- |
 | [Utfyllende beskrivelse av tjenesten](StructureDefinition-ServiceDescriptionMarkdown.md) | Utfyllende beskrivelse av tjenesten |
-| [Weekly Extent Quantity](StructureDefinition-WeeklyExtentQuantity.md) | The quantity of the service provided on a weekly basis |
+| [Weekly Extent Ratio](StructureDefinition-WeeklyExtentRatio.md) | The ratio of the service provided |
 
 ### Terminology: Value Sets 
 
@@ -63,6 +62,7 @@ These define transformations to convert between data structures used by systems 
 
 | | |
 | :--- | :--- |
+| [OktMessageEpisodeOfCare](StructureMap-OktMessage-EpisodeOfCare.md) | Map OktMessage to EpisodeOfCare |
 | [OktMessageServiceRequest](StructureMap-OktMessage-ServiceRequest.md) | Map OktMessage to ServiceRequest |
 
 ### Example: Example Instances 
@@ -71,8 +71,13 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
+| [OktEpisodeOfCare-Proto-19779998080-1](EpisodeOfCare-OktEpisodeOfCare-Proto-19779998080-1.md) | An example OktMessage implemented as a EpisodeOfCare patient 19779998080 service 1 |
 | [OktEpisodeOfCare1](EpisodeOfCare-OktEpisodeOfCare1.md) | An example OktMessage implemented as a EpisodeOfCare |
 | [OktMessage1](Binary-OktMessage1.md) | An example OktMessage |
-| [OktServiceRequest1](ServiceRequest-OktServiceRequest1.md) | An example OktMessage implemented as a ServiceRequest |
+| [OktMessage2](Binary-OktMessage2.md) | An example OktMessage with a service on hold |
 | [PatientExample](Patient-Example.md) | An example Patient for resources that need a Patient reference |
+| [org-1](Organization-org-1.md) |  |
+| [org-1-1](Organization-org-1-1.md) |  |
+| [org-1-1-2](Organization-org-1-1-2.md) |  |
+| [org-1-1-2-6](Organization-org-1-1-2-6.md) |  |
 
