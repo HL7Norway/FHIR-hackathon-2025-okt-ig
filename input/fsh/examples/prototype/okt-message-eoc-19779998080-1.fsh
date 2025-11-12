@@ -1,8 +1,8 @@
-Instance: OktEpisodeOfCare1
+Instance: OktEpisodeOfCare-Proto-19779998080-1
 InstanceOf: OktEpisodeOfCare
-Description: "An example OktMessage implemented as a EpisodeOfCare"
+Description: "An example OktMessage implemented as a EpisodeOfCare patient 19779998080 service 1"
 Usage: #example
-* extension[WeeklyExtentRatio].valueRatio.numerator.value = 10
+* extension[WeeklyExtentRatio].valueRatio.numerator.value = 15
 * extension[WeeklyExtentRatio].valueRatio.numerator.unit = "h"
 * extension[WeeklyExtentRatio].valueRatio.numerator.system = $ucum
 * extension[WeeklyExtentRatio].valueRatio.numerator.code = #h
@@ -10,10 +10,8 @@ Usage: #example
 * extension[WeeklyExtentRatio].valueRatio.denominator.unit = "wk"
 * extension[WeeklyExtentRatio].valueRatio.denominator.system = $ucum
 * extension[WeeklyExtentRatio].valueRatio.denominator.code = #wk
-* extension[ServiceDescriptionMarkdown].valueMarkdown = "Dette er en utfyllende beskrivelse av tjenesten"
-* status = #active
-* type[iplosCode] = IplosCodeSystem#1 "Praktisk bistand - daglige gjøremål"
-* type[stayType] = OktStayTypeCodeSystem#dagopphold
+* managingOrganization = Reference(Organization/org-1-1-2-6)
 * patient = Reference(Patient/Example)
-* period.start = 2025-01-01
-* period.end = 2025-12-31
+* period.start = 2020-06-22
+* status = #active
+* type[iplosCode] = IplosCodeSystem#2 "Praktisk bistand - opplæring - daglige gjøremål"

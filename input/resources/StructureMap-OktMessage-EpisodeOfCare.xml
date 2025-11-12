@@ -1,0 +1,332 @@
+<StructureMap xmlns="http://hl7.org/fhir">
+    <id value="OktMessage-EpisodeOfCare" />
+    <url value="http://hl7.no/fhir/ig/okt/StructureMap/OktMessage-EpisodeOfCare" />
+    <name value="OktMessageEpisodeOfCare" />
+    <status value="draft" />
+    <experimental value="true" />
+    <description value="Map OktMessage to EpisodeOfCare" />
+    <structure>
+        <mode value="source" />
+        <url value="http://hl7.no/fhir/ig/okt/StructureDefinition/OktMessage" />
+        <alias value="NhnOktMessage" />
+    </structure>
+    <structure>
+        <mode value="target" />
+        <url value="http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare" />
+        <alias value="FhirEpisodeOfCare" />
+    </structure>
+    <group>
+        <name value="OktMessageToEpisodeOfCare" />
+        <typeMode value="types" />
+        <input>
+            <name value="source" />
+            <type value="NhnOktMessage" />
+            <mode value="source" />
+        </input>
+        <input>
+            <name value="target" />
+            <type value="FhirEpisodeOfCare" />
+            <mode value="target" />
+        </input>
+        <!-- WeeklyExtent -->
+        <rule>
+            <name value="mapWeeklyExtent" />
+            <source>
+                <context value="source" />
+                <element value="weeklyExtent" />
+                <variable value="weeklyExtent" />
+            </source>
+            <target>
+                <context value="target" />
+                <element value="extension" />
+                <variable value="weeklyExtentExtensionVariable" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="Extension" />
+                </parameter>
+            </target>
+            <target>
+                <context value="weeklyExtentExtensionVariable" />
+                <contextType value="variable" />
+                <element value="url" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString
+                        value="http://hl7.no/fhir/ig/okt/StructureDefinition/WeeklyExtentRatio" />
+                </parameter>
+            </target>
+            <target>
+                <context value="weeklyExtentExtensionVariable" />
+                <element value="value" />
+                <variable value="weeklyExtentExtensionVariableValueRatio" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="Ratio" />
+                </parameter>
+            </target>
+            <!-- Transform value 'qty' is unknown for the implementation -->
+            <target>
+                <context value="weeklyExtentExtensionVariableValueRatio" />
+                <contextType value="variable" />
+                <element value="numerator" />
+                <variable value="numeratorVariable" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="Quantity" />
+                </parameter>
+            </target>
+            <target>
+                <context value="numeratorVariable" />
+                <contextType value="variable" />
+                <element value="value" />
+                <transform value="copy" />
+                <parameter>
+                    <valueId value="weeklyExtent" />
+                </parameter>
+            </target>
+            <target>
+                <context value="numeratorVariable" />
+                <contextType value="variable" />
+                <element value="unit" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="h" />
+                </parameter>
+            </target>
+            <target>
+                <context value="numeratorVariable" />
+                <contextType value="variable" />
+                <element value="system" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="http://unitsofmeasure.org" />
+                </parameter>
+            </target>
+            <target>
+                <context value="numeratorVariable" />
+                <contextType value="variable" />
+                <element value="code" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="h" />
+                </parameter>
+            </target>
+            <target>
+                <context value="weeklyExtentExtensionVariableValueRatio" />
+                <contextType value="variable" />
+                <element value="denominator" />
+                <variable value="denominatorVariable" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="Quantity" />
+                </parameter>
+            </target>
+            <target>
+                <context value="denominatorVariable" />
+                <contextType value="variable" />
+                <element value="value" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="1" />
+                </parameter>
+            </target>
+            <target>
+                <context value="denominatorVariable" />
+                <contextType value="variable" />
+                <element value="unit" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="wk" />
+                </parameter>
+            </target>
+            <target>
+                <context value="denominatorVariable" />
+                <contextType value="variable" />
+                <element value="system" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="http://unitsofmeasure.org" />
+                </parameter>
+            </target>
+            <target>
+                <context value="denominatorVariable" />
+                <contextType value="variable" />
+                <element value="code" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="wk" />
+                </parameter>
+            </target>
+        </rule>
+        <rule>
+            <name value="mapServiceDescription" />
+            <source>
+                <context value="source" />
+                <element value="serviceDescription" />
+                <variable value="serviceDescription" />
+            </source>
+            <target>
+                <context value="target" />
+                <element value="extension" />
+                <variable value="descrExtensionVariable" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="Extension" />
+                </parameter>
+            </target>
+            <target>
+                <context value="descrExtensionVariable" />
+                <contextType value="variable" />
+                <element value="url" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString
+                        value="http://hl7.no/fhir/ig/okt/StructureDefinition/ServiceDescriptionMarkdown" />
+                </parameter>
+            </target>
+            <target>
+                <context value="descrExtensionVariable" />
+                <element value="value" />
+                <variable value="descrExtensionVariableValueMd" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="markdown" />
+                </parameter>
+            </target>
+            <target>
+                <context value="descrExtensionVariableValueMd" />
+                <contextType value="variable" />
+                <element value="value" />
+                <transform value="copy" />
+                <parameter>
+                    <valueId value="serviceDescription" />
+                </parameter>
+            </target>
+        </rule>
+        <!-- Status -->
+        <!-- Active -->
+        <rule>
+            <name value="mapStatus" />
+            <source>
+                <context value="source" />
+                <condition value="temporaryCessation != true" />
+            </source>
+            <target>
+                <context value="target" />
+                <element value="status" />
+                <variable value="statusVariable" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="code" />
+                </parameter>
+            </target>
+            <target>
+                <context value="statusVariable" />
+                <contextType value="variable" />
+                <element value="value" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="active" />
+                </parameter>
+            </target>
+        </rule>
+        <!-- On Hold -->
+        <rule>
+            <name value="mapStatus" />
+            <source>
+                <context value="source" />
+                <condition value="temporaryCessation = true" />
+            </source>
+            <target>
+                <context value="target" />
+                <element value="status" />
+                <variable value="statusVariable" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="code" />
+                </parameter>
+            </target>
+            <target>
+                <context value="statusVariable" />
+                <contextType value="variable" />
+                <element value="value" />
+                <transform value="copy" />
+                <parameter>
+                    <valueString value="onhold" />
+                </parameter>
+            </target>
+        </rule>
+        <!-- TODO Finished/Planned from startDate and endDate -->
+        <!-- StayType -->
+        <rule>
+            <name value="mapStayType" />
+            <source>
+                <context value="source" />
+                <element value="stayType" />
+                <variable value="stayType" />
+            </source>
+            <target>
+                <context value="target" />
+                <element value="type" />
+                <variable value="typeVariable" />
+                <transform value="cc" />
+                <parameter>
+                    <valueString value="http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs" />
+                </parameter>
+                <parameter>
+                    <valueId value="stayType" />
+                </parameter>
+            </target>
+        </rule>
+        <!-- Period -->
+        <rule>
+            <name value="mapPeriod" />
+            <source>
+                <context value="source" />
+            </source>
+            <target>
+                <context value="target" />
+                <element value="period" />
+                <variable value="period" />
+                <transform value="create" />
+                <parameter>
+                    <valueString value="Period" />
+                </parameter>
+            </target>
+            <rule>
+                <name value="setStart" />
+                <source>
+                    <context value="source" />
+                    <element value="startDate" />
+                    <variable value="startDate" />
+                </source>
+                <target>
+                    <context value="period" />
+                    <contextType value="variable" />
+                    <element value="start" />
+                    <transform value="copy" />
+                    <parameter>
+                        <valueId value="startDate" />
+                    </parameter>
+                </target>
+            </rule>
+            <rule>
+                <name value="setEnd" />
+                <source>
+                    <context value="source" />
+                    <element value="endDate" />
+                    <variable value="endDate" />
+                </source>
+                <target>
+                    <context value="period" />
+                    <contextType value="variable" />
+                    <element value="end" />
+                    <transform value="copy" />
+                    <parameter>
+                        <valueId value="endDate" />
+                    </parameter>
+                </target>
+            </rule>
+        </rule>
+    </group>
+</StructureMap>
