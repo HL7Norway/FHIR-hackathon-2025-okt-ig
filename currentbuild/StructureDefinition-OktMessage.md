@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-OktMessage.csv), [Ex
   "name" : "OktMessage",
   "title" : "Logical Model for OktMessage",
   "status" : "draft",
-  "date" : "2025-11-12T13:38:48+00:00",
+  "date" : "2025-11-12T13:47:08+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

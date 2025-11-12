@@ -10,8 +10,8 @@
       "systems" : ["urn:oid:2.16.578.1.12.4.1.1.9151"],
       "uses" : {
       },
-      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare",
-      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest",
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktOrderDetailsVs",
@@ -32,8 +32,8 @@
       "systems" : ["http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs"],
       "uses" : {
       },
-      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare",
-      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest",
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
     },
     {
       "url" : "http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs",
@@ -45,8 +45,8 @@
       "systems" : ["http://hl7.no/fhir/ig/okt/CodeSystem/OktStayTypeCs"],
       "uses" : {
       },
-      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare",
-      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest"
+      "StructureDefinition-OktServiceRequest.html" : "OktServiceRequest",
+      "StructureDefinition-OktEpisodeOfCare.html" : "OktEpisodeOfCare"
     }
   ]
 }

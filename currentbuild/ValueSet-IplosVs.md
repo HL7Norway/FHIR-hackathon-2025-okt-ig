@@ -54,7 +54,7 @@ Individbasert pleie- og omsorgsstatistikk (IPLOS) er et nasjonalt register som i
   "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T13:38:48+00:00",
+  "date" : "2025-11-12T13:47:08+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

@@ -3,7 +3,7 @@ OKTonFHIR : Validation Results
 
 err = 0, warn = 0, info = 2
 IG Publisher Version: 2.0.26
-Generated Wed Nov 12 13:40:18 UTC 2025. FHIR version 4.0.1 for no.hl7.fhir.okt#0.1.0 (canonical = http://hl7.no/fhir/ig/okt)
+Generated Wed Nov 12 13:48:35 UTC 2025. FHIR version 4.0.1 for no.hl7.fhir.okt#0.1.0 (canonical = http://hl7.no/fhir/ig/okt)
  Build Errors : 0 / 0 / 0
  /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/Binary-OktMessage1 : 0 / 0 / 1
  /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/CodeSystem-IplosCs : 0 / 0 / 1

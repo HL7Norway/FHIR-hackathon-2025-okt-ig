@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Indikatorer for tjenesten"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v true] ; # 
-  fhir:date [ fhir:v "2025-11-12T13:38:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-12T13:47:08+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;

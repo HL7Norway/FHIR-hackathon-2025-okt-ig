@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "9c2bfaae-9bba-4331-964d-82d352c1c71c",
+  "id" : "817453a9-d0a7-44be-8378-281c513fad79",
   "meta" : {
-    "lastUpdated" : "2025-11-12T13:38:48.482+00:00"
+    "lastUpdated" : "2025-11-12T13:47:08.415+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Individbasert pleie- og omsorgsstatistikk (IPLOS)",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-11-12T13:38:48+00:00",
+      "date" : "2025-11-12T13:47:08+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:30e7c8d6-f68d-408a-955b-00eaf16c46b9",
-        "timestamp" : "2025-11-12T13:40:04+00:00",
+        "identifier" : "urn:uuid:2cf03f6b-0e78-4a3e-8801-801b7500b3c6",
+        "timestamp" : "2025-11-12T13:48:21+00:00",
         "total" : 25,
         "offset" : 0,
         "parameter" : [{
@@ -187,10 +187,10 @@
       "title" : "Indikatorer for tjenesten",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-11-12T13:38:48+00:00",
+      "date" : "2025-11-12T13:47:08+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:c58508d3-d50c-4c93-a220-da6ef5a5bb58",
-        "timestamp" : "2025-11-12T13:40:04+00:00",
+        "identifier" : "urn:uuid:337f7f5d-6c66-4790-a6fa-bd404d6e4d1d",
+        "timestamp" : "2025-11-12T13:48:21+00:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -235,10 +235,10 @@
       "title" : "Tjenestenivå",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-11-12T13:38:48+00:00",
+      "date" : "2025-11-12T13:47:08+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:4c8cbb1b-3616-4e6f-a7e7-ef3978f5c410",
-        "timestamp" : "2025-11-12T13:40:04+00:00",
+        "identifier" : "urn:uuid:436cc059-95e9-45e7-ac8d-75a24a3abdf6",
+        "timestamp" : "2025-11-12T13:48:21+00:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
@@ -283,10 +283,10 @@
       "title" : "Oppholdstype",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2025-11-12T13:38:48+00:00",
+      "date" : "2025-11-12T13:47:08+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:efd73219-159e-4134-8412-3e084722a707",
-        "timestamp" : "2025-11-12T13:40:04+00:00",
+        "identifier" : "urn:uuid:927b5b67-7c44-488b-846a-4a2d79afa3fb",
+        "timestamp" : "2025-11-12T13:48:21+00:00",
         "total" : 1,
         "offset" : 0,
         "parameter" : [{
