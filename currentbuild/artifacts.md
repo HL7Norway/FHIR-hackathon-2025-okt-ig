@@ -73,6 +73,7 @@ These are example instances that show what data produced and consumed by systems
 | :--- | :--- |
 | [OktEpisodeOfCare-Proto-19779998080-1](EpisodeOfCare-OktEpisodeOfCare-Proto-19779998080-1.md) | An example OktMessage implemented as a EpisodeOfCare patient 19779998080 service 1 |
 | [OktEpisodeOfCare1](EpisodeOfCare-OktEpisodeOfCare1.md) | An example OktMessage implemented as a EpisodeOfCare |
+| [OktEvent1](Binary-OktEvent1.md) | An example OktEvent |
 | [OktMessage1](Binary-OktMessage1.md) | An example OktMessage |
 | [OktMessage2](Binary-OktMessage2.md) | An example OktMessage with a service on hold |
 | [PatientExample](Patient-Example.md) | An example Patient for resources that need a Patient reference |

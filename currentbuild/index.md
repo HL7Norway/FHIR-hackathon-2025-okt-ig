@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/ImplementationGuide/no.hl7.fhir.okt | *Version*:0.2.0 |
-| Draft as of 2025-11-12 | *Computable Name*:OKTonFHIR |
+| Draft as of 2025-11-14 | *Computable Name*:OKTonFHIR |
 
 ### Introduction
 
@@ -118,7 +118,7 @@ The [OktMessage-EpisodeOfCare](StructureMap-OktMessage-EpisodeOfCare.md) Structu
   "version" : "0.2.0",
   "name" : "OKTonFHIR",
   "status" : "draft",
-  "date" : "2025-11-12T16:10:30+00:00",
+  "date" : "2025-11-14T11:11:36+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {
@@ -983,6 +983,24 @@ The [OktMessage-EpisodeOfCare](StructureMap-OktMessage-EpisodeOfCare.md) Structu
         "name" : "OktEpisodeOfCare1",
         "description" : "An example OktMessage implemented as a EpisodeOfCare",
         "exampleCanonical" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+            "valueCode" : "application/fhir+json"
+          },
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Binary"
+          }
+        ],
+        "reference" : {
+          "reference" : "Binary/OktEvent1"
+        },
+        "name" : "OktEvent1",
+        "description" : "An example OktEvent",
+        "exampleCanonical" : "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEvent"
       },
       {
         "extension" : [

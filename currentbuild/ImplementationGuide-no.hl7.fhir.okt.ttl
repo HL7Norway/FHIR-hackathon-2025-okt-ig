@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.2.0"] ; # 
   fhir:name [ fhir:v "OKTonFHIR"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-12T16:10:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-14T11:11:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Norway"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Norway" ] ;
@@ -1539,6 +1539,37 @@
          a fhir:Canonical ;
          fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare"^^xsd:anyURI ;
          fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/OktEpisodeOfCare>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "application/fhir+json"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Binary"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.no/fhir/ig/okt/Binary/OktEvent1> ;
+         fhir:reference [ fhir:v "Binary/OktEvent1" ]
+       ] ;
+       fhir:name [ fhir:v "OktEvent1" ] ;
+       fhir:description [ fhir:v "An example OktEvent" ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://hl7.no/fhir/ig/okt/StructureDefinition/OktEvent"^^xsd:anyURI ;
+         fhir:l <http://hl7.no/fhir/ig/okt/StructureDefinition/OktEvent>
        ]
      ] [
        fhir:extension ( [

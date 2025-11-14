@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/CodeSystem/OktServiceLevelCs | *Version*:0.2.0 |
-| Draft as of 2025-11-12 | *Computable Name*:OktServiceLevelCodeSystem |
+| Draft as of 2025-11-14 | *Computable Name*:OktServiceLevelCodeSystem |
 
  
 Tjenestenivå for pleie- og omsorgstjenester. 
@@ -32,7 +32,7 @@ Tjenestenivå for pleie- og omsorgstjenester.
   "title" : "Tjenestenivå",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T16:10:30+00:00",
+  "date" : "2025-11-14T11:11:36+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

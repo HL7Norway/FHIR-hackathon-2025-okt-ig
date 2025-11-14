@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a67ed3c6-8c96-466a-bfb7-63870fffef38"/>
+  <id value="db97b4ab-4940-4f3d-af9b-66434ab4e36a"/>
   <meta>
-    <lastUpdated value="2025-11-12T16:10:30.172+00:00"/>
+    <lastUpdated value="2025-11-14T11:11:36.034+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -576,10 +576,10 @@
         <title value="Individbasert pleie- og omsorgsstatistikk (IPLOS)"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-12T16:10:30+00:00"/>
+        <date value="2025-11-14T11:11:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1ef48f8b-f835-4b95-ac68-72a2408cec4c"/>
-          <timestamp value="2025-11-12T16:11:49+00:00"/>
+          <identifier value="urn:uuid:0abe54b1-8825-42c5-bde2-881eaa893131"/>
+          <timestamp value="2025-11-14T11:12:34+00:00"/>
           <total value="25"/>
           <offset value="0"/>
           <parameter>
@@ -793,10 +793,10 @@
         <title value="Indikatorer for tjenesten"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-12T16:10:30+00:00"/>
+        <date value="2025-11-14T11:11:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5d5a2b40-a757-4beb-87da-9f1ec431fb79"/>
-          <timestamp value="2025-11-12T16:11:49+00:00"/>
+          <identifier value="urn:uuid:8ea8deda-48ba-4e50-8402-a337bab7ade8"/>
+          <timestamp value="2025-11-14T11:12:34+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -890,10 +890,10 @@
         <title value="Tjenestenivå"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-12T16:10:30+00:00"/>
+        <date value="2025-11-14T11:11:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:93a488f2-7419-4c9d-85d7-a42dbe1d7f31"/>
-          <timestamp value="2025-11-12T16:11:49+00:00"/>
+          <identifier value="urn:uuid:2ff4f9a3-1d50-471f-8673-49d597d24e4b"/>
+          <timestamp value="2025-11-14T11:12:34+00:00"/>
           <total value="1"/>
           <offset value="0"/>
           <parameter>
@@ -1007,10 +1007,10 @@
         <title value="Oppholdstype"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2025-11-12T16:10:30+00:00"/>
+        <date value="2025-11-14T11:11:36+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b21959b4-ce0e-48f6-9139-a91f488c92d9"/>
-          <timestamp value="2025-11-12T16:11:49+00:00"/>
+          <identifier value="urn:uuid:f4cb0733-83b4-4f50-8f71-88e3dfa195a3"/>
+          <timestamp value="2025-11-14T11:12:34+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>

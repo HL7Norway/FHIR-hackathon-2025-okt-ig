@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/ValueSet/OktStayTypeVs | *Version*:0.2.0 |
-| Draft as of 2025-11-12 | *Computable Name*:OktStayTypeValueSet |
+| Draft as of 2025-11-14 | *Computable Name*:OktStayTypeValueSet |
 
  
 Oppholdstype for pleie- og omsorgstjenester. 
@@ -53,7 +53,7 @@ Oppholdstype for pleie- og omsorgstjenester.
   "title" : "Oppholdstype",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2025-11-12T16:10:30+00:00",
+  "date" : "2025-11-14T11:11:36+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:http://hl7.no/fhir/ig/okt/StructureDefinition/OktEvent | *Version*:0.2.0 |
-| Draft as of 2025-11-12 | *Computable Name*:OktEvent |
+| Draft as of 2025-11-14 | *Computable Name*:OktEvent |
 
  
 Logical Model for OktEvent 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-OktEvent.csv), [Exce
   "name" : "OktEvent",
   "title" : "Logical Model for OktEvent",
   "status" : "draft",
-  "date" : "2025-11-12T16:10:30+00:00",
+  "date" : "2025-11-14T11:11:36+00:00",
   "publisher" : "HL7 Norway",
   "contact" : [
     {

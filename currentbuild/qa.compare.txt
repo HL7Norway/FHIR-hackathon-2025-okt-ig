@@ -5,6 +5,7 @@ err = 0, warn = 5, info = 5
 $--
 Generated $--. FHIR version $-- for no.hl7.fhir.okt#$-- (canonical = http://hl7.no/fhir/ig/okt)
  Build Errors : 0 / 4 / 0
+ /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/Binary-OktEvent1 : 0 / 0 / 1
  /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/Binary-OktMessage1 : 0 / 0 / 1
  /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/Binary-OktMessage2 : 0 / 0 / 1
  /__w/FHIR-hackathon-2025-okt-ig/FHIR-hackathon-2025-okt-ig/fsh-generated/resources/CodeSystem-IplosCs : 0 / 0 / 1
@@ -37,6 +38,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-1-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-1-1-2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/org-1-1-2-6.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+== fsh-generated/resources/Binary-OktEvent1.json ==
 == fsh-generated/resources/Binary-OktMessage1.json ==
 == fsh-generated/resources/Binary-OktMessage2.json ==
 == fsh-generated/resources/CodeSystem-IplosCs.json ==

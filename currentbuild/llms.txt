@@ -49,6 +49,7 @@
 
 ### Examples
 
+* [OktEvent1 (Binary)](Binary-OktEvent1.md)
 * [OktMessage1 (Binary)](Binary-OktMessage1.md)
 * [OktMessage2 (Binary)](Binary-OktMessage2.md)
 * [OktEpisodeOfCare-Proto-19779998080-1 (EpisodeOfCare)](EpisodeOfCare-OktEpisodeOfCare-Proto-19779998080-1.md)
